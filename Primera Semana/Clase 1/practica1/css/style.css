@@ -1,0 +1,33 @@
+/* h1{
+    background-color: brown;
+}
+p{
+    background-color: brown;
+}
+a{
+    background-color: aqua;
+} */
+
+.bloque-1{
+    background-color: brown;
+    text-align: center;
+    color: aliceblue;
+}
+
+.parrafo-centrado{
+    text-align: center;
+}
+
+img{
+
+    height: 200px;
+    width: 200px;
+
+}
+
+.imagen-casa-papel{
+    display: block;
+    margin: 0px auto;
+   
+  
+}

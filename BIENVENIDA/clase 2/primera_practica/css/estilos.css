@@ -1,0 +1,35 @@
+
+.contenedor{
+    background-color: #918dfb;
+    margin: 50px;
+}
+
+body{
+    background-color: azure;
+}
+
+h2{
+    color: red;
+}
+
+p{
+    color: chartreuse;
+    margin: 90px;
+}
+
+img{
+    height: 420px;
+    width: 400px;
+}
+
+.tituloH1{
+color: darkgreen;
+}
+
+.estiloParrafo{
+    color: brown;
+    font-size: xx-large;
+    margin-left: 20px;
+    border: 10px solid red;
+    padding: 80px;
+}

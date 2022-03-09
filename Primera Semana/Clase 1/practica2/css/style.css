@@ -1,0 +1,15 @@
+.jaula{
+    background-color: rgb(15, 15, 15);
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 200px;
+}
+
+.pajaro-imagen{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 90px;
+}

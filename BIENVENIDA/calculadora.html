@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculadora</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>scr="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"</script>
+    <script>src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"</script>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora</h1>
+
+        <script>
+            function suma(){
+
+                var a=document.f1.a.value;
+                var b=document.f1.b.value;
+                var r=document.f1.c.value;
+                r=parseFloat(a) + parseFloat(b);
+                document.f1.c.value=r;
+                alert("El resultado de la suma es: "+r);
+            }
+
+
+            function resta(){
+
+                var a=document.f1.a.value;
+                var b=document.f1.b.value;
+                var r=document.f1.c.value;
+                r=parseFloat(a) - parseFloat(b);
+                document.f1.c.value=r;
+            }
+
+
+                
+            function multiplicacion(){
+
+            var a=document.f1.a.value;
+            var b=document.f1.b.value;
+            var r=document.f1.c.value;
+            r=parseFloat(a) * parseFloat(b);
+            document.f1.c.value=r;
+            }
+
+
+
+            function division(){
+
+            var a=document.f1.a.value;
+            var b=document.f1.b.value;
+            var r=document.f1.c.value;
+            r=parseFloat(a) /parseFloat(b);
+            document.f1.c.value=r;
+            }
+
+
+
+        </script>
+
+<form name="f1" action="calculadora.html" method="POST">
+    <div class="form-group">
+        <label for="numero1">Número 1</label>
+        <input type="text" class="form-control" id="a" placeholder="Ingrese un número" name="a">
+        <br>
+        <label for="numero1">Número 2</label>
+        <input type="text" class="form-control" id="b" placeholder="Ingrese un número" name="b">
+        <br>
+
+        <input type="Button" name="" value="sumar" onclick="suma()" class="btn btn-primary">
+        <input type="Button" name="" value="resta" onclick="resta()" class="btn btn-success">
+        <input type="Button" name="" value="multiplicacion" onclick="multiplicacion()" class="btn btn-warning">
+        <input type="Button" name="" value="division" onclick="division()" class="btn btn-danger">
+        <input type="Button" name="" value="Limpiar" onclick="reset()" class="btn btn-success">
+<br><br>
+<label for="resultado">Resultado</label>
+<input type="text"class="form-control"id="c"name="c" placeholder="Aqui se imprime el resultado">
+
+
+
+    </div>
+
+    
+</form>
+
+
+
+
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+h1{
+    color:rgb(255, 255, 255);
+    background-color: #023047;
+    border: 1px solid  #023047;
+    padding: 10px 50px 100px;
+    margin: 50px;
+
+   
+}
+
+
+h3{
+  
+    color: white;
+    background-color: crimson;
+    padding: 5px;
+    border: 10px solid powderblue;
+    margin: 5px;
+  
+    
+
+   
+}
+
+.tituloPersonalizado{
+    color: rgb(59, 67, 175);
+    margin-right: 10px;
+}
+

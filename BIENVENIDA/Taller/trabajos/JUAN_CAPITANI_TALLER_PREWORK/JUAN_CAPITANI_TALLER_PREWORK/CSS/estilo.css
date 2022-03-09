@@ -1,0 +1,57 @@
+.cabecera{
+    text-align: center;
+}
+
+.tituloCabecera{
+    color: navy;
+}
+
+.fotoPerfil{
+    height: 300px;
+    width: 300px;
+}
+
+.seccionPasatiempos{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.proyectos{
+    text-align: center;
+    padding-top: 15px;
+}
+
+p{
+    color: #1C1C1C;
+    font-size: large;
+}
+
+.columna {
+    float: left;
+    width: 32.33%;
+    padding: 1px;
+  }
+  
+  .fila::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  h2{
+      color: midnightblue;
+  }
+
+  .misRedes{
+      text-align: center;
+      padding-top: 20px;
+  }
+
+  .linkSocial{
+      padding-left: 100px;
+  }
+
+  .galerias{
+      height: 400px;
+      width: 400px;
+  }

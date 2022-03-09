@@ -1,0 +1,89 @@
+body{
+    background-color: black;
+}
+.biografia{
+    background-color: black;
+}
+.tituloH1{
+    text-align: center;
+    color: darkcyan;
+    border: 10px solid gray;
+}
+.foto{
+    text-align: center;
+    background-color:darkmagenta;
+    border: 10px solid grey;
+}
+img{
+    height: 200px;
+    width: 200px;
+}
+.estiloBio{
+    text-align: center;
+    color: cadetblue;
+    font-style: italic;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.estiloPas{
+    text-align: center;
+    color: cadetblue;
+    font-style: unset;
+}
+.pleyades{
+    text-align: center;
+}
+.estiloPas2{
+    text-align: center;
+    color: cadetblue;
+}
+.pasatiempo2{
+    background-color: black;
+    border: 10px solid darkmagenta ;
+}
+.imgZelda{
+    height: 200px;
+    width: 300px;
+}
+
+.zelda{
+    text-align: center;
+}
+.tituloH2{
+    text-align: center;
+    color: cadetblue;
+}
+.estiloProy1{
+    text-align: center;
+    color: cadetblue;
+    text-decoration:solid;
+
+}
+.estiloProy2{
+    text-align: center;
+    color: cadetblue;
+    text-decoration: underline;
+    font-style: italic;
+}
+.estiloProy3{
+    text-align: center;
+    color: white;
+    text-decoration: line-through;
+    font-size: x-small;
+}
+.imgProg{
+    border: 10px solid grey;
+    text-align: center;
+}
+.social{
+    text-align: center;
+}
+.imgSocial{
+    height: 200px;
+    width: 500px;
+}
+.link{
+    text-align: center;
+}
+
+

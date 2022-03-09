@@ -1,0 +1,38 @@
+body {
+    font-family: cursive;
+    background-color: rgb(143, 137, 130);
+}
+
+.hh000 {
+    margin-left: 2%;
+    width: 20%;
+    height: 20%;
+}
+
+.hh001 {
+    width: 25%;
+}
+
+.hh002 {
+    margin-left: 25%;
+    width: 25%;
+    height: 25%;
+    text-align: justify;
+}
+
+.hh003 {
+    margin-left: 50%;
+    width: 30%;
+    height: 30%;
+    text-align: justify;
+}
+.hh004{
+    margin-top: 3%;
+    margin-left: 30%;
+    display: flex;
+}
+input{
+
+    width: 25%;
+    border-radius: 120px;
+}

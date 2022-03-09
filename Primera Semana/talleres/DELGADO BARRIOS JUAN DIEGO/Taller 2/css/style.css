@@ -1,0 +1,324 @@
+body{
+    background-color: #212121;
+}
+
+.barra-nav{
+    background-color:#0c7275; 
+    display: inline;
+    padding: 10px;
+    list-style-type: none;
+    margin: 0px;
+    width: 100%;
+    overflow: hidden;
+    left: 0px;
+    position: fixed;
+    top: 0%;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+
+.contenido-ini{
+    text-decoration: none;
+    padding: 10px;
+    color: #EEEEEE;    
+}
+.contenido-ini:hover{
+    color:gold
+}
+
+.contenido-con{
+    text-decoration: none;
+    padding: 10px;
+    color: #EEEEEE;
+}
+.contenido-con:hover{
+    color:gold
+}
+
+.contenido-for{
+    text-decoration: none;
+    padding: 10px;
+    color: #EEEEEE;
+
+}
+.contenido-for:hover{
+    color:gold
+}
+
+.contenido-tab{
+    text-decoration: none;
+    padding: 10px;
+    color: #EEEEEE;
+}
+.contenido-tab:hover{
+    color:gold
+}
+
+
+
+
+
+
+.titulo-Teropo{
+    background-color: rgba(35, 243, 35, 0.192);
+    font-size: 25px;
+}
+.titulo-1{
+    color: #EEEEEE;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    top: 60px;
+    display: block;
+}
+.texto_bienvenida{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    padding: 10px;
+    color: #32E0C4;
+
+}
+.lista-or{
+   display: inline-block; 
+   text-align: left;
+   padding: 0px auto;
+   margin-top: 0px auto;
+   font-family: Georgia, 'Times New Roman', Times, serif; 
+   font-size: medium;
+   color: #32E0C4;
+  
+   
+
+   
+ 
+
+    
+
+}
+.dinosaurs{
+    width: 800px;
+    height: ;
+    display: block;
+    text-align: center;
+    margin: auto;
+   float:none ;
+}
+
+
+.inscrip{
+    color: #EEEEEE;
+    font-size: 45px;
+    text-align: center;
+
+}
+
+.foot{
+    background-color: #0c7275;
+}
+.text-foot{
+    text-decoration: none;
+    padding: 20px;
+
+}
+.text-foot-1{
+color: #EEEEEE ;
+text-decoration: none;
+display: inline;
+}
+.text-foot-2{
+    color: #EEEEEE ;
+text-decoration: none;
+display: inline;
+}
+.img-insta{
+width: 30px;
+height: 20px;
+display: inline-block;
+}
+
+
+
+.titu-tero{
+    color: #EEEEEE;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    top: 60px;
+    display: block;   
+}
+.tex-tero{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    padding: 10px;
+    color: #32E0C4;
+    
+}
+
+
+.titu-carn{
+    color: #EEEEEE;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    top: 60px;
+    display: block;
+    background-color:#2fdabdb2; 
+}
+
+
+.tituloTirano{
+    color: #EEEEEE;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    top: 60px;
+    display: block;
+   
+   
+}
+
+img{
+    height: 350px;
+width: 500px;
+display: block ;
+margin: 0px auto;
+
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    padding: 10px;
+    color: #32E0C4;
+    text-align: justify;
+}
+.click{
+    height: 63px;
+    width: 60px; 
+}
+.vidioTrex{
+    text-align: center;
+    margin: 0px auto;
+}
+
+
+
+
+.gigantos{
+    color: #EEEEEE;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    top: 60px;
+    display: block;
+}
+.fotoGigantus{
+    height: 400px;
+width: 600px;
+display: block ;
+margin: 0px auto;
+
+}
+
+.videoGigantus{
+    text-align: center;
+    margin: 0px auto;
+
+}
+
+.textoGiganto{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    padding: 10px;
+    color: #32E0C4;
+    text-align: justify;
+}
+
+
+.herb{
+    color: #EEEEEE;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    top: 60px;
+    display: block;
+    background-color:#2fdabdb2; 
+}
+
+.paqui-titu{
+    color: #EEEEEE;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    top: 60px;
+    display: block;
+}
+.img-paqui{
+    height: 450px;
+    width: 750px;
+    display: block ;
+    margin: 0px auto;
+}
+.vidio-paqui{
+    text-align: center;
+    margin: 0px auto;
+
+}
+
+
+.theri-titu{
+    color: #EEEEEE;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    top: 60px;
+    display: block;
+}
+.img-theri{
+    height: 350px;
+    width: 550px;
+    display: block ;
+    margin: 0px auto;
+}
+.vidio-theri{
+    text-align: center;
+    margin: 0px auto;
+}
+
+
+
+.titu-otrs-d{
+    color: #EEEEEE;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    top: 60px;
+    display: block;
+}
+.otrs-d{
+    text-align: center;
+}
+.tabla-others-dinos{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.tabla-others-dinos,th,td{
+    border: 1px solid #0D7377;
+    border-collapse: collapse;
+    padding: 8px;
+    margin: 0 auto;
+}
+.tabla-others-dinos{
+    width: 50%;
+}
+.tabla-others-dinos th{
+    background-color: #32E0C4;
+    text-align: center;
+}
+.tabla-others-dinos td{
+    text-align: left;
+}
+.tabla-others-dinos tr:hover{
+    background-color: #EEEEEE;
+}
+
+.form{
+    text-align: center;
+    color: #EEEEEE;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+    top: 60px;
+    display: block;
+}
+

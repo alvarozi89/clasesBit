@@ -1,0 +1,17 @@
+.caja-1{
+    background-color: brown;
+    color: azure;
+
+}
+
+.parrafo-1{
+    background-color: blue;
+    margin: 100px;
+    padding:100px
+   
+}
+
+.iframe-estilo{
+    width: 100%;
+    height: 350px;
+}

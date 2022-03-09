@@ -1,0 +1,38 @@
+
+.tituloh1{
+    color: blue;
+    text-align: center;
+}
+
+h2{
+    color: blue;
+    text-align: center;
+}
+
+h3{
+    color: darkgreen;
+    text-align: center;
+
+}
+h4{
+    color: darkblue;
+    text-align: center;
+}
+
+.estiloparrafo{
+    color: darkblue;
+    border: 30px;
+    margin-left: 50px;
+}
+
+p{
+    color: black;
+    margin-left: 80px;
+    text-align: left;
+    padding: 100px;
+    text-align: center;
+}
+
+img{
+    height: 400px;
+    width: 400px;}

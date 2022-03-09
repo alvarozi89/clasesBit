@@ -1,0 +1,94 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav ul{
+    background-color: #0CECDD;
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0%;
+    padding: 0%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+.nav li{
+    float: left;
+}
+.nav li a{
+    color: #000000;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    display: block;
+}
+.lista-ordenada{
+    margin-top: 80px;
+    text-align: center;
+
+}
+.texto{
+    text-align: justify;
+    width: 60%;
+    margin: auto;
+
+}
+.lista-ordenada a{
+    text-decoration: none;
+    display: inline-block;
+    text-align: left;
+    color: #000000;
+}
+.ol-class{
+    display: inline-block;
+    text-align: left;
+}
+.texto-centrado{
+    text-align: center;
+}
+.manchester-c{
+    height: 150px;
+}
+.paris-s{
+    height: 150px;
+}
+.chelsea-f{
+    height: 150px;
+}
+.manchester-u{
+    height: 150px;
+}
+.liverpool-e{
+    height: 150px;
+}
+.video-1{
+    height: 350px;
+    width: 550px;
+}
+.video-2{
+    height: 350px;
+    width: 550px;
+}
+.tabla-1{
+    text-align: center;
+}
+.tabla-jugadores,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    margin: 0 auto;
+}
+.tabla-jugadores{
+    width: 60%;
+}
+.tabla-jugadores th{
+    background-color: #FFF338;
+    color: #40394A;
+    text-align: left;
+}
+.tabla-jugadores td{
+    text-align: left;
+}
+.formulario-1{
+    text-align: center;
+}

@@ -1,0 +1,46 @@
+.titulo-inicial{
+    background-color: blue;
+    color: azure;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.titulo-xbox{
+    background-color: darkgreen;
+    color: azure;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin: 0px auto;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+
+}
+
+.imagen-mano{
+    width: 20px;
+    height: 20px;
+}
+.video{
+    text-align: center;
+    margin: 10px auto;
+}
+
+.titulo-ps5{
+    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: azure;
+    text-align: center;
+}
+
+.imagen-mano:hover{
+    width: 50px;
+    height: 50px;
+}

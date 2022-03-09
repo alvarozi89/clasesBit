@@ -1,0 +1,124 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-color: #EDEEF7;
+ 
+}
+
+.barra ul{
+    list-style-type:none;
+    margin: 0px;
+    padding: 0px;
+    overflow:hidden;
+    background-color: #398AB9;
+    width:100%;
+    position:fixed;
+    left: 0px;
+    top:0px
+}
+
+.barra li{
+    float:left;
+    
+}
+
+.barra .li-derecha{
+    float: right;
+}
+
+.barra li a{
+    text-decoration:none;
+    display: block;
+    padding: 5px;
+    color: azure; 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.barra li a:hover{
+    background-color: blue;
+}
+
+.bienvenida{
+    text-align: center;
+    
+}
+
+h2{
+    margin-top: 80px;
+    color: #2D46B9;
+}
+
+.contenido{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+.texto-contenido{
+   margin: auto;
+   text-align: justify;
+   width: 60%;
+   
+}
+
+.iframe{
+    width: 100%;
+    height: 250px;
+    border-style: none;
+}
+
+.imagen-como-aplicar{
+    border-radius: 10%;
+}
+
+.imagen-beneficios{
+    border-radius: 50%;
+}
+
+.titulo-bootcamps{
+    color: #2D46B9;
+}
+
+.titulo-bootcamps:hover{
+    color:#FF1700;
+    font-size: 15px;
+
+}
+
+.lista-referencia:hover{
+
+    color: #FF1700;
+}
+
+.ol-class a{
+    text-decoration:none;
+}
+
+.ol-class{
+    display:inline-block;
+    text-align: left;
+    
+}
+
+
+.ol-class a:hover{
+  color: #FF1700;
+}
+
+.footer{
+    background-color: #FF4848;
+    color: #EDEEF7;
+    text-align: center;
+    padding: 2px;
+    position:relative;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+  
+}
+
+

@@ -1,0 +1,253 @@
+body{
+    background-color: #5D8BF4;
+    margin: 30px;
+    padding: 0xp;
+}
+
+
+/*Cabecera*/
+.seccion-principal{
+    background-color: #051367;
+    margin:-30px -30px 15px -30px;
+    padding-bottom: 350px;
+    position: relative;
+    
+    
+}
+
+.titulo-principal{
+    color: #DFF6FF;
+    text-align: center;
+    margin-top: 30px;
+}
+
+h1{
+    font-family: 'Nanum Pen Script', cursive;
+    padding-top: 20px;
+    font-size: 40px;
+}
+
+.msj-corto p{
+    font-family: 'Nanum Pen Script', cursive;
+    left: 0%;
+    font-size: 35px;
+    color: aliceblue;
+    position: absolute;
+    text-align: center;
+    padding: 120px;
+    right: 850px;
+    text-decoration: underline;
+}
+
+div img{
+    margin: 20px;
+    padding: 20px;
+
+    position: absolute;
+
+    display: block;
+
+    height: 300px;
+    width: 700px;
+
+    border-radius: 50%;
+
+    right: 120px;
+}
+
+
+/*Menú*/
+.nav-bar{
+    background-color: #2D31FA;
+    margin:-30px -30px 15px -30px;
+}
+
+.nav-bar ul{
+    text-align: center;
+    
+}
+
+.nav-bar ul li{
+    font-family: 'Nanum Pen Script', cursive;
+    display: inline-block;
+    padding: 20px;
+    list-style: none;
+    text-align: center;
+    padding-bottom: 10px;
+    
+}
+
+.nav-bar ul li a{
+    color: aliceblue;
+    padding: 75px;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+.nav-bar ul li a:hover{
+    color: #051367;
+    animation-delay: 1s;
+}
+
+/*Secciones*/
+.contenido{
+    position: relative;
+}
+
+.contenido .seccion-1{
+    text-align: center;
+    padding: 20px;
+    margin: 20 px;
+}
+
+.contenido .seccion-1 .temas{
+    text-align: center;
+}
+
+.contenido .seccion-1 .temas ul{
+    list-style: none;
+}
+
+.contenido .seccion-1 .temas ul li{
+    text-decoration: none;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 35px;
+    padding: 5px;
+}
+
+
+/* Footer */
+.cls-footer{
+    background-color: #051367;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.cls-footer .info{
+    font-size: 15px;
+    color: aliceblue;
+}
+
+.contenido{
+    display: inline;
+    text-align: justify;
+    padding: 30px;
+}
+
+.contenido .seccion-1 h2{
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 40px;
+}
+
+.contenido .seccion-1 p{
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 30px;
+}
+
+.img-descrip{
+    
+    /*position: absolute;*/
+
+    /*display: block;*/
+
+    height: 200px;
+    width: 300px;
+
+    /*border-radius: 50%;*/
+
+    right: 120px;
+}
+
+
+/* OTAS PAGINAS*/
+
+.seccion-principal-p2{
+    background-color: #051367;
+    margin:-30px -30px 15px -30px;
+    padding-bottom: 50px;
+}
+
+.seccion{
+    text-align: center;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+.titulos-h2{
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 35px;
+    text-align: center;
+}
+
+.img-mano{
+
+    width: 100px;
+    height: 100px;
+    display: block;
+    bottom: 580px;
+    margin-right: 300px;
+
+}
+
+.texto-contenido{
+    margin: 20px;
+    font-size: 30px;
+}
+
+iframe{
+    height: 400px;
+    width: 700px;
+    right: 0 auto;
+    left: 0 auto;
+    padding-bottom: 35px;
+}
+
+table{
+    background-color: aliceblue;
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+th, td{
+    padding: 20px;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 25px;
+}
+
+th{
+    background-color: #051367;
+    border-bottom: solid 5px #2D31FA;
+    color: aliceblue;
+}
+
+td:hover{
+    background-color: #DFF6FF;
+}
+
+
+.url p{
+
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 20px;
+    margin-top: 45px;
+}
+
+
+.formulario-contacto{
+    margin-top: 20px;
+    padding: 20px;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 35px;
+    text-align: center;
+}
+
+.formulario-contacto input{
+    width: 300px;
+    height: 30px;
+    border-radius: 35%;
+}

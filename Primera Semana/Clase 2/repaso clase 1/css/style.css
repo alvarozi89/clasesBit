@@ -1,0 +1,53 @@
+.div-padre{
+    background-color: brown;
+    color: azure;
+    text-align: center;
+
+}
+
+.div-hijo-1{
+    background-color: blue;
+    color: azure;
+    text-align: left;
+    display: inline-block;
+
+}
+
+.div-hijo-2{
+    background-color: black;
+    color: azure;
+    text-align: right;
+    display: inline-block;
+  
+}
+
+.cambiar-color-palabra{
+    color: blue;
+    font-size: 20px;
+}
+
+.div-hijo-1:hover{
+    background-color: darkgreen;
+    font-size: 25px;
+
+}
+
+.div-hijo-2:hover{
+    background-color: blueviolet;
+    font-size: 25px;
+}
+
+.cambiar-color-palabra:hover{
+    color: brown;
+    font-size: 10px;
+}
+
+.imagen-mano{
+    height: 20px;
+    width: 20px;
+}
+
+.imagen-mano:hover{
+    height: 40px;
+    width: 40px;
+}

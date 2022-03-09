@@ -1,0 +1,247 @@
+*{
+    font-family: 'Dosis', sans-serif;
+    
+}
+body{
+    background-color:#DEEDF0;
+}
+
+/*-----------------------NATBAR styles -------------------*/
+.natbar ul{
+    list-style-type:none;
+    margin: 0px;
+    padding: 0px;
+    overflow:hidden;
+    background-color: #213E3B ;
+    width:100%;
+    position:fixed;
+    left: 0px;
+    top:0px
+}
+
+.natbar li{
+    float: left;
+}
+
+.natbar .salida{
+    float: right;
+}
+
+.natbar li a{
+    text-decoration:none;
+    display: block;
+    padding: 5px;
+    color: azure; 
+    font-size: 25px;
+}
+
+.natbar li a:hover{
+    background-color:#41AEA9;
+}
+
+
+/*------------------------Inicio Styles--------------------------------------------*/
+
+h2{
+    margin-top: 80px;
+    color:#22577E ;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.principal_text{
+    text-align: justify;
+    font-size: x-large;
+    margin-left: 200px;
+    margin-right: 200px;
+
+}
+h3{
+    color:#007580;
+    text-align: center;
+}
+.list{
+    
+    margin-left: 25%;
+    text-decoration: none;    
+    text-align: justify;
+    display: inline-block;
+    padding: 5px;
+    
+    color: black;
+}
+
+
+.principal_img{
+    margin-left: 35%;
+}
+
+.im1{
+    margin-left: 10%;
+    height: 400px;
+    width: 800px;
+
+
+}
+
+/*------------------------Contenido Styles--------------------------------------------*/
+
+.content_text{
+    text-align: justify;
+    font-size: x-large;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.country1{
+    height: 150px;
+    width: 200px;
+}
+.country1:hover{
+    height: 220px;
+    width: 330px;
+}
+.country2{
+    height: 150px;
+    width: 200px;
+}
+.country2:hover{
+    height: 220px;
+    width: 330px;
+}
+.country3{
+    height: 150px;
+    width: 200px;
+}
+.country3:hover{
+    height: 220px;
+    width: 330px;
+}
+.content_img{
+    display: block;
+    margin-left:20% ;
+}
+
+strong:hover{
+    color: rgb(139, 6, 139);
+
+}
+.video{
+    margin-left: 5%;
+}
+.dis_list{
+    margin-left: 35%;
+    text-decoration: none;    
+    text-align: justify;
+    margin-bottom: 0%;
+   
+}
+
+/*------------------------------------Tabla styles--------------------------------*/
+
+.content2{
+    text-align: center;
+    font-size: x-large;
+}
+.table_italy,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    margin: 0 auto;
+    
+}
+.table_italy{
+    width: 50%;
+}
+.table_germany,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    margin: 0 auto;
+}
+.table_germany{
+    width: 50%;
+}
+
+.table_spain,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    margin: 0 auto;
+}
+.table_spain{
+    width: 50%;
+}
+
+.table_italy tr:hover{
+    background-color: #BFA2DB;
+}
+.table_germany tr:hover{
+    background-color: #BFA2DB;
+}
+.table_spain tr:hover{
+    background-color: #BFA2DB;
+}
+
+.ptable{
+    font-size: xx-large;
+}
+.ranking:hover{
+    color:red;
+}
+.table_italy th{
+    background-color: #5698be;
+    color: aliceblue;
+}
+.table_germany th{
+    background-color: #5698be;
+    color: aliceblue;
+}
+.table_spain th{
+    background-color: #5698be;
+    color: aliceblue;
+}
+.rankings{
+    height: 300px;
+    width: 80%;
+}
+
+/*------------------------------------Formulario styles--------------------------------*/
+
+.content3{
+    text-align: justify;
+    font-size: xx-large;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.form1{
+    text-align: center;
+    font-size: x-large;
+    border: 10px solid rgba(46, 111, 185, 0.562);
+    background-image: url(https://i.pinimg.com/564x/8d/fb/cf/8dfbcf3a47e42de933fa921e8d758022.jpg) ;
+    
+}
+
+h1{
+    color: darkslateblue;
+
+}
+
+
+
+
+/*------------------------------------Footer styles--------------------------------*/
+
+.footer{
+    background-color: #213E3B;
+    display: block;
+    color: aliceblue;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    left: 0;
+    bottom: 0;
+    opacity: 90%;
+}

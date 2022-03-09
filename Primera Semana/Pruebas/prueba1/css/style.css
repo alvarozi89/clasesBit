@@ -1,0 +1,121 @@
+table,th,td {
+    border: 1px  solid black;
+}
+
+table{
+    background-color: rgb(49, 178, 238);
+    text-align: left;
+    width: 50%;
+    margin: auto;
+   
+}
+
+th{
+    color: rgb(255, 0, 119);
+
+}
+
+
+td{
+    color: rgb(233, 233, 233);
+
+}
+h2{
+    text-align: center;
+    margin: auto;
+}
+
+.img1{
+    width: 420px;
+    height: 320px;
+    display:block;
+    margin: 0px auto; 
+}
+
+.img2{
+    width: 420px;
+    height: 320px;
+    display: block;
+    margin: auto;
+}
+
+.imagenes{
+    background-color: brown;
+ 
+  
+}
+.tabla{
+    display:contents;
+    background-color: blue;
+    text-align: center;
+   
+}
+
+.cuadrado{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    margin: 20px;
+    display:inline-block;
+    padding-bottom: 200px;
+  
+}
+
+p{
+    text-align: center;
+    font-family: 'League Gothic', sans-serif;
+}
+p:hover {
+    color: brown;
+    font-size: xx-large;
+}
+.cuadrado:hover{
+    background-color: blue;
+}
+
+.jaula{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: relative;
+    left: 200px;
+
+}
+
+.pajaroTamaño{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 38%;
+    top: 38%;
+
+}
+
+.cuadro-padre{
+    text-align: center;
+    background-color: bisque;
+}
+
+.jaula-img{
+
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    border: 20px solid black;
+    position: relative;
+    left: 200px;
+    border-radius: 50%;
+  
+
+}
+
+
+.pajaroTamaño-2{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 38%;
+    top: 38%;
+    border-radius: 50%;
+
+}

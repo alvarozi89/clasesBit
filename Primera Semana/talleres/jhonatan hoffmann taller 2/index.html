@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Taller2</title>
+</head>
+<body>
+    
+    <div class="nav">
+        <ul>
+            <li><a href="#inicio-ordenada-nav">Inicio</a></li>
+            <li><a href="#contenido">Contenido</a></li>
+            <li><a href="#tabla">Tabla</a></li>
+            <li><a href="#formulario">Formulario</a></li>
+        </ul>
+    </div>
+
+    <div id="inicio-ordenada-nav" class="lista-ordenada">
+
+        <p class="texto">La Liga de Campeones de la UEFA,conocida en sus orígenes como Copa de Europa, es el torneo internacional oficial de fútbol más prestigioso a nivel de clubes entre los organizados por la Unión de Asociaciones Europeas de Fútbol (UEFA). Asimismo, es el acontecimiento deportivo anual más seguido en el mundo, con más de 350 millones de espectadores en 2018.</p>
+
+        <h4>Top 5 mejores equipos de la Champions League 2021-2022</h4>
+        
+        <ol class="ol-class">
+            <li><a href="#">Manchester City</a></li>
+            <li><a href="#">Paris Saint - Germain</a></li>
+            <li><a href="#">Chelsea</a></li>
+            <li><a href="#">Manchester United</a></li>
+            <li><a href="#">Liverpool FC</a></li>
+        </ol>
+    
+    </div>
+
+    <div>
+
+        <p>En  la temporada 1955-56 la Champions League fue creada por el diario L'Équipe, bajo la denominación de Copa de Clubes Campeones Europeos, con un formato de eliminación directa. Ideada para definir al mejor club del continente, en 1992 el torneo fue reestructurado incorporando por primera vez el formato de competición de liga o fase de grupos como paso previo a la fase eliminatoria. <br>
+        El ganador de esta competición disputa la Supercopa de Europa contra el campeón de la Liga Europa y, como representante de la confederación, la Copa Mundial de Clubes de la FIFA. <br>
+        El vigente campeón es el Chelsea Football Club quien ganó su segundo título tras vencer al Manchester City Football Club. El Real Madrid Club de Fútbol es el más laureado con trece títulos. La federación española es la que más campeonatos ha logrado con dieciocho, seguida por la inglesa con catorce y la italiana con doce.
+        </p>
+
+        <div class="texto-centrado">      
+             <img src="http://as01.epimg.net/img/comunes/fotos/fichas/equipos/large/66.png" alt="Manchester-city" class="manchester-c">
+             <img src="https://www.brandemia.org/wp-content/uploads/2013/02/PSG_marca_escudo.jpg" alt="paris" class="paris-s">
+             <img src="http://as01.epimg.net/img/comunes/fotos/fichas/equipos/large/58.png" alt="chelsea" class="chelsea-f">
+             <img src="http://as01.epimg.net/img/comunes/fotos/fichas/equipos/large/67.png" alt="manchester-united" class="manchester-u">
+             <img src="http://as01.epimg.net/img/comunes/fotos/fichas/equipos/large/65.png" alt="liverpool" class="liverpool-e">
+
+             <iframe width="713" height="401" src="https://www.youtube.com/embed/jOAwkmTOHKA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video-1"></iframe>
+
+             <iframe width="713" height="401" src="https://www.youtube.com/embed/6fddSZZZ1uY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video-2"></iframe>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div id="tabla" class="tabla-1">
+        <h4>Mejores jugadores de la Champions League</h4>
+
+        <table class="tabla-jugadores"> 
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+                <th>Nacionalidad</th>
+            </tr>
+            <tr>
+                <td>Lionel Andrés</td>
+                <td>Messi Cuccittini</td>
+                <td>34 años</td>
+                <td>Argentina</td>
+            </tr>
+            <tr>
+                <td>Cristiano Ronaldo</td>
+                <td>Santos Aveiro</td>
+                <td>37 años</td>
+                <td>Portugal</td>
+            </tr>
+            <tr>
+                <td>Robert</td>
+                <td>Lewandowski</td>
+                <td>36 años</td>
+                <td>Polonia</td>
+            </tr>
+            <tr>
+                <td>Mohamed Salah</td>
+                <td>Hamed Mahrous</td>
+                <td>29 años</td>
+                <td>Egipto</td>
+            </tr>
+
+        </table>
+    </div>
+    <hr>
+    <div id="formulario" class="formulario-1"> 
+        <h4>Digite sus datos</h4>
+        <form action="">
+
+            <label for="nombre">Nombre</label>
+            <input type="nombre" name="nombre" placeholder="Digite su nombre" required type="text"> <br>
+
+            <label for="apellido">Apellido</label>
+            <input type="apellido" name="apellido" placeholder="Digite su apellido" required type="text"> <br>
+
+            <label for="edad">Edad</label>
+            <input type="number" name="number" placeholder="Digite solo numero" required type="number"> <br>
+            
+            <label for="fecha de nacimiento">Fecha de nacimiento</label>
+            <input type="date" name="date" placeholder="Digiste su fecha de nacimiento" required type="date"> <br>
+
+            <h4>Genero</h4>
+            <input id="m" name="genero" type="radio">
+            <label for="m">Masculino</label>
+
+            <input id="f" name="femenino" type="radio">
+            <label for="f">Femenino</label>
+
+            <h4>Seleccione su mejor jugador</h4>
+            <input id="Cristiano" name="cristiano" type="checkbox">
+            <label for="cristiano">Cristiano</label>
+
+            <input id="messi" name="messi" type="checkbox">
+            <label for="messi">Messi</label>
+
+            <input id="mbappe" name="mbappe" type="checkbox">
+            <label for="mbappe">Mbappe</label>
+
+            <h4>Seleccione su equipo favorito</h4>
+            <select name="" id="">
+
+                <option value="">Chelsea</option>
+                <option value="">Barcelona</option>
+                <option value="">Real Madrid</option>
+                <option value="">Paris</option>
+                <option value="">Liverpool</option>
+
+            </select>
+            
+            <h4>Tu comentario nos aporta mucho</h4>
+            <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+        </form>
+        <hr>
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a href="#">
+                            <img src="https://as01.epimg.net/futbol/imagenes/2021/12/06/champions/1638802702_622263_1638821388_noticia_normal_recorte1.jpg" alt="logo de champions">
+                        </a>
+                    </figure>
+                </div>
+
+                <div class="box">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, earum!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, earum!</p>
+                </div>
+                <div class="box">
+                    <h2>SIGUENOS</h2>
+                    <div class="red-social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twiter"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+</body>
+</html>

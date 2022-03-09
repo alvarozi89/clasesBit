@@ -1,0 +1,64 @@
+body{
+    background-color: #00b8ff;
+}
+header{
+    color: aqua;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    background-color: #006ad3;
+    border-radius: 25px;
+}
+.header h1{
+    font-family: Algerian;
+    font-size: 55px;
+    color: aqua;
+}
+img{
+    height: 300px;
+    width: 300px;
+    border-radius: 25%;
+}
+.biografia{
+    background-color: #006ad3;
+    border-radius: 25px;
+}
+h1{
+    text-align: center;
+    color: aqua;
+    font-family: Algerian;
+    font-size: 25px;
+}
+p{
+    text-align: center;
+    font-family: Algerian;
+    padding-right: 150px;
+    padding-left: 150px;
+}
+
+.pasatiempos{
+    background-color: #006ad3;
+    border-radius: 25px;
+}
+.proyectos{
+    background-color: #006ad3;
+    border-radius: 25px;
+}
+.redes{
+    background-color: #006ad3;
+    border-radius: 25px;
+}
+nav{
+    text-align: center;
+}
+footer{
+    color: aqua;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    background-color: #006ad3;
+    border-radius: 25px;
+}
+a{
+    color: blue;
+}

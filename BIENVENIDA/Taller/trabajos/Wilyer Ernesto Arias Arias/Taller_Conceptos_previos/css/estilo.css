@@ -1,0 +1,43 @@
+h1{
+    color:coral;
+    text-align: center;
+
+}
+
+p{
+    color:darkgreen;
+    margin:90px;
+
+}
+
+img{
+    height:400px;
+    width: 380px;
+}
+
+.tituloh1{
+    color:darkred;
+}
+
+.tituloh6{
+    color:darkorange;
+}
+
+.estiloparrafo{
+    color:black;
+    font-size:medium;
+    margin-left: 5px;
+    border:5px solid red;
+    padding: 5px;
+}
+
+.centrado{
+    background-color: red;
+    width: 380px;
+    margin: 0px auto;
+}
+
+.centrado2{
+    width: 380px;
+    margin: 0px auto;
+}

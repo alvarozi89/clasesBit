@@ -1,0 +1,118 @@
+.cuerpo {background-color: lightblues;}
+
+ul {
+    list-style-type:none;
+    padding: 20px;
+    background-color: grey;
+    
+    overflow: hidden;
+    top: 20px;
+}
+
+li {float:left;}
+
+
+li a{
+    
+    color: rgb(53, 107, 155);
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li a:hover {background-color: rgb(8, 8, 99);}
+
+.bienvenida {color: black;
+    font-size: xx-large;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.textoinicio { text-align: center;
+font-size: xx-large;
+}
+
+.explora { display: block;
+text-align: center;
+}
+
+.texto2 {text-align: left;
+font-family: sans-serif;
+font-size: xx-large;
+margin-left: 50px;}
+
+.lista1 {padding: 50px;
+    margin-left: 80px;
+     font-size: x-large; font-family: sans-serif;}
+
+.video {text-align: center;
+display: block;
+}
+
+.curazao {text-align: center;
+font-size: larger;
+font-family: sans-serif;}
+
+.listados { 
+display: block;
+margin-left:400px;
+padding: 0 auto;
+font-family: sans-serif;
+font-size: x-large;}
+
+.titulo2 {margin-left: 390px;
+color: blue;}
+.titulo3 {margin-left: 190px;
+    font-size: xx-large;
+font-family: sans-serif;
+}
+
+.curaz {display: block;
+width: 800;
+height: 600;
+margin-left: 290px;
+}
+
+.houston {display: block;
+text-align: center;}
+
+.santiago {display: block;
+   text-align: center;}
+
+
+.tablapais th,td {border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    margin: 0 auto;}
+
+
+
+.tablapais { width: 50%; margin-bottom: 200px;}
+.tablapais th{background-color: rgb(125, 125, 240);
+    color: aliceblue;
+    text-align: left;}
+    
+    .tablapais td{
+        text-align: left;
+    }
+    
+    .tablapais tr :hover {background-color: rgb(38, 83, 109)}
+
+        
+    .datopais { font-size: xx-large; font-family: sans-serif;}
+    .tips {font-size: large;
+    font-family: sans-serif;
+padding-left: 30px;
+padding-right: 50px;}
+
+.formulario {text-align: center;
+font-size: large;
+font-family: sans-serif;}
+
+.seguro { display: block;
+text-align: center;}
+
+.piedp ul {width: 100%;
+}

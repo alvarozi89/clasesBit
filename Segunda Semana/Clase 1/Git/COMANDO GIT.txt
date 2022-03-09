@@ -1,0 +1,33 @@
+git init
+El comando git config --list enumerará la configuración. Allí también debe encontrar user.name y user.email
+
+Para conocer el nombre de usuario, escriba:
+git config user.name
+
+Para conocer el correo electrónico, escriba:
+git config user.email
+
+Estos dos solo muestran el nombre y el correo electrónico, respectivamente.
+
+
+CAMBIAR USUARIO:
+git config --global user.name "alvarozi89"
+
+CAMBIAR CORREO:
+git config --global user.mail "alvarozi@hotmail.es"
+
+
+
+
+
+…or create a new repository on the command line
+echo "# hola" >> README.md
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/alvarozi89/hola.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/alvarozi89/hola.git
+git branch -M main

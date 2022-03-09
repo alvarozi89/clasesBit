@@ -1,0 +1,41 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(218, 214, 158, 0.658);
+}
+h1,h2{
+    text-align: center;
+    color:rgb(54, 59, 53);
+    font-style: oblique;
+    font-family: 'Gill Sans';
+    font-size: 50px;
+
+}
+.myself{
+    width: 200px;
+    height: 250px;
+    border: 5px solid rgb(172, 116, 13);
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+
+.cuatri{
+    width: 650px;
+    height: 450px;
+    margin-top: 20px;
+}
+
+p{
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(110, 83, 42, 0.966);
+    text-align: center;
+}
+
+.travel {
+    margin-top: 20px;
+}
+

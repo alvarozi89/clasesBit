@@ -1,0 +1,27 @@
+.texto-centrado{
+    text-align: center;
+}
+
+.contenido-centrado{
+    width: 60%;
+    margin: 0 auto;
+    /* background-color: aqua; */
+}
+.imagenes{
+    /* width: 200px; */
+   height: 200px;
+
+}
+p{
+    text-align: justify;
+}
+
+.imagenes-pasatiempos{
+    height: 100px;
+}
+
+.a-futuro{
+    height: 150px;
+}
+
+    

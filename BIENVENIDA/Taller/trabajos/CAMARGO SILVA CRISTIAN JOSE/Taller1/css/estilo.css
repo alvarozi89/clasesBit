@@ -1,0 +1,22 @@
+body{
+background: url(../imagenes/fondo.jpg);
+
+}
+
+
+h1{
+text-align: center;
+color: blue;
+
+}
+img{
+border: 3px dashed blue;
+align-items: center;
+display: flex;
+margin: auto;
+}
+
+p{
+text-align: justify;
+text
+}

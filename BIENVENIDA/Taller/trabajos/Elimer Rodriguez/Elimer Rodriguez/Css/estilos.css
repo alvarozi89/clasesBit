@@ -1,0 +1,45 @@
+h1,
+h2 {
+  text-align: center;
+  color: blue;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+p {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(4, 24, 112);
+}
+
+div.contenedor {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  border: 3px solid #a8dadc;
+  text-align: center;
+}
+div.contenedor2 {
+  width: 400px;
+  height: 277px;
+  margin: auto;
+  border: 3px solid #1d079c;
+  text-align: center;
+}
+div.contenedor3 {
+  width: 400px;
+  height: 300px;
+  margin: auto;
+  border: 3px solid #a70b92;
+  text-align: center;
+}
+div.contenedor4 {
+  margin: auto;
+  text-align: center;
+}
+
+.imagen {
+  width: 100%;
+}
+.parrafo {
+  width: 500px;
+  margin: auto;
+}

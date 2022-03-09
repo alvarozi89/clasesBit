@@ -1,0 +1,79 @@
+.formulario{
+
+    text-align: center;
+   
+    background-color: #495371 ;
+   
+   height: 50px; 
+   border-radius: 20px;
+   color: aliceblue;
+   }
+   
+   
+   body{
+   
+   background-color:beige;
+   height: 100px; 
+   
+   }
+   
+   .formulario2{
+   
+   
+   height: 150px; 
+   border-radius: 20px;
+   
+   
+   
+   }
+   
+   .formulario3{
+   
+
+   height: 90px; 
+   width: 70px;
+   border-radius: 20px;
+   display: inline-block;
+   align-content: center;
+   
+   
+   }
+   
+   
+   
+   
+   
+   
+   
+   #N1{
+     
+   color:  black;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+   }
+   
+   #nombre{
+   margin-top: 10px;
+   border-radius: 10px;
+   margin-bottom: 20px;
+   width: 540px;
+   
+   }
+   
+   #Apellido{
+   
+   width: 540px;
+    margin-top: 20px;
+   border-radius: 10px;
+    margin-bottom: 10px;
+   
+   }
+   #N2{
+   color: black;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+      
+   
+   }
+   
+   
+   

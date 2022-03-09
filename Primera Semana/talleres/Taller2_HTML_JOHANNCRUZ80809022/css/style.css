@@ -1,0 +1,168 @@
+ul{
+
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: black;
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    }
+    
+    .li{
+    
+    float: left;
+    
+    
+    }
+    
+    li a:hover{
+        background-color: #E0DDAA;
+        color:black;
+        background-image: url("paper.gif");
+    }
+    
+    
+    li a{
+       margin-top: 15px;
+      text-decoration:none;
+      display: block;
+      padding: 5px;
+      color: azure;
+    
+    
+    }
+
+    .li-derecha{
+
+        float: right;
+        
+        }
+
+        h1{
+          margin-top: 300px;
+          text-align: center;
+          color:black;
+        }
+       
+         h2{
+          margin-top: 40px;
+          text-align: center;
+          color:black;
+
+
+
+         }
+
+         body{
+
+          background: url('https://2.bp.blogspot.com/-ktP9HRpMdvM/XAZODSGafRI/AAAAAAAAGyY/1nnwf7LumJAK53XPFKRoiremaWrM_ukiACEwYBhgL/s1600/cabecera%2Bde%2BLos%2Bsimpson.jpg') fixed;
+          
+          }
+
+          .logo{
+
+             margin-top: 250px;
+             align-content: center;
+
+  
+
+          }
+        .familia{width: 50%;
+          height: 50%;
+          margin-left:200px;
+  
+
+
+        }
+          #imagen{
+             
+           
+            margin-top: 50px;
+            margin-left: 200px
+            
+            }
+          
+          
+
+
+        .footer{
+
+        background-color: #42C2FF;
+         
+
+          color:azure;
+          text-align: center;
+          padding: 5px;
+          position: fixed;
+          width: 100%;
+           left: 0px;
+           bottom: 0px;
+            
+        }
+
+        
+        
+             .tabla {
+
+      
+    
+        border: 1px solid #000;
+       
+        
+        
+    
+     }
+     .nombre,th, td {
+
+
+        margin-left: 500px;
+         margin-top: 100px;
+        width: 25%;
+        text-align: center;
+        vertical-align: top;
+        border: 1px solid #000;
+        border-collapse: collapse;
+        padding: 0.3em;
+        caption-side: bottom;
+        background-color: #42C2FF;
+        
+     }
+    
+    
+     .nombre th {
+      background-color: rgb(71, 103, 192);
+      color: azure;
+    
+    
+     }
+
+
+     .video{
+    
+      margin-top: 40px;
+      
+      width: 50%;
+      height: 50%;
+      margin-left:250px;
+
+     }
+
+
+     .derechos{
+      margin-top: 90px;
+      text-align: center;
+  }
+
+
+
+
+
+        
+
+
+        

@@ -1,0 +1,123 @@
+*{
+    color: #444;
+    font-size: 16px; font-family: Sans-Serif;
+    text-shadow: -5px 3px 2px #bbb;
+}
+
+body{
+    background: linear-gradient(to bottom, #0af, #fff);
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.nube{
+    background: linear-gradient(to left, #aaa, #ddd);
+    box-shadow: -10px 4px 2px 2px #ddd;
+    border-radius: 30%;
+    height: box-content;
+}
+.nubeGris{
+    background: linear-gradient(to left, #888, #ddd);
+    box-shadow: -10px 4px 2px 2px #ddd;
+    border-radius: 30%;
+}
+img{
+    width: 120px; height: 120px;
+    border-radius: 10%;
+}
+
+#saludo{
+    display: flex;
+    flex-direction: row;
+    height: box-content;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#saludo1{
+    font-size: 20px;
+}
+#saludo2{
+    margin-left: 30px;
+    color: #444;
+}
+#imgPerfil{
+    width: 40px; height: 40px;
+    flex-shrink: 5;
+}
+
+#descripcion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: box-content;
+    align-content: center;
+    margin-bottom: 10px;
+}
+#descripcionMe{
+    font-size: 10px;
+    flex-shrink: 5;
+    margin: 10px;
+    padding: 10%;
+}
+#imgPosition{
+    width: 200px; height: 180px;
+}
+
+#pasatiempos{
+    text-align: center;
+}
+
+#pasatiemposMe{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    height: 240px;
+    margin: 10px;
+}
+#pasatiemposFotos{
+    flex-shrink: 10;
+}
+#pasatiemposExclamacion{
+    height: 40px;
+    margin-top: 120px;
+}
+#pasatiemposDescripcion{
+    margin: 10px;
+    padding: 5px;
+    height: 200px;
+    height: 100px;
+    padding: 10%;
+}
+
+#proyectosFuturos{
+    text-align: center;
+}
+#proyectosFuturosMe{
+    height: 100px;
+    padding: 10%;
+}
+.float{
+    width: 20px; height: 20px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#busquenme{
+    text-align: center;
+}
+#busquenmeMe{
+    text-align: center;
+}
+#busquenmeMe a{
+    color: #000;
+}
+
+
+
+
+
+

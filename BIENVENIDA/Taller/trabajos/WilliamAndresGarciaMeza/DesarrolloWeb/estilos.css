@@ -1,0 +1,148 @@
+* {
+  margin: o;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "calibri";
+}
+
+header {
+  background-image: url(/Fondo.jpg);
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px 0;
+}
+
+section img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin-left: 1050px;
+}
+
+section h1 {
+  text-align: center;
+  font-size: 44px;
+  color: white;
+  height: 60px;
+  width: 300px;
+}
+
+.cabecera {
+  text-align: center;
+}
+
+.cabecera p {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 1em 0;
+  color: white;
+}
+
+.cabecera a {
+  color: white;
+  text-decoration: none;
+  padding: 4px 20px;
+  border-radius: 30px;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.facebook {
+  background-color: rgba(56, 56, 189, 0.582);
+}
+
+.instagram {
+  background-color: rgba(216, 112, 147, 0.658);
+}
+
+.linkedin {
+  background-color: rgba(0, 0, 255, 0.637);
+}
+
+.tiktok {
+  background-color: rgba(0, 0, 0, 0.671);
+}
+
+.contenedor {
+  text-align: center;
+}
+
+.contenedor h2 {
+  font-size: 33px;
+}
+
+.contenedor h3 {
+  font-size: 33px;
+}
+
+.contenedor p {
+  font-size: 33px;
+
+  text-align: justify;
+}
+
+.slide {
+  height: auto;
+  width: 45%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slide ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+
+  animation: cambio 20s infinite alternate linear;
+}
+
+.slide li {
+  width: 50%;
+  list-style: none;
+  height: 1%;
+}
+
+.slide img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}

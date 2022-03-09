@@ -1,0 +1,77 @@
+body{
+    background-color: grey;
+}
+#contenedor{
+    margin: 100px;
+    border: 10px solid rgb(60, 43, 136);
+}
+h1{
+    text-align: center;
+}
+img{
+   max-width: 400px;
+    max-height: 400px;
+}
+.perfil{
+    height: -400px;
+    width: -400px;
+    margin: 0px 50px 0px 100px;
+    clear:right;
+    float:right;
+}
+
+p{
+    text-align:left;
+    text-align: justify;
+    margin-right: 400px;
+    margin-left: 100px;
+    font-size: x-large;
+    color: aliceblue;
+}
+.gato{
+    height: -500px;
+    width: -200px;
+    clear:right;
+    float:right;
+}
+.conteder{
+    margin: 100px;
+    border: 10px solid rgb(15, 53, 122);
+}
+p{
+    text-align:center;
+    text-align: justify;
+}
+.contf{
+    margin: 100px;
+    border: 10px solid rgb(122, 15, 38);
+}
+.titulo{
+    text-align: center;
+}
+.time{
+    height: -500px;
+    width: -200px;
+    clear:right;
+    float:right;
+}
+.izquierda{
+    text-align: center;
+    text-align: justify;
+    margin-right: 300px;
+    margin-left: 10px;
+    font-size: x-large;
+    color: aliceblue
+}
+.redes{
+    margin: 100px;
+    border: 10px solid rgb(15, 53, 122);
+}
+.rds{
+    text-align:left;
+    text-align: justify;
+    margin-right: 400px;
+    margin-left: 100px;
+    font-size: x-large;
+    color: aliceblue;
+}

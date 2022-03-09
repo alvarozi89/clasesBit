@@ -1,0 +1,16 @@
+/*img{
+    border: 5px solid red;
+}*/
+
+h3{
+    color: red; 
+    font-size: 25px; 
+    padding: 5px; 
+    text-align: center;}
+
+.center{
+    display: flex;
+    justify-content: center;
+    
+}
+

@@ -1,0 +1,124 @@
+body{
+    background-color: #FF5403;
+    position: relative;
+}
+.nav ul{
+    background-color: #FF5403;
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    left:0;
+    top:0;
+    position: fixed;
+    width: 100%;
+}
+.nav li {
+    float: left;
+}
+li{
+    padding: 5px;
+}
+li a{
+    text-decoration: none;
+    font-size: xx-large;
+    font-family:themillion;
+    
+}
+
+
+@font-face {
+    font-family:themillion;
+    src: url(../font/Destiny.ttf);
+}
+h1{
+    margin-top: 70px;
+    text-align: center;
+    font-size: 100px;
+    background-color: #FF5403;
+    font-family:themillion;
+}
+p{
+    margin: 50px;
+    text-align: justify;
+    font-size: 20px;
+}
+.imagen-1{
+    width: 250px;
+    height: 250px;
+}
+.caja{
+    margin: auto;
+    margin-top: 0px;
+    
+    border:5px #0a0503;
+    background-color: #FF5403 ;
+
+}
+.caja img{
+    float: center;
+}
+.caja1{
+    background-color: #FF5403;
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+.caja2{
+    background-color: #FF5403;
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+.caja3{
+    background-color: #FF5403;
+}
+.img1{
+    width: 500px;
+    height: 500px;
+
+}
+.img-cont{
+    width: 400px;
+    height: 200px;
+}
+
+
+.tabla-1{
+    text-align: center;
+}
+
+.tabla-persona,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.tabla-persona{
+    width: 50%;
+}
+
+.tabla-persona th{
+    background-color: blue;
+    color: darkblue;
+    text-align: left;
+}
+
+.tabla-persona td{
+    text-align: left;
+}
+
+.tabla-persona tr:hover{
+    background-color: brown;
+}
+
+.img-tabla{
+    width: 100px;
+    height: 100px;
+}
+
+.button:hover {
+    background: #2079b0;
+    text-decoration: none;
+  }

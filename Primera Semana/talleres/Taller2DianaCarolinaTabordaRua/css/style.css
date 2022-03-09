@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: aliceblue;
+    font-family: "Fredoka";
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.barra{
+    background-color:#150050 ;
+    padding: 3px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.barra a{
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 25px;
+    color:#FEC260 ;
+}
+.barra a:link, .barra a:visited {
+    color:#FEC260 ;
+}
+.barra a:hover{
+    color: #6E85B2;
+}
+
+
+.barra ul{
+    list-style-type: none;
+    
+}
+
+.barra li{
+    display: inline-block;
+}
+
+.contenido {
+    padding-top: 120px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    flex-grow: 1;
+}
+
+.tit-prin{
+    color: #7D1935;
+    text-align: center;
+    margin-bottom: 60px;  
+}
+
+.imagen{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+.imagen img{
+    border-radius: 50px;
+    border: 3px dashed aliceblue ;
+}
+
+.lista-or{
+    color:#E9A6A6 ;
+}
+
+.lista-or li{
+    margin-top: 20px;
+}
+
+.footer{
+    text-align: center;
+    background-color: #EEEEEE;
+    color: #150050;
+    padding: 5px;
+    margin-top: 70px;
+}
+
+
+.titulo{
+    color: #1597BB;
+    text-align: center;
+    font-size: 50px;
+}
+
+.tit-2{
+    color: #150485;
+}
+
+.video{
+    text-align: center;
+    margin: 60px 0;
+}
+
+.imagen2{
+    text-align: center;
+    margin: 70px 0;
+
+
+}
+.imagen2 img{
+    width: 900px;
+}
+
+table, th, td {
+    border: 1px solid white;
+  }
+
+table {
+    background-color: white;
+    margin: 0 auto;
+    
+}
+td, th{
+    background-color: #000000;
+    padding: 15px 10px;
+}
+
+th{
+    color: #B3541E;
+}
+
+.formulario{
+   width: 100%;
+   max-width: 600px;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;  
+}
+
+.formulario input{
+    background-color: #F9F3DF;
+    width: 90%;
+    height: 30px;
+    margin: 15px;
+}
+
+.formulario button{
+   padding: 5px 15px;
+   border: none;
+   background: aliceblue;
+   cursor: pointer;
+}
+
+.imagen3{
+    text-align: center;
+    margin: 100px 0;   
+}
+
+.imagen3 img{
+    width: 500px;
+}
+

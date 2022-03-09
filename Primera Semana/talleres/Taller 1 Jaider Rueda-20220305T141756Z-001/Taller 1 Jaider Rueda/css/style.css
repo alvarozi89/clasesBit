@@ -1,0 +1,115 @@
+.ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: blue;
+    width: 100%;
+    position: fixed;
+    left: 8px;
+    top: 0px;
+}
+
+.li{
+    float: left;
+}
+.li-derecha{
+    float: right;
+}
+
+li a{
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    color: azure;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2{
+    margin-top: 80px;
+    color: brown;
+}
+
+h3{
+    margin-top: 30px;
+    color: brown;
+}
+
+.Contenido{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.texto-contenido{
+    text-justify: auto;
+}
+.lista{
+    text-align: center;
+}
+
+.elementos{
+    text-align: center;
+}
+
+ul{
+    text-align: center;
+    display: block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+img{
+    height:300px ;
+    width: 400px;
+    display: block;
+    margin: 0px auto;
+}
+
+.tabla-1{
+    text-align: center;
+}
+
+.tabla-persona,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.tabla-persona{
+    width: 50%;
+}
+
+.tabla-persona th{
+    background-color: blue;
+    color: aliceblue;
+    text-align: left;
+}
+
+.tabla-persona td{
+    text-align: left;
+}
+
+.tabla-persona tr:hover{
+    background-color: beige;
+}
+
+.footer{
+    background-color: forestgreen;
+    color: antiquewhite;
+    text-align: center;
+    padding: 0px;
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+}
+.formulario{
+    text-align: center;
+    margin: 20px;
+}
+
+
+
+
+  
+

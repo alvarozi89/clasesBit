@@ -1,0 +1,84 @@
+.nav ul{
+    background-color: #FF5403;
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    left:0;
+    top:0;
+    position: fixed;
+    width: 100%;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    display: block;
+}
+
+.lista-ordenada{
+    margin-top: 80px;
+    text-align: center;
+}
+
+.lista-ordenada ol {
+    display: inline-block;
+    text-align: left;
+}
+
+.lista-ordenada a{
+    text-decoration: none;
+}
+
+.lista-desordenada{
+    text-align: center;
+}
+
+.lista-desordenada ul{
+    display: inline-block;
+    text-align: left;
+}
+
+.lista-desordenada a{
+    text-decoration: none;
+}
+
+.tabla-1{
+    text-align: center;
+}
+
+.tabla-persona,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.tabla-persona{
+    width: 50%;
+}
+
+.tabla-persona th{
+    background-color: #0C1E7F;
+    color: aliceblue;
+    text-align:left;
+}
+
+.tabla-persona td {
+    text-align: left;
+}
+
+.tabla-persona tr:hover{
+    background-color: #FFEDED;
+}
+
+.formulario{
+    text-align: center;
+
+}

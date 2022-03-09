@@ -1,0 +1,180 @@
+body{
+    background-color:#EFEFEF;
+}
+
+
+.dogs-table,td,th{
+    border: 2px solid  rgb(77, 33, 4);
+    border-collapse: collapse;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+
+.dogs-table{
+    width: 50%;
+}
+    
+.dogs-table{
+    background-color:#ECDBBA;
+    color:#C84B31;
+    text-align:center;
+    font-family:'Roboto', sans-serif; ;
+}
+
+.dogs-table td{
+    text-align: center;
+}
+
+
+.dogs-table tr:hover{
+background-color:#ECB365;
+}
+
+
+.external-links{
+    text-align: left;
+    margin-left: 600px;
+    font-family:'Hubballi', cursive;
+    list-style-type: square;
+    }
+
+
+.external-links ul{
+    display: inline-block;
+    text-align: left;
+       }
+
+
+.external-links a{
+    text-decoration: none;
+}
+    
+
+.formulario{
+    text-align: center;
+    font-family:'Roboto', sans-serif;
+    }
+
+.foot{
+    font-size: x-small;
+    font-family:'Roboto', sans-serif;
+    text-align: right;
+    color: #351403;
+
+}
+
+
+.grupos-perros{
+    font-family:'Roboto', sans-serif;
+    color: #603601;
+    margin-top: 80px;
+    text-align: left;
+
+}
+
+.grupos-perros ol{
+    display: inline-block;
+    text-align: left;  
+}
+
+
+
+
+.general-paragraphs{
+    font-family:'Roboto', sans-serif;
+    text-align: justify;
+    color: #603601;
+}
+
+
+h1{
+    margin-top: 50px;
+    text-align: center;
+    font-family:'Roboto', sans-serif;
+       }
+
+
+h2{
+    font-family:'Hubballi', cursive;
+    color:#1C0A00;
+    text-align: center;
+    }
+
+
+h3{
+    font-family:'Hubballi', cursive;
+    color:#361500;
+}
+
+
+.h3external-links{
+    font-family:'Hubballi', cursive;
+    color:#361500;
+    text-align: center;
+}
+
+
+.img-form{
+    text-align: center;
+    width: 600x;
+    height: 600px;
+       }
+
+
+   .img-portada{
+    width: 100x;
+    height: 100px;
+   }
+
+
+.lista-inicial{
+    font-family:'Roboto', sans-serif;
+    text-align: justify;
+    color: #603601;
+    list-style-type:georgian;
+}
+
+
+.navbar li{
+    float:left;
+    }
+
+
+.navbar li a{
+    text-decoration:none;
+    display: block;
+    padding: 8px;
+    color: black; 
+    font-family:'Hubballi', cursive;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.navbar li a:hover{
+    background-color:#E3CAA5;
+}
+
+
+.navbar ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #;
+    width:100%;
+    position:fixed;
+    left: 0px;
+    top:0px
+}
+
+
+.portada{
+    text-align: center;
+}
+
+
+.video1{
+    text-align: center;
+}

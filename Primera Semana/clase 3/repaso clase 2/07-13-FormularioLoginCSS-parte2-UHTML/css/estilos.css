@@ -1,0 +1,43 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#7209b7, #ff4d4d);
+}
+.contenedor{
+    margin: 50px auto;
+    width: 400px;
+    padding: 30px;
+    background: rgb(8, 6, 43,.5);
+    border-radius: 10px;
+}
+.contenedor h2{
+    margin:  0;
+    padding: 0;
+    font-size: 30px;
+    color: #4cc9f0;
+    text-align: center;
+}
+.contenedor .elemento label{
+    color: #fff;
+}
+.contenedor .elemento input{
+    width: 100%;
+    padding: 10px 0;
+    color: #fff;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(8, 6, 43);
+    margin-bottom: 30px;
+}
+.contenedor .elemento .boton{
+    background-color: #f72585;
+    border:none;
+    letter-spacing: 5px;
+    text-transform: lowercase;
+    cursor: pointer;
+    padding: 15px;
+    margin-top: 30px;
+}

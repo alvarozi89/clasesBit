@@ -1,0 +1,202 @@
+body{
+    background-color: #1C0A00;
+    color: #FF9F45;
+}
+.barra ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    background-color: #F76E11;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.barra li{
+    float: left;
+}
+
+.barra li a{
+    text-decoration:none;
+    display:block;
+    padding: 10px;
+    color: #343F56;
+    font-size: large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.barra li a:hover{
+    background-color: #890F0D;
+}
+
+.titulo-introduccion{
+    margin: 100px 0px 70px 0px;
+    text-align: center;
+}
+.introduccion{
+    margin: 0px 0px 50px 0px;
+    text-align: justify;
+}
+
+.marcas li{
+    color: blue;
+}
+
+.marcas li:hover{
+    color: red;
+}
+
+.titulo-zontes{
+    margin: 80px 0 80px 0;
+    text-align: center;
+}
+
+.zontes{
+    text-align: justify;
+}
+
+.video-zontes{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.contenido-titulo-1{
+    margin: 120px 0px 80px 0px;
+    text-align: left;
+}
+
+.contenido-parrafo-1{
+    text-align: justify;
+}
+
+.contenido-titulo-2{
+    margin: 100px 0 80px 0;
+    text-align: left;
+}
+
+.contenido-parrafo-2{
+    text-align: justify;
+}
+
+.ranking-marcas{
+    text-align: center;
+}
+
+.tabla-ranking-marcas,td,th{
+    border: 1px solid #AD8B73;
+    border-collapse: collapse;
+    padding: 7px;
+    margin: 80px auto;
+}
+
+.tabla-ranking-marcas{
+    width: 20%;
+}
+
+.tabla-ranking-marcas th{
+    background-color: #461111;
+    text-align: center;
+}
+
+.tabla-ranking-marcas td{
+    text-align: left;
+}
+
+.tabla-ranking-marcas tr:hover{
+    background-color: #C3B091;
+    color: #040303;
+}
+
+.contenido-img-1{
+    display: flex;
+    margin: 100px 0 100px 50px;
+    height: 500px;
+    width: 500px;
+}
+
+.contenido-img-2{
+    display: flex;
+    margin: 100px 0 100px 280px;
+    height: 500px;
+    width: 500px;
+}
+
+.contenido-parrafo-3{
+    text-align: justify;
+}
+
+.contenido-video{
+    text-align: center;
+    margin: 100px 0 0 0;
+}
+
+.tabla-lista{
+    margin: 80px 0 0 0;
+    text-align: left;
+}
+
+.tabla-lista ul{
+    display: inline-block;
+    text-align: left;
+}
+
+.tabla-lista a{
+    text-decoration: none;
+}
+
+.tabla-titulo-1{
+    margin: 120px 0 100px 0;
+    text-align: center;
+}
+
+.tabla-titulo-2{
+    margin: 120px 0 100px 0;
+    text-align: center;
+}
+
+.tabla-modelos{
+    text-align: center;
+}
+
+.tabla-ranking-modelos,th,td{
+    border: 1px solid #AD8B73;
+    border-collapse: collapse;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.tabla-ranking-modelos{
+    width: 50%;
+}
+
+.tabla-ranking-modelos th{
+    background-color: #461111;
+    text-align: center;
+}
+
+.tabla-ranking-modelos td{
+    text-align: left;
+}
+
+.tabla-ranking-modelos tr:hover{
+    background-color: #C3B091;
+    color: #040303;
+}
+
+.formulario-titulo{
+    text-align: center;
+    margin: 120px 0 100px 0;
+}
+
+.footer{
+    background-color: #040303;
+    color: #FFE6BC;
+    text-align: center;
+    padding: 0px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}

@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #96bb7c;
+}
+.nav ul {
+  background-color: #125c13;
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 15px;
+  left: 0;
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.temario {
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+}
+
+.temario-l {
+  font-size: 20px;
+  width: 200px;
+  text-align: left;
+}
+
+li {
+  float: left;
+  margin-right: 20px;
+}
+
+li a:hover {
+  background-color: #1e6f5c;
+}
+
+.nav li {
+  float: left;
+}
+
+.nav li a {
+  color: aliceblue;
+  text-decoration: none;
+  padding: 8px;
+  text-align: center;
+  display: block;
+}
+
+.entrada {
+  text-align: center;
+}
+
+h1 {
+  margin-top: 80px;
+  color: #125c13;
+  font-size: 60px;
+}
+
+.img-1 {
+  text-align: center;
+}
+.img-2 {
+  text-align: center;
+  padding: 10px;
+  width: 70%;
+  margin: auto;
+}
+.img-3 {
+  text-align: center;
+  margin: auto;
+  height: 80%;
+  width: 60%;
+}
+.video {
+  text-align: center;
+}
+.nutricional {
+  color: #523906;
+  font-weight: bold;
+}
+
+.foo {
+  background-color: #125c13;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  position: relative;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+.parrafo-1 {
+  color: rgb(12, 12, 12);
+  font-weight: bold;
+}
+
+.relleno {
+  font-size: 40px;
+  text-align: left;
+}
+.rellenos2 {
+  font-size: 40px;
+  text-align: left;
+}
+.tabla-1 {
+  text-align: center;
+}
+.tabla-medicos,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  margin: 0 auto;
+}
+.tabla-medicos {
+  width: 50%;
+}
+.tabla-medicos th {
+  background-color: #5b6d5b;
+  color: aliceblue;
+  text-align: left;
+}
+.tabla-medicos td {
+  text-align: left;
+}
+.tabla-medicos tr:hover {
+  background-color: white;
+}
+.tabla-2 {
+  text-align: center;
+}
+.tabla-youtube,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  margin: 0 auto;
+}
+.tabla-youtube {
+  width: 50%;
+}
+.tabla-youtube th {
+  background-color: #5b6d5b;
+  color: aliceblue;
+  text-align: left;
+}
+.tabla-youtbe td {
+  text-align: left;
+}
+.tabla-youtube tr:hover {
+  background-color: white;
+}
+.formulario {
+  background-color: #bfcba8;
+  text-align: center;
+}
+button:hover {
+  background-color: #f6fcf9;
+  border: 2px;
+  border-radius: 12px;
+  color: rgb(19, 18, 18);
+  padding: 15px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  width: 250px;
+}
