@@ -28,7 +28,7 @@ const:almacena un espacio en memoria- nova cambiar su valor-estatica
 /*alert("El nombre digitado es: " + nombre);
 alert("La edad es: " + edad);*/
 
-/*condicionales: if quiere decir si, es un condicional, va evular algo y devolver un resultado.
+/*condicionales: if quiere decir si, es un condicional, va evaluar algo y devolver un resultado.
 es importante conocer los operadores logicos: 
 mayor:>
 menor:< 
@@ -63,11 +63,11 @@ console.log("el nombre digitado es " +nombre);*/
 
 //simular un login
 
-/*var usuario="batman";
-var pass=123;
+/*let usuario="batman";
+let pass=123;
 
-var usuarioSolicitado = prompt("Digite el usuario");
-var passSolicitado = prompt("Digite la constraseña");
+let usuarioSolicitado = prompt("Digite el usuario");
+let passSolicitado = prompt("Digite la constraseña");
 
 if(usuario == usuarioSolicitado && pass == passSolicitado){
     console.log("Usuario correcto, Bienvenido al sistema");
@@ -83,15 +83,13 @@ else if(usuario != usuarioSolicitado ){
 
 else if(pass != passSolicitado) {
     console.log("Fallo en la contraseña");
-}
-
-else {
-    console.log("Ambos estan mal");
 }*/
+
+
 
 //carrito de compra chiquito
 
-var porcentajeDescuento=0;
+/*var porcentajeDescuento=0;
 var descuento=0;
 var total = 0;
 var articulo = prompt("Digite el nombre del producto");
@@ -124,4 +122,29 @@ else {
     alert("Articulo sin descuento, suerte");
     alert("total a pagar es de " +precioArticulo);
 
+}*/
+/*let nombreLet= "Alvaro";
+if (5>1) {
+    var nombreVar= "Alvaro";
+    
 }
+
+if (2>1) {
+     nombreLet= "Luis";
+    
+}
+
+
+ nombreVar = "pedro"
+ nombreLet = "pedro"
+
+const nombreConst= "Alvaro";
+nombreConst = "pedro"
+
+alert("Var "+nombreVar);
+alert("let "+nombreLet);*/
+
+
+
+
+
