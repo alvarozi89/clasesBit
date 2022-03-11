@@ -176,6 +176,5 @@ else{
 
 alert("Cantidad total de votos " +totalVotos)
 
-"Hola ahorita"
 
 
