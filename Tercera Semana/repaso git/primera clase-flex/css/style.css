@@ -1,0 +1,37 @@
+.flex{
+    display:flex;
+    background-color: brown;
+    justify-content:center;
+    flex-wrap:wrap-reverse;
+    padding: 10px;
+    border: 2px solid black;
+    flex-direction:row-reverse;
+
+}
+
+.flex div {
+    background-color: aliceblue;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    border: 2px solid black;
+
+}
+
+
+
+
+
+
+
+/* @media (max-width: 600px) {
+    .flex{
+   
+        background-color: rgb(11, 43, 226);
+      
+      
+    }
+  } */

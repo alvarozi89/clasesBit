@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 2</title>
+</head>
+<body>
+
+    <!-- Punto 1 -->
+     
+    
+    <h1> Taller 1 - Diego Alejandro Muñoz Artunduaga </h1>
+
+    <br>
+
+    <h2>Punto 1:</h2>
+    
+    <br>
+
+    <label for="edad1">Edad 1</label>
+    <input id="edad1" type="number" name="" placeholder="Ingrese la primera edad: ">
+
+    <br>
+
+    <label for="edad2">Edad 2</label>
+    <input id="edad2" type="number" name="" placeholder="Ingrese la segunda edad: ">
+    
+    <br>
+
+    <label for="resultado">Resultado:</label>
+    <input id="resultado" type="text" name="" placeholder="Resultados">
+
+    <button onclick="calEdad()">Calcular Edad</button>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h2>Punto 2:</h2>
+
+    <br>
+
+    <!-- Punto 2 -->
+
+    <label for="est1">Estudiante 1</label>
+    <input id="est1" type="number" name="" placeholder="Ingrese la nota del estudiante 1: ">
+    <br>
+    <label for="est2">Estudiante 2</label>
+    <input id="est2" type="number" name="" placeholder="Ingrese la nota del estudiante 2: ">
+    <br>
+    <label for="est3">Estudiante 3</label>
+    <input id="est3" type="number" name="" placeholder="Ingrese la nota del estudiante 3: ">
+    <br>
+    <label for="est4">Estudiante 4</label>
+    <input id="est4" type="number" name="" placeholder="Ingrese la nota del estudiante 4: ">
+    <br>
+    <label for="est5">Estudiante 5</label>
+    <input id="est5" type="number" name="" placeholder="Ingrese la nota del estudiante 5: ">
+    <br>
+
+    <label for="resultadoP2">Resultado</label>
+    <input id="resultadoP2" type="number" name="" placeholder="Resultado">
+
+    <button onclick="calNota()">Calcular promedio</button>
+
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h2>Punto 3:</h2>
+
+    <br>
+
+
+     <!-- Punto 3 -->
+
+    <label for="contra">Contraseña: </label>
+    <input id="contra" type="text" placeholder="Ingrese la contraseña">
+    <br>
+    <label for="resultadoP3">Resultado </label>
+    <input id="resultadoP3" type="text" placeholder="Resultado">
+
+    <button onclick="validarContra()">Validar contraseña</button>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h2>Punto 4:</h2>
+
+    <br>
+
+     <!-- Punto 4 -->
+
+    <label for="nombre">Nombre</label>
+    <input id="nombre" type="text" placeholder="Ingresa el nombre">
+    <label for="email">Email</label>
+    <input id="email" type="email" placeholder="Ingresa el email">
+    <label for="vacuna">Vacuna</label>
+    <input id="vacuna" type="number" placeholder="1 - Si o 2 - No">
+    <br>
+    <label for="resultadoP4">Nombre</label>
+    <input id="resultadoP4" type="text" placeholder="Resultado">
+    <button onclick="validarVacuna()">Validar vacuna</button>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h2>Punto 5:</h2>
+
+    <br>
+
+    <!-- Punto 5 -->
+
+    <label for="fecNaci">Anio de nacimiento</label>
+    <input id="fecNaci" type="number" placeholder="Digite el año de nacimiento">
+    <br>
+    <label for="resultadoP5">Resultado</label>
+    <input id="resultadoP5" type="text" placeholder="Resultado">
+
+    <button onclick="calcAnios()">Calcular años</button>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h2>Punto 6:</h2>
+
+    <br>
+
+    <!-- Punto 6 -->
+
+    <p>
+        Para ver la capitál de alguna de los siguientes paises, por favor tenga e cuenta los siguiente:
+    </p>
+
+    <p>
+        1 - Colombia <br> 2 - Argentina <br> 3 - Perú <br> 4 - Japón <br> 5 - Alemania
+    </p>
+
+
+    <label for="opc">Opción</label>
+    <input id="opc" type="number" placeholder="Seleccione su opción: ">
+
+    <br>
+
+    <label for="resultadoP6">Resultado</label>
+    <input id="resultadoP6" type="text" placeholder="Resultado">
+
+    <button onclick="capital()">Calcular Capital</button>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h2>Punto 7:</h2>
+
+    <br>
+
+    <!-- Punto 7 -->
+
+    <p>
+        Selecciona un numero que quieras multiplicar hasta 100.
+    </p>
+
+    <button onclick="multiplicar()">Hacer multiplicación</button>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h2>Punto 8:</h2>
+
+    <br>
+
+    <!-- Punto 8 -->
+
+    <p>
+        Vamos a traducir palabras del español al ingles. Ten en cuanta lo siguiente:
+    </p>
+
+    <p>
+        1 - Gato <br> 2 - Perro <br> 3 - Casa <br> 4 - Computador <br> 5 - Teléfono
+    </p>
+
+    <label for="opcion">Opción</label>
+    <input id="opcion" type="number" placeholder="Seleccione su opción: ">
+
+    <br>
+
+    <label for="resultadoP8">Resultado</label>
+    <input id="resultadoP8" type="text" placeholder="Resultado">
+
+    <button onclick="traduccion()">Traduce tu palabra</button>
+
+
+
+
+     <script src="js/scripts.js"></script>
+
+</body>
+</html>
