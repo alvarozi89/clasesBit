@@ -1,0 +1,20 @@
+.grid{
+    display: grid;
+    /* grid-template-columns: 33% 33% 33% ; */
+    grid-template-columns:repeat(3, 1fr) ;
+    gap: 1em;
+    align-items: center;
+    grid-template-rows: 200px;
+}
+
+.grid div{
+    background-color: brown;
+    color: aliceblue;
+    padding: 1em;
+}
+
+.grid div :hover{
+
+    border: 1px black;
+}
+   

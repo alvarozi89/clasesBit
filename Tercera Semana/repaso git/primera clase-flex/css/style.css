@@ -21,17 +21,17 @@
 
 }
 
-
-
-
-
-
-
-/* @media (max-width: 600px) {
+@media (max-width:600px) {
     .flex{
-   
-        background-color: rgb(11, 43, 226);
-      
-      
+
+        background-color: rgb(0, 187, 125);
+        flex-direction:column;
     }
-  } */
+    
+}
+
+
+
+
+
+
