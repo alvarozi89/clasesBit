@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Practicando Js</title>
+</head>
+<body>
+
+    <!-- <h1>Soy Dom</h1>
+    <h2 class="parrafo-1">hola</h2>
+    <p id="parrafo-2"></p>
+    <p id="parrafo-3"></p>
+    
+
+    <button onclick="dom()">Clic</button>
+    <button onclick="color()">Estilo</button> -->
+
+    <div class="bg-warning text-center">
+        <h1>Ejercicios js</h1>
+    </div>
+
+    <!-- <ul id="lista">
+   
+    </ul> -->
+
+    <div class="container">
+    <h1>Primer ejercicio-Tabla</h1>
+        <div class="form-group">
+            <input class="form-control mb-2" id="nombre" type="text" placeholder="Nombre">
+            <input class="form-control mb-2" id="apellido" type="text" placeholder="Apellido">
+            <input class="form-control mb-2" id="edad" type="num" placeholder="edad">
+        </div>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Edad</th>
+              </tr>
+            </thead>
+            <tbody id="tabla">
+            </tbody>
+          </table>
+          <button onclick="tabla()" type="button" class="btn btn-success">Guardar persona</button>
+    </div>
+<hr>
+    <div class="container">
+        <h1>Segundo ejercicio calculadora</h1>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="form-group">
+                    <label for="num1">Número 1</label>
+                    <input id="num1" class="form-control" name="num1" type="number">
+
+                    <label for="num2">Número 2</label>
+                    <input id="num2" class="form-control" name="num2" type="number">
+                    
+                    <div class="py-2">
+                        <button onclick="suma()" type="button" class="btn btn-primary">Sumar</button>
+                        <button onclick="resta()" type="button" class="btn btn-secondary">Restar</button>
+                        <button onclick="multiplicacion()" type="button" class="btn btn-success">Multiplicar</button>
+                        <button onclick="division()" type="button" class="btn btn-danger">Dividir</button>
+                    </div>
+              
+                    <label for="resultado">Resultado</label>
+                    <input id="resultado" class="form-control" name="resultado" type="number" disabled>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Tercer ejercicio-votaciones</h1>
+
+        <div class="row">
+            <div class="col-12 col-md-6">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://lasimagenesdegoku.com/wp-content/uploads/2017/12/descargar-imagenes-de-goku-para-celular-gratis.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Candidato 1</h5>
+                        <input id="candidato1" type="number">
+                    </div>
+                  </div>
+                  
+
+            </div>
+
+            <div class="col-12 col-md-6">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://lasimagenesdegoku.com/wp-content/uploads/2017/12/descargar-imagenes-de-goku-para-celular-gratis.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Candidato 2</h5>
+                        <input id="candidato2" type="number">
+                    </div>
+                  </div>
+                  
+
+            </div>
+            
+        </div>
+
+       
+
+
+     <button onclick="votacion()" type="button" class="btn btn-primary">Votar</button>
+    </div>
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

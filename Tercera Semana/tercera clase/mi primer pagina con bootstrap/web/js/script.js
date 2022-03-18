@@ -4,3 +4,4 @@ function calcular(){
    let calculo = valor * plan;
    alert("Debes pagar: " +calculo);
 }
+
