@@ -1,0 +1,48 @@
+
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.navbar{
+    min-height:90px;
+}
+.navbar.btn{
+    padding:.625rem 1.25rem !important;
+}
+
+
+.text-primary{
+    color: var(--primary)!important;
+}
+.btn{
+    padding:1rem;
+}
+
+
+.btn-primary{
+    background-color: var(--primary);
+    border-color:var(--primary);
+}
+
+.btn-primary:hover{
+    background-color: var(--primary);
+    border-color:var(--primary);
+}
+
+.contenedor-dos{
+    width:25em;
+}
+.card-custom-title{
+    text-align:center;
+    background-color:#F3BAD6;
+}
+
+.right-field{
+    width:100%;
+    text-align:right;
+}
+
+.imagen-carrusel{
+    height: 100vh;
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark/dark.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TALLER_4 VANNESA_CIFUENTES</title>
+
+
+</head>
+
+<body>
+
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bcolor">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light " href="#DerechosDeAutor"><i class="bi bi-heart"></i> Derechos de autor </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link text-light " href="#Ejercicio1">Ejercicio #1</a>
+                    <a class="nav-link text-light " href="#Ejercicio2">Ejercicio #2</a>
+                    <a class="nav-link text-light " href="#Ejercicio3">Ejercicio #3</a>
+                    <a class="nav-link text-light " href="#Ejercicio4">Ejercicio #4</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--Derechos de autor-->
+
+    <div class="container text-center ">
+        <div id="DerechosDeAutor" class="text-center">
+            <h1 class="display-4 text-light m-5"> Derechos de Autor</h1>
+            <div class="card mb-4" style="max-width: 1140px; background-color:#395B64;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="img/Avatar.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title text-uppercase te text-light   ">S. Vannesa Cifuentes Bohórquez</h5>
+                            <p class="card-text text-light texto1 "> <br> <br> Ingeniera Electrónica, con especialización en Telecomunicaciones de la Universidad Pedagógica y Tecnológica de Colombia. Cuento con experiencia en el área de soporte y desarrollo de aplicaciones bancarias sobre sistemas
+                                IBM/iSeries AS400, ejecutando procedimientos de mejora y solución rápida y efectiva sobre fallos en la aplicación y base de datos del CORE SIIF, también cuento con experiencia en atención al cliente remota y en sitio. Durante
+                                este tiempo he adquirido conocimiento en lenguajes de programación C, C++, Java, JavaScript, RPGLE, HTML, CSS y el lenguaje de consulta SQL. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!--Ejercicio #1-->
+
+
+    <div class="container text-center ">
+        <div id="Ejercicio1" class="text-center bg-dark">
+            <h1 class="display-4  text-light text-success m-4"> Ejercicio #1: Cálculo del IMC</h1>
+
+            <p class=" m-3 texto1 text-light ">El IMC se usa como una herramienta de detección, pero no diagnostica la grasa corporal ni la salud de un individuo. Para determinar si el exceso de peso es un riesgo para la salud, un proveedor de atención médica necesitará realizar evaluaciones
+                adicionales. Para calcular el IMC se necesita conocer el peso en kilogramos y la estatura en metros. Se aplica una sencilla fórmula matemática que consiste en dividir el peso entre la estatura al cuadrado: IMC = Peso (Kg) / Estatura al
+                cuadrado (Mt) </p>
+
+            <label for="" class="text-light">Estatura (Mt):</label>
+            <input id="estatura" class="form-control-mb-2 " type="number" placeholder="Estatura">
+            <label for="" class="text-light">Peso(Kg) </label>
+            <input id="peso" class="form-control-mb-2" type="number" placeholder="Peso">
+
+            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                <button onclick="imc()" type="button" class="m-1 btn btn-danger text-light ">HOMBRE</button>
+                <button onclick="imc()" type="button" class="m-1 btn btn-warning text-light ">MUJER</button>
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+    <hr>
+
+
+    <!--Ejercicio #2-->
+
+
+    <div class="container text-center ">
+        <div id="Ejercicio2" class="text-center bg-dark ">
+            <h1 class="display-4 text-light"> Ejercicio #2: EUR a COP </h1>
+
+            <p class=" m-3 texto1 text-light "> Por favor ingrese el monto en euros que desea convertir: </p>
+
+            <label for="" class="text-light">Valor a convertir:</label>
+            <input id="euros" class="form-control-mb-2 " type="number" placeholder="€ Euros">
+            <button onclick="conversor()" type="button" class="btn btn-danger ">CONVERTIR</button>
+            <br>
+            <br>
+        </div>
+    </div>
+    <hr>
+    <!--Ejercicio #3-->
+
+
+    <div class="container text-center ">
+        <div id="Ejercicio3" class="text-center bg-dark">
+            <h1 class="display-4 text-light"> Ejercicio #3: Vacunación</h1>
+
+            <p class=" m-3 texto1 text-light"> Por favor ingrese los datos solicitados a continuación: </p>
+
+            <div class="form-group ">
+                <label for="" class="text-light">Nombre:</label>
+                <input class="form-control-mb-2" id="nombre" type="text" placeholder="Nombre">
+                <label for="" class="text-light">Apellido:</label>
+                <input class="form-control-mb-2" id="apellido" type="text" placeholder="Apellido">
+                <label for="" class="text-light">Edad:</label>
+                <input class="form-control-mb-2" id="edad" type="number" placeholder="Edad">
+                <label for="" class="text-light">Vacuna:</label>
+                <input class="form-control-mb-2" id="vacuna" type="text" placeholder="Estado Vacuna">
+            </div>
+            <br>
+
+
+            <table class="table table-sm table-bordered border-warning ">
+
+                <thead class=" text-light">
+                    <tr>
+                        <th scope="col">NOMBRE</th>
+                        <th scope="col">APELLIDO</th>
+                        <th scope="col">EDAD</th>
+                        <th scope="col">VACUNA</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla" class="text-white ">
+                </tbody>
+            </table>
+
+            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                <button onclick="tabla()" type="button" class="btn btn-danger">Llenar</button>
+
+            </div>
+            <br>
+            <br>
+
+        </div>
+    </div>
+    <hr>
+    <!--Ejercicio #4-->
+
+
+    <div class="container text-center ">
+        <div id="Ejercicio4" class="text-center bg-dark">
+            <h1 class="display-4 text-light m-5"> Ejercicio #4: Planes netflix</h1>
+
+            <p class=" m-3 texto1 text-light">Por favor seleccione el plan que quiere comprar: </p>
+
+            <div class="row m-3">
+
+                <div class=" col-4 card border border-dark py-1 ">
+                    <img src="https://comboplay.tv/wp-content/uploads/2018/09/netflix.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">PLAN BASIC</h5>
+                        <p class="card-text">En este plan solo tendras acceso a una pantalla, con un costo de <strong>$50.000</strong> </p>
+                        <label for="" class="text-dark"># Meses plan basic:</label>
+                        <input class="form-control-mb-2" id="cantidad1" type="number" placeholder="Numero de Meses">
+                        <br>
+                        <br>
+                        <button onclick="plan1()" type="button" class="btn btn-danger">Comprar</button>
+                    </div>
+                </div>
+                <div class=" col-4 card border-dark py-1">
+                    <img src="https://comboplay.tv/wp-content/uploads/2018/09/netflix.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">PLAN MEDIUM</h5>
+                        <p class="card-text">En este plan tendras acceso a dos pantallas, con un costo de <strong>$100.000</strong> </p>
+                        <label for="" class="text-dark"># Meses plan basic:</label>
+                        <input class="form-control-mb-2" id="cantidad2" type="number" placeholder="Numero de Meses">
+                        <br>
+                        <br>
+                        <button onclick="plan2()" type="button" class="btn btn-danger">Comprar</button>
+                    </div>
+                </div>
+                <div class=" col-4 card border-dark py-1">
+                    <img src="https://comboplay.tv/wp-content/uploads/2018/09/netflix.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">PLAN PREMIUN</h5>
+                        <p class="card-text">En este plan solo tendras acceso a cinco pantallas, con un costo de <strong>$150.000</strong> </p>
+                        <label for="" class="text-dark"># Meses plan basic:</label>
+                        <input class="form-control-mb-2" id="cantidad3" type="number" placeholder="Numero de Meses">
+                        <br>
+                        <br>
+                        <button onclick="plan3()" type="button" class="btn btn-danger">Comprar</button>
+                    </div>
+                </div>
+
+            </div>
+            <br>
+        </div>
+    </div>
+    <hr>
+
+    <!--Footer-->
+
+    <footer class="container-fluid bg-dark py-5 text-center text-light ">
+
+        <div class="container pt-4">
+
+            <p class=" text-light"> Ponte en contacto con nosotros atrevés de las siguientes redes:</p>
+
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/svannesa_/" role="button"><i class="bi bi-instagram"></i ></a>
+
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/96vannesacifuentes/" role="button"><i class="bi bi-linkedin"></i
+              ></a>
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/svannesa" role="button"><i class="bi bi-github"></i
+              ></a>
+
+        </div>
+
+
+        <div class="text-center p-4 text-white">
+            © 2022 Copyright:
+            <a class="text-reset fw-bold" href="https://www.linkedin.com/in/96vannesacifuentes/">Vannesa Cifuentes</a>
+        </div>
+
+    </footer>
+
+    <!--Inserción Scripts de Js--->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

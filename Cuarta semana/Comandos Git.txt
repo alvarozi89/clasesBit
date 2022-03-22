@@ -1,0 +1,29 @@
+git status
+git add .
+git add <archivo>
+git commit -m "comentario"
+git push 
+
+git branch <nombre-de-la-rama>
+git branch --list
+git branch -d <nombre-de-la-rama>
+git checkout <nombre-de-la-rama>
+git push <nombre-remoto> <nombre-de-tu-rama>
+
+
+git pull <nombre-remoto>
+
+ git log -- oneline:
+git revert
+git revert 3321844
+
+
+Primero, debes cambiarte a la rama dev:
+
+git checkout dev
+Antes de fusionar, debes actualizar tu rama dev local:
+
+git fetch
+Por último, puedes fusionar tu rama de características en la rama dev:
+
+git merge <nombre-de-la-rama>

@@ -1,0 +1,91 @@
+.titulo2{
+  color: white;
+  background-color: #1B4F72;
+  border-style:solid;
+  border-radius: 10px;
+  font-family: 'Bungee Shade', cursive;
+font-family: 'Press Start 2P', cursive;
+margin-top: 30px;
+padding-top: 5px;
+}
+
+
+.titulo3{
+
+    color: white;
+    background-color: #1B4F72;
+    border-style:solid;
+    border-radius: 10px;
+    margin-top: 150px;
+    
+     font-family: 'Bungee Shade', cursive;
+  font-family: 'Press Start 2P', cursive;
+ 
+
+}
+
+.bordes{
+ border-radius: 10px ;
+ background-color: rgb(144, 160, 202);
+ text-align: center;
+ font-family: 'Press Start 2P', cursive;
+ font-size: small;
+   
+}
+
+.esp{
+ margin-top: 280px;
+
+}
+
+.esp2{
+
+margin-top: 400px;
+
+}
+
+.esp3{
+  margin-top: 280px
+}
+
+.tam{
+  margin-top: 100px;
+  background-color: #EBF3F9;
+  font-family: 'Playball', cursive;
+  border-radius: 10px;
+  border-style:solid;
+  border-color: white;
+  
+
+  
+
+}
+
+div[class|="col"]{
+
+  border: 50px solid ddd ;
+  background-color: #C8CED3 ;
+  text-align: center;
+  padding: 1em;
+
+}
+
+.row{
+
+margin-top: 100px ;
+height: 600px;
+
+
+}
+
+.grafica{
+
+  
+
+
+  width: 10px;
+  min-height: 10px;
+  align-self: center;
+  
+  
+  }

@@ -1,0 +1,48 @@
+body {
+  background-color: #105652;
+}
+
+.back {
+  text-decoration: none;
+  color: #095753;
+}
+
+.back2 {
+  text-decoration: none;
+  color: #f0e9c5;
+}
+
+.bodyejercicios {
+  background-color: #fcf8ec;
+}
+
+.netwi {
+  background-color: #1b1a17;
+  font-family: bebasneue;
+}
+.netwi2 {
+  background-color: #ac0d0d;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
+    sans-serif;
+}
+
+.imgplanes {
+  width: 400px;
+  height: 500px;
+}
+
+/* .tarjeta {
+  padding-left: 100px;
+  width: 400px;
+  height: 400px;
+} */
+
+/* .card {
+  background-color: #eeedde;
+  width: 400px;
+  height: 400px;
+}
+
+.avatar {
+}
+ */

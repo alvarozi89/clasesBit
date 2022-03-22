@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--Comienza el navBar-->
+    <div>
+        <ul class="nav nav-tabs navbar fixed-top">
+            <li class="nav-item">
+                <a class="nav-link active text-primary" aria-current="page" href="#">Derechos de Autor</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#ejercicio1">Ejercicio 1.</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#ejercicio2">Ejercicio 2.</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#ejercicio3">Ejercicio 3.</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#ejercicio4">Ejercicio 4.</a>
+            </li>
+        </ul>
+    </div>
+    <br><br><br><br><br>
+    <h1 class="text-primary">Taller Semana 3</h1><br><br><br>
+    <h1 class="text-primary">Derechos de autor.</h1><br><br><br><br>
+    <div align="center">
+        <div class="card mb-3" style="max-width: 540px; border-left-color: #0082ca; border-top-color: #0082ca;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="img/cristian.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Cristian Camargo S.</h5>
+                        <p class="card-text text-primary">Profesional en área de sistemas y telecomunicaciones,
+                            orientado al logro de
+                            objetivos y cumplimiento de metas, vocación de servicio, buenas relaciones interpersonales y
+                            excelente disposición para el trabajo en equipo.</p>
+                        <p class="card-text"><small class="text-primary">Desarrollador FullStack Junior</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <!--  comienza el ejercicio 1.-->
+    <a name="ejercicio1"></a>
+    <br><br><br><br><br>
+    <h1 class="text-primary">Ejercicio 1.</h1>
+    <br>
+    <div class="container">
+        <div class="form-check">
+            <legend class="text-primary">Calculo del índice de masa corporal de un adulto (IMC) </legend>
+            <br>
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label text-primary" for="flexRadioDefault1">
+                Hombre
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label text-primary" for="flexRadioDefault2">
+                Mujer
+            </label>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="form-group text-primary">
+                    <label for="num1">Peso</label>
+                    <input id="num1" class="form-control" name="num1" type="number">
+                    <label for="num2">Altura</label>
+                    <input id="num2" class="form-control" name="num2" type="number">
+                    <div class="py-2">
+                        <button onclick="calcular()" type="button" class="btn btn-primary">Calcular</button>
+                    </div>
+                    <label for="resultado">Resultado</label>
+                    <input id="resultado" class="form-control" name="resultado" type="number" disabled>
+                </div>
+            </div>
+        </div>
+        <div class="text-primary">
+            <p>
+                Criterios de evalución del IMC:
+            <ul>
+                <li>• Si su IMC es inferior a 18.5, está dentro de los valores correspondientes a “delgadez o
+                    bajo
+                    peso".</li>
+                <li>• Si su IMC es entre 18.5 y 24.9, está dentro de los valores "normales" o de peso saludable.
+                </li>
+                <li>• Si su IMC es entre 25.0 y 29.9, está dentro de los valores correspondientes a "sobrepeso".
+                    </il>
+                <li>• Si su IMC es 30.0 o superior, está dentro de los valores de "obesidad".</li>
+
+            </ul>
+            "Bajo peso", "normal", "sobrepeso" y "obesidad" son términos para referirse a los distintos
+            rangos de peso corporal. La obesidad y el sobrepeso caracterizan a los rangos de peso que
+            exceden lo que se considera saludable para una determinada estatura, el bajo peso describe al
+            peso corporal inferior a lo que se considera saludable.
+            </p>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br>
+    <a name="ejercicio2"></a>
+    <br><br><br><br><br>
+
+    
+    <!-- Ejericio 2-->
+    <div class="text-primary">
+        
+        <h1>Ejercicio 2.</h1>
+        <br><br><br>
+        <legend align="center">Calculadora de modenas</legend>
+        <br><br><br>
+        <div class="container" align="center">
+            <p>Coloca el valor en pesos colombianos y obtendras al cambio la moneda que escojas</p>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="form-group">
+                        <label for="num11">Valor pesos colombianos </label>
+                        <input id="num11" class="form-control" name="num11" type="number">
+                        <label for="resultado2">Resultado</label>
+                        <input id="resultado2" class="form-control" name="resultado2" type="number" disabled>
+                    </div>
+                </div>
+                <br><br><br><br>
+                <div class="py-2" align="center">
+                    <button onclick="dolar()" type="button" class="btn btn-outline-primary">Dolar</button>
+                    <button onclick="euro()" type="button" class="btn btn-outline-secondary">Euro</button>
+                    <button onclick="mexicano()" type="button" class="btn btn-outline-success">Peso Mexicano</button>
+                    <button onclick="yen()" type="button" class="btn btn-outline-danger">Yen Japones</button>
+                    <button onclick="rublo()" type="button" class="btn btn-outline-warning">Rublo Ruso</button>
+                    <button onclick="yuan()" type="button" class="btn btn-outline-primary">Yuan Chino</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+    <!--  comienza el ejercicio 3 -->
+    <br><br><br>
+    <a name="ejercicio3"></a>
+    <br><br><br><br><br><br>
+    <h1 class="text-primary">Ejercicio 3.</h1>
+    <br><br><br>
+    <div class="container">
+        <div class="form-group">
+            <input class="form-control mb-2" id="nombre" type="text" placeholder="Nombre">
+            <input class="form-control mb-2" id="apellido" type="text" placeholder="Apellido">
+            <input class="form-control mb-2" id="edad" type="number" placeholder="edad">
+            <input class="form-control mb-2" id="vacuna" type="text" placeholder="vacuna">
+        </div>
+        <table class="table text-primary">
+            <thead>
+                <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">Edad</th>
+                </tr>
+            </thead>
+            <tbody id="tabla">
+            </tbody>
+        </table>
+        <br><br><br><br>
+        <button onclick="tabla()" type="button" class="btn btn-primary">Guardar persona</button>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!--  comienza el ejercicio 4. -->
+<a name="ejercicio4"></a>
+<h1 class="text-primary">Ejercicio 4.</h1>
+<br>
+<div class="container text-primary">
+    <div class="row">
+        <div class="col-12 col-md-3">
+
+            <div class="card" style="width: 18rem;">
+                <img src="img/fb.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Facebook</h5>
+                    <p class="card-text">Adquiere Facebook Premiun y tendras las mejores funciones</p>
+                    <legend>$50 usd</legend>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Comprar
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="img/insta.jfif" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Instagram</h5>
+                    <p class="card-text">Adquiere Instagram Premiun y tendras las mejores funciones</p>
+                    <legend>$50 usd</legend>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Comprar
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="img/twt.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Twitter</h5>
+                    <p class="card-text">Adquiere Twitter Premiun y tendras las mejores funciones</p>
+                    <legend>$40 usd</legend>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Comprar
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="img/what.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <br><br>
+                    <h5 class="card-title">Whatsapp</h5>
+                    <p class="card-text">Adquiere Whatsapp Premiun y tendras las mejores funciones</p>
+                    <legend>$60 usd</legend>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Comprar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div> <br><br>
+    <footer class="bg-light text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;"
+                    href="https://www.facebook.com/cristian.camargo.127" role="button"><img class="imgRedes"
+                        src="img/fbp.png" alt=""><i class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;"
+                    href="https://twitter.com/Crystolive?s=09" role="button"><i class="fab fa-twitter"><img
+                            class="imgRedes" src="img/twt.png" alt=""></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;"
+                    href="https://www.instagram.com/crystolive/?hl=es-la" role="button"><i
+                        class="fab fa-instagram"><img class="imgRedes" src="img/insta.jfif" alt=""></i></a>
+
+                <!-- Linkedin -->
+
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca;"
+                    href="https://www.linkedin.com/in/cristian-camargo-b56603121/" role="button"><i
+                        class="fab fa-linkedin-in"><img class="imgRedes" src="img/linkin.png" alt=""></i></a>
+                <!-- Github -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #333333;"
+                    href="https://github.com/Cristianjcs" role="button"><img class="imgRedes" src="img/github.png"
+                        alt=""><i class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3 btn btn-primary" style="background-color: rgba(0, 0, 0, 0.2);">
+            <a class="btn btn-primary" href="#"> © 2020 Copyright: Derechos reservados Cristian Camargo S.</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Confirmacion</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Se te agrego el producto a tu carrito !!!
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

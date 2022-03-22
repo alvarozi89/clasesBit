@@ -1,0 +1,70 @@
+#color{
+background-color: rgb(83, 125, 202);
+border-radius: 10px;
+width:  1100px;
+
+
+}
+
+.log{
+margin-left: 20px;
+}
+
+#marca{
+
+margin-left: 20px;
+font-family: 'Bungee Shade', cursive;
+
+}   
+
+.letras{
+font-family: 'Press Start 2P', cursive;
+
+}
+
+.caja :hover{
+    color:rgb(83, 125, 202)
+   
+   
+   }
+
+.inicio :hover{
+
+    background-color: rgb(255, 0, 242);
+    
+    }   
+
+.ch:hover{
+    background-color: white;
+
+    }
+
+.box{
+
+border-radius: 10px;
+background-color: rgb(118, 152, 214);
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+body{
+    
+      
+        background-image: url("https://diseñowebmdp.com/wp-content/uploads/2017/10/programacion-web-mardelplata-1.jpg");
+
+}
+
+  
+
+footer{
+
+    background-color: rgba(0, 0, 0, 0.2);
+    
+
+}

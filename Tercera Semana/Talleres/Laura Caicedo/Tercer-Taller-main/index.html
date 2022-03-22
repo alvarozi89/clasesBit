@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1506499ffb.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" <link
+        rel="preconnect" href="https://fonts.googleapis.com">
+        <base href="/"> 
+        <link rel="stylesheet" href="css/style.css">
+    
+    <title>Laura Caicedo</title>
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand m-0" href="#"><img src="img/logo.png" class="logo" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active me-5" aria-current="page" href="#">Derechos de autor</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Ejercicios
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">ejercicio 1</a></li>
+                            <li><a class="dropdown-item" href="#">ejercicio 2</a></li>
+                            <li><a class="dropdown-item" href="#">ejercicio 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+        <div class="row biografia">
+            <div class="col-lg-5 mt-5 col-12 block-1">
+                <div class="card border-0 ms-4 card-1">
+                    <div class="card-body ">
+                        <h5 class="card-title ">Hello World!</h5>
+                        <p class="card-text">My name is Laura Caicedo. <br> Junior Web developer Lorem ipsum dolor sit,
+                            amet consectetur adipisicing elit. Laborum, quos! Magnam iusto in eius enim nisi esse
+                            quaerat totam, quidem fugit, molestiae sunt cum soluta dolor ipsa repellat sint nihil. </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 mt-5  col-12  block-2 text-center">
+                <img src="img/biografia.png" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <div class="container p-0">
+        <div class="row calc">
+            <div class="col-lg-7 mt-5 col-12">
+                <div class="calculadora">
+                    <h1 class="titleImc">Calcule your Body <br> Mass Index </h1>
+                    <div class="formulario">
+                        <form action="">
+                            <input id="age" class="age" name="age" type="number" placeholder="age" required>
+                            <input name="Weight" id="Weight" class="weight" type="number" placeholder="Weight(kg)"
+                                required type="Weight">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    fememine
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    masculine
+                                </label>
+                            </div>
+                            <input id="height" class="height" name="height" type="number" placeholder="height (m)">
+
+                        </form>
+                        <div class="botonImc">
+                            <button class="submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 mt-5  col-md-12  block-2 text-center result-1">
+                <label for="" class="resultTitle">Result</label>
+                <input type="number" class="finalResult" id="finalResult">
+                <div class="">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="moneda">
+        <h1 class="titleImc">Currency Change</h1>
+        <div class="row">
+            <div class="col-lg-2 col-sm-2"><img src="img/flags.png" class="flags-img " alt=""></div>
+            <div class="col-lg-5 col-sm-10">
+                <div class="container contact-form">
+                    <div class="contact-image">
+                        <img src="img/sign-dollar.png" alt="" />
+                    </div>
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="number" name="valueCop" class="form-control" placeholder="Value in COP"
+                                        value="" />
+                                </div>
+                                <select class="form-select" aria-label="Currency">
+                                    <option selected>Currency</option>
+                                    <option value="1" class="dollar">Dollar</option>
+                                    <option value="2" class="euro">Euro</option>
+                                    <option value="3" class="yuan">Yuan</option>
+                                    <option value="4" class="cad">Canadian Dollar</option>
+                                </select>
+
+                                <div class="form-group">
+                                    <input type="submit" name="btnSubmit" class="btnContact" value="calculate" />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-5 col-sm-12">
+                <label for="" class="resultTitle">Result</label>
+                <p type="number" class="resultCoins" id="resultCoins"></p>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    
+        <div class="containerVac">
+            <div class="row mx-auto">
+                <div class="col-lg-6 col-md-12" style="margin-top: 30px;">
+                    <div class="card cardtwo mx-auto" style=" width: 400px; border: none; margin-top: 20px;">
+                        <img src="img/miVacuna.png" class="card-img-top mivacfoto" style="width: 400px;" alt="...">
+                        <div class="card-body cardbody">
+                            <p class="card-text">Si es colombiano o residente en Colombia, mediante el registro aquí
+                                dispuesto, podrá acceder al certificado digital de vacunación o de prueba PCR o de
+                                antígeno.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="container table-1" style="margin-top: 60px; ">
+                        <div class="form-group mx-auto" style="width: 70%;">
+                            <input class="form-control mb-2" id="nombre" type="text" placeholder="Nombre">
+                            <input class="form-control mb-2" id="apellido" type="text" placeholder="Apellido">
+                            <input class="form-control" id="estadovacuna" type="estadovacuna"
+                                placeholder="estado vacunal">
+                        </div>
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Apellido</th>
+                                    <th scope="col">Estado vacunal</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tabla">
+                            </tbody>
+                        </table>
+                        <div class="subirPersona">
+                            <button onclick="tabla()" type="button" class="btn btn-dark botonvacuna">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+
+    <!--netflix -->
+
+    <div class="netflix"
+        style="background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/87a1d9d8-a21d-4109-ba3a-c10d9055f5cf/7db9dec2-cb42-4919-b35e-b7435f6ef22c/CO-en-20220307-popsignuptwoweeks-perspective_alpha_website_large.jpg);  height: 100vh; width: 100%; background-repeat: no-repeat; background-size: cover;">
+        <div class="degradado"
+            style=" background: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);  height: 100vh; width: 100%;">
+            <div id="planes" class="text-center cards-netflix;">
+                <div class="container">
+                    <div>
+                        <img src="img/netflix.png" alt="" class="logo-netflix" style="width: 30%; height: 30%;">
+                    </div>
+                    <div class=" mb-5">
+                    <h2 class="text-white">Películas y series ilimitadas y mucho más.</h2>
+                    <h7 class="text-white">Disfruta donde quieras. Cancela cuando quieras.</h7>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <div class="card">
+                                <div class="card-body mb-3">
+                                    <h5 class="card-title">$COP 16,900</h5>
+                                    <p class="card-text text-black">
+                                        <i class="fa-solid fa-check"></i> Video quality good <br>
+                                        <i class="fa-solid fa-check"></i> Resolution 480px<br>
+                                        <i class="fa-solid fa-check"></i> Watch on your TV, computer, mobile phone and tablet<br>
+                                    </p>
+                                    <button type="button" class="buy" data-bs-toggle="modal"data-bs-target="#exampleModal-1">
+                                        Buy
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4 ">
+                            <div class="card">
+                                <div class="card-body mb-3">
+                                    <h5 class="card-title">$COP 26,900</h5>
+                                    <p class="card-text text-black">
+                                        <i class="fa-solid fa-check"></i> Video quality better <br>
+                                        <i class="fa-solid fa-check"></i> Resolution 1080px<br>
+                                        <i class="fa-solid fa-check"></i> Watch on your TV, computer, mobile phone and tablet<br>
+                                    </p>
+                                    <button type="button" class="buy"  data-bs-toggle="modal"data-bs-target="#exampleModal-2">
+                                        Buy
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4">
+                            <div class="card">
+                                <div class="card-body mb-3">
+                                    <h5 class="card-title">COP 38,900</h5>
+                                    <p class="card-text text-black">
+                                        <i class="fa-solid fa-check"></i> Video quality best <br>
+                                        <i class="fa-solid fa-check"></i> Resolution 4K + HDR<br>
+                                        <i class="fa-solid fa-check"></i> Watch on your TV, computer, mobile phone and tablet<br>
+                                        
+                                    </p>
+                                    <button type="button" class="buy" data-bs-toggle="modal"data-bs-target="#exampleModal-3">
+                                        Buy
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal#1-->
+    <div class="modal fade" id="exampleModal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Adquirir plan</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <label for="">Cantidad</label>
+                <input id="num" type="number">
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              <button onclick="calcular()" type="button" class="btn btn-danger">Buy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Modal#2-->
+    <div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Adquirir plan</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <label for="">Cantidad</label>
+                <input id="num" type="number">
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              <button onclick="calcularTwo()" type="button" class="btn btn-danger">Buy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+ <!--Modal#3-->
+ <div class="modal fade" id="exampleModal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Adquirir plan</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <label for="">Cantidad</label>
+            <input id="num" type="number">
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <button onclick="calcularThree()" type="button" class="btn btn-danger">Buy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+   
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white footer">
+        <div class="container p-4">
+            <section class="mb-4">
+                <a class="btn btn-outline-light btn-floating m-1 social" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1 social" href="#" role="button"><i
+                        class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1 social" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1 social" href="#" role="button"><i
+                        class="fab fa-instagram"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1 social" href="#" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1 social" href="#" role="button"><i
+                        class="fab fa-github"></i></a>
+            </section>
+            <div class="text-center p-3">
+                © 2022 Copyright: Made with 💜 by Laura Caicedo
+            </div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+        
+    <script src="js/script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
