@@ -1,0 +1,38 @@
+[
+    {
+      "precio": 500,
+      "id": 1,
+      "title": "Mouse",
+      "thumbnailUrl": "https://http2.mlstatic.com/D_NQ_NP_696858-MCO46223178033_052021-O.webp"
+    },
+    {
+      "precio": 300,
+      "id": 2,
+      "title": "Teclado",
+      "thumbnailUrl": "https://www.bhphotovideo.com/cdn-cgi/image/format=auto,fit=scale-down,width=500,quality=95/https://www.bhphotovideo.com/images/images500x500/asus_ma02rogclaymoreii_rd_us_rog_claymore_ii_mechanical_1646842850_1693480.jpg"
+    },
+    {
+      "precio": 100,
+      "id": 3,
+      "title": "Camara",
+      "thumbnailUrl": "https://http2.mlstatic.com/D_NQ_NP_2X_899616-MCO41082529331_032020-F.webp"
+    },
+    {
+      "precio": 50,
+      "id": 4,
+      "title": "Cpu",
+      "thumbnailUrl": "https://http2.mlstatic.com/D_NQ_NP_2X_899616-MCO41082529331_032020-F.webp"
+    },
+    {
+      "precio": 10,
+      "id": 5,
+      "title": "Parlantes",
+      "thumbnailUrl": "https://http2.mlstatic.com/D_NQ_NP_2X_899616-MCO41082529331_032020-F.webp"
+    },
+    {
+      "precio": 150,
+      "id": 6,
+      "title": "Diademas",
+      "thumbnailUrl": "https://http2.mlstatic.com/D_NQ_NP_2X_899616-MCO41082529331_032020-F.webp"
+    }
+]

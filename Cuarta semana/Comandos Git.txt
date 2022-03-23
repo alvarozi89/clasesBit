@@ -1,15 +1,23 @@
+//Sirve para ver el estado
 git status
+// sirve para agregar, cuando esta el punto se agrega todo,
 git add .
 git add <archivo>
+//sirve para enviar un comentario, es la guia.
 git commit -m "comentario"
+//el que mas miedo da, es el envio.
 git push 
 
+//sirve para ver el historial
 git log --oneline
 
-
+// sirve para crear ramas
 git branch <nombre-de-la-rama>
+//sirve para ver las ramas que existen
 git branch --list
+//sirve para eliminar ramas
 git branch -d <nombre-de-la-rama>
+// sirve para cambiar de rama
 git checkout <nombre-de-la-rama>
 git push <nombre-remoto> <nombre-de-tu-rama>
 

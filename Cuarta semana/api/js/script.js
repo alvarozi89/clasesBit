@@ -18,13 +18,13 @@ function evento(){
 }*/
 let tabla = document.getElementById("tabla")
 const consumirApi = async()=>{
-    const res= await fetch('https://jsonplaceholder.typicode.com/posts');
+    const res= await fetch('https://api.covidtracking.com/v1/us/daily.json');
     const data = await res.json();
     data.forEach(item=>{
         tabla.innerHTML+=`<tr>
-        <td>${item.userId}</td>
-        <td>${item.id}</td>
-        <td>${item.title}</td>
+        <td>${item.date}</td>
+        <td>${item.positive}</td>
+        <td>${item.hospitalized}</td>
         </tr>`
     })
     console.log(data);
