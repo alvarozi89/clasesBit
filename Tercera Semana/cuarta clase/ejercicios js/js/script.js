@@ -1,4 +1,4 @@
-//el dom Es la fomra como js accede a nuestro archivo html
+//el dom Es la forma como js accede a nuestro archivo html
 
 /*document.querySelector('.parrafo-1').textContent="Saludos desde js";
 document.querySelector('#parrafo-3').textContent="Saludos desde js";
@@ -29,14 +29,51 @@ function tabla(){
     let apellido = document.getElementById('apellido').value;
     let edad=  document.getElementById('edad').value;
 
-    tabla.innerHTML+=`<tr>
-    <td>${nombre}</td>
-    <td>${apellido}</td>
-    <td>${edad}</td>
-</tr>`
-document.getElementById('nombre').value="";
-document.getElementById('apellido').value="";
-document.getElementById('edad').value="";
+    if(nombre==""){
+
+        Swal.fire(
+            'Falta llenar el nombre!',
+            'Dale click para continuar!',
+            'warning'
+          )
+
+    }
+
+   else if(apellido==""){
+
+        Swal.fire(
+            'Falta llenar el apellido!',
+            'Dale click para continuar!',
+            'warning'
+          )
+
+    }
+
+    else if(edad==""){
+
+        Swal.fire(
+            'Falta llenar la edad!',
+            'Dale click para continuar!',
+            'warning'
+          )
+
+    }
+
+    else {
+
+        tabla.innerHTML+=`<tr>
+        <td>${nombre}</td>
+        <td>${apellido}</td>
+        <td>${edad}</td>
+        </tr>`
+
+        document.getElementById('nombre').value="";
+        document.getElementById('apellido').value="";
+        document.getElementById('edad').value="";
+    }
+
+
+
 }
 
 function suma(){

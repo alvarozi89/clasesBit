@@ -4,16 +4,20 @@ git add <archivo>
 git commit -m "comentario"
 git push 
 
+git log --oneline
+
+
 git branch <nombre-de-la-rama>
 git branch --list
 git branch -d <nombre-de-la-rama>
 git checkout <nombre-de-la-rama>
 git push <nombre-remoto> <nombre-de-tu-rama>
 
+git merge <nombre-de-la-rama>
 
 git pull <nombre-remoto>
 
- git log -- oneline:
+git log --oneline:
 git revert
 git revert 3321844
 
