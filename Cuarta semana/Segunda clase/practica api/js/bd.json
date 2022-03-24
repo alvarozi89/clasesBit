@@ -1,0 +1,32 @@
+[
+    {
+      "precio": 500,
+      "id": 1,
+      "title": "Mouse Gamer",
+      "img": "https://http2.mlstatic.com/D_NQ_NP_696858-MCO46223178033_052021-O.webp"
+    },
+
+    {
+        "precio": 600,
+        "id": 2,
+        "title": "Teclado gamer RGB",
+        "img": "https://http2.mlstatic.com/D_NQ_NP_2X_818546-MLA48170555345_112021-F.webp"
+    },
+
+    {
+        "precio": 800,
+        "id": 3,
+        "title": "Monitor gamer",
+        "img": "https://http2.mlstatic.com/D_NQ_NP_2X_720951-MLA45731411194_042021-F.webp"
+    },
+
+    {
+        "precio": 200,
+        "id": 4,
+        "title": "Camara gamer",
+        "img": "https://http2.mlstatic.com/D_NQ_NP_801985-MCO42521547033_072020-O.webp"
+    }
+
+
+    
+]
