@@ -6,7 +6,6 @@ let carrito={};
 const consumirBd= async()=>{
     const res = await fetch('/js/bd.json');
     const data = await res.json();
-
     data.forEach(item=>{
         cards.innerHTML+=
         `<div class="col-12 col-md-4 mb-2">
