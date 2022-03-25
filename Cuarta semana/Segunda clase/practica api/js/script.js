@@ -27,7 +27,7 @@ const consumirBd= async()=>{
 consumirBd();
 
 const pintarTabla =()=>{
-    var indice=1;
+    let indice=1;
     console.log("estoy en pintar tabla"+carrito);
     tabla.innerHTML="";
     Object.values(carrito).forEach(producto=>{
@@ -53,11 +53,29 @@ function eliminarProducto(e) {
     if(e.target.classList.contains('borrar-curso') ) {
          // e.target.parentElement.parentElement.remove();
          const productoId = e.target.getAttribute('data-id')
-         
+         Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#d33',
+            cancelButtonColor: '#3085d6',
+            confirmButtonText: 'Yes, delete it!'
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire(
+                'Deleted!',
+                'Your file has been deleted.',
+                'success'
+              )
+              delete carrito[productoId];
+              pintarTabla();
+            }
+          })
          // Eliminar del arreglo del carrito
-         delete carrito[productoId];
+        
 
-         pintarTabla();
+      
     }
 }
 
@@ -97,6 +115,11 @@ cards.addEventListener('click',e=>{
 const agregarProducto = e=>{
     if(e.target.classList.contains('btn-primary')){
         //alert("toque el boton primario");
+        Swal.fire(
+            'Producto agregado!',
+            'You clicked the button!',
+            'success'
+          )
         console.log(e.target.parentElement);
         setCarrito(e.target.parentElement);
     }
@@ -129,8 +152,28 @@ const imprimirTotal=()=>{
 
     const btnLimpiar =document.getElementById('limpiar');
     btnLimpiar.addEventListener('click',()=>{
-        carrito={};
-        pintarTabla();
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#d33',
+            cancelButtonColor: '#3085d6',
+            confirmButtonText: 'Yes, delete it!'
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire(
+                'Deleted!',
+                'Your file has been deleted.',
+                'success'
+              )
+              carrito={};
+              pintarTabla();
+            }
+          })
+         
+      
+       
     })
 
 
