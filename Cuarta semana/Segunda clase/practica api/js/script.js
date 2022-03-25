@@ -14,7 +14,7 @@ const consumirBd= async()=>{
                     <div class="card-body">
                     <h5 class="card-title">${item.title}</h5>
                     <p class="card-text precio">${item.precio}</p>
-                    <p class="card-text id">${item.id}</p>
+                    <p style="display: none;" class="card-text id">${item.id}</p>
                     <a href="#" class="btn btn-primary">Comprar</a>
                     </div>
                 </div>
@@ -37,8 +37,12 @@ const pintarTabla =()=>{
         <td>${producto.cantidad}</td>
         <td>${producto.precio}</td>
         <td><button type="button" class="btn btn-success">Aumentar</button> <button type="button" class="btn btn-danger">Disminuir</button></td>
+        <td>${producto.cantidad *producto.precio}</td>
+        <td>x-lo mejoran</td>
         </tr>`
+        
     })
+    imprimirTotal();
 }
 
 cards.addEventListener('click',e=>{
@@ -70,5 +74,20 @@ const setCarrito= objeto=>{
 
     carrito[producto.id]={...producto}
     pintarTabla();
+}
+
+const imprimirTotal=()=>{
+    const cantidadProductos=Object.values(carrito).reduce((acum,{cantidad})=> acum+cantidad,0);
+    const total=Object.values(carrito).reduce((acum,{cantidad,precio})=> acum+(cantidad*precio),0);
+    document.getElementById('totalProductos').textContent="Cantidad de productos:"+cantidadProductos;
+    document.getElementById('totalPagar').textContent="Total a pagar: "+total;
+
+    const btnLimpiar =document.getElementById('limpiar');
+    btnLimpiar.addEventListener('click',()=>{
+        carrito={};
+        pintarTabla();
+    })
+
+
 }
 
