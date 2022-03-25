@@ -1,7 +1,7 @@
 [
     {
       "precio": 500,
-      "id": 1,
+      "id": 50,
       "title": "Mouse Gamer",
       "img": "https://http2.mlstatic.com/D_NQ_NP_696858-MCO46223178033_052021-O.webp"
     },
@@ -15,7 +15,7 @@
 
     {
         "precio": 800,
-        "id": 3,
+        "id": 30,
         "title": "Monitor gamer",
         "img": "https://http2.mlstatic.com/D_NQ_NP_2X_720951-MLA45731411194_042021-F.webp"
     },

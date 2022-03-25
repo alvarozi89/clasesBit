@@ -27,27 +27,72 @@ const consumirBd= async()=>{
 consumirBd();
 
 const pintarTabla =()=>{
+    var indice=1;
     console.log("estoy en pintar tabla"+carrito);
     tabla.innerHTML="";
     Object.values(carrito).forEach(producto=>{
         tabla.innerHTML+=
         `<tr>
-        <td>${producto.id}</td>
+        <td>${indice}</td>
         <td>${producto.title}</td>
         <td>${producto.cantidad}</td>
         <td>${producto.precio}</td>
-        <td><button type="button" class="btn btn-success">Aumentar</button> <button type="button" class="btn btn-danger">Disminuir</button></td>
-        <td>${producto.cantidad *producto.precio}</td>
-        <td>x-lo mejoran</td>
+        <td><button type="button" class="btn btn-success" data-id="${producto.id}">Aumentar</button> <button type="button" class="btn btn-danger" data-id="${producto.id}">Disminuir</button></td>
+        <td>${producto.cantidad * producto.precio}</td>
+        <td <a href="#" class="borrar-curso text-danger" data-id="${producto.id}">X</a></td>
         </tr>`
-        
+        indice=indice+1;
+
     })
     imprimirTotal();
 }
+tabla.addEventListener('click', eliminarProducto);
+
+function eliminarProducto(e) {
+    e.preventDefault();
+    if(e.target.classList.contains('borrar-curso') ) {
+         // e.target.parentElement.parentElement.remove();
+         const productoId = e.target.getAttribute('data-id')
+         
+         // Eliminar del arreglo del carrito
+         delete carrito[productoId];
+
+         pintarTabla();
+    }
+}
+
+tabla.addEventListener('click' , e =>{
+    btnAccion(e);
+})
+
+const btnAccion = e => {
+   
+    if(e.target.classList.contains('btn-success')){
+        const productoId = e.target.getAttribute('data-id')
+        console.log(carrito[productoId]); 
+        const producto =carrito[productoId];
+            producto.cantidad= carrito[productoId].cantidad+1;
+            carrito[productoId]={...producto}
+            pintarTabla();
+    }
+    if(e.target.classList.contains('btn-danger')){
+        const productoId = e.target.getAttribute('data-id')
+        const producto =carrito[productoId];
+            producto.cantidad--
+            if (producto.cantidad===0) {
+                delete carrito[productoId];
+            }
+            pintarTabla();    
+    }
+
+}
+
 
 cards.addEventListener('click',e=>{
     agregarProducto(e);
 })
+
+
 
 const agregarProducto = e=>{
     if(e.target.classList.contains('btn-primary')){
