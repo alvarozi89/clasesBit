@@ -1,37 +1,44 @@
 mongod
 
+//sirve para arrancar servicio de mongodb
 mongo 
 
+//sirve para mostrar las bd que tenemos de manera local
 show databases
+//manera abreviada
+show dbs;
 
-show dbs
-
+//nota: mongo no tiene un comando de crear, el comando use, sirve para usar una bd que ya este creada, pero tambien puede emplearse para crear una nueva bd,pero hasta que esta no se alimente no se va generar.
 use nombre de la base;
 
+//amarrado a la primera vez que vamos a crear nuestra primera bd
 db.user.insert(
 {name: "Ada Lovelace", 
 age: 205
 });
-
+//sirve para mostrar las colecciones que estan dentro de nuestra bd
 show collections;
 
+//sirve para imprimir los datos que tiene la colección
 db.persona.find();
 
+//sirve para ordenar el documento
 db.persona.find().pretty();
-
+//sirve para filtrar
 db.persona.find({"nombre":"Alvaro"});
 
 db.persona.findOne({"nombre":"Alvaro"});
 
 db.persona.update({"nombre":"Actualizado"});
 
+//Sirve para actualizar un dato en concreto, no vamos a tener riesgo de alteras los demas.
 db.persona.updateOne(
    {_id:"6243c373d1331b53f35702e1"},
    { $set: { nombre: "actualizado" } }
 );
-
-db.persona.update(
-   {"nombre": "actualizado"}, {"apellidos": "ahorita"}
+//debemos ser cuidadoso con las instrucciones actualizar, eliminar, deben ser especificas por que de lo contrario van afectar los demás registro.
+db.personas.update(
+   {"nombre": "Alvaro"}, {"apellidos": "ahorita"}
 );
 
 db.persona.deleteOne({_id: "6243c373d1331b53f35702e1"});
@@ -39,12 +46,13 @@ db.persona.deleteOne({_id: "6243c373d1331b53f35702e1"});
 db.persona.remove({'nombre':'actualizado'});
 
 
-
+//sirve para contar los registros que tenemos en nuestro documento
 db.persona.count();
 
+//este comando sirve para insetar un registro
 db.articulos.insertOne(
   {
-    _id: 1,  
+   
     nombre: 'MULTIFUNCION HP DESKJET 2675',
     rubro: 'impresora',
     precio: 3000,
@@ -56,5 +64,5 @@ db.products.remove({_id:890})
 
 db.createCollection("geekFlareCollection");
 
-
+//sirve para eliminar la bd
 db.dropDatabase();
