@@ -1,0 +1,60 @@
+mongod
+
+mongo 
+
+show databases
+
+show dbs
+
+use nombre de la base;
+
+db.user.insert(
+{name: "Ada Lovelace", 
+age: 205
+});
+
+show collections;
+
+db.persona.find();
+
+db.persona.find().pretty();
+
+db.persona.find({"nombre":"Alvaro"});
+
+db.persona.findOne({"nombre":"Alvaro"});
+
+db.persona.update({"nombre":"Actualizado"});
+
+db.persona.updateOne(
+   {_id:"6243c373d1331b53f35702e1"},
+   { $set: { nombre: "actualizado" } }
+);
+
+db.persona.update(
+   {"nombre": "actualizado"}, {"apellidos": "ahorita"}
+);
+
+db.persona.deleteOne({_id: "6243c373d1331b53f35702e1"});
+
+db.persona.remove({'nombre':'actualizado'});
+
+
+
+db.persona.count();
+
+db.articulos.insertOne(
+  {
+    _id: 1,  
+    nombre: 'MULTIFUNCION HP DESKJET 2675',
+    rubro: 'impresora',
+    precio: 3000,
+    stock: 20 
+  }
+)
+
+db.products.remove({_id:890})
+
+db.createCollection("geekFlareCollection");
+
+
+db.dropDatabase();

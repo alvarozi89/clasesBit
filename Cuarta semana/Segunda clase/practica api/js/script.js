@@ -52,7 +52,7 @@ function eliminarProducto(e) {
     e.preventDefault();
     if(e.target.classList.contains('borrar-curso') ) {
          // e.target.parentElement.parentElement.remove();
-         const productoId = e.target.getAttribute('data-id')
+         const productoId = e.target.getAttribute('data-id');
          Swal.fire({
             title: 'Are you sure?',
             text: "You won't be able to revert this!",
@@ -72,10 +72,7 @@ function eliminarProducto(e) {
               pintarTabla();
             }
           })
-         // Eliminar del arreglo del carrito
-        
-
-      
+         // Eliminar del arreglo del carrito 
     }
 }
 

@@ -1,2 +1,16 @@
 https://api.covidtracking.com/v1/us/daily.json
 https://jsonplaceholder.typicode.com/posts
+
+{
+    "titulo": "sad",
+    "descripcion": "as",
+    "categoria": "Alimentos",
+    "precio": 33,
+    "sucursal": "61c4fea1dbe50db15d7a9593",
+    "sucursalNombre": "exito",
+    "activo": true,
+    "date": {
+        "$date": "2021-12-24T00:08:31.860Z"
+    },
+    "__v": 0
+}

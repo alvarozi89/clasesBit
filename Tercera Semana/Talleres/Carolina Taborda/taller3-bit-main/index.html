@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"/>
+    <title>Academia Ritmo Salvaje</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg barra fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">PORTAL</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#us">NOSOTROS</a></li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#info">INFO</a></li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#calcular-aqui">IMC</a></li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#planes">PLANES</a></li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#cambio-peso">CAMBIO PESO</a></li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#autor">AUTOR</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+<div >
+    <video class="video-inicio"  width="100%" height="550px" autoplay>
+        <source src="img/video_inicio.mp4" type="video/mp4"></video>
+</div>
+
+<div id="us" class="bg-light bloque-1 text-black py-5">
+  <div class="container">
+  <h1 class="text-center display-1">La Academia</h1>
+    <div class="row align-items-center">
+        <div class="col-12 col-md-4">
+          <h2> <i class="bi bi-boombox"></i> Sobre nosotros</h2>
+           <hr/>
+            <p>Somos una academia dedicada a fortalecer una pasión a través de herramientas en pro de facilitar encuentros con nuevas oprtunidades 
+              de trabajo o disfrutar de un pasatiempo. Contamos con diferentes cursos que se adecuan para todas las edades, con o sin experiencia;
+              también contamos con un programa de entrenamiento llamado<mark>On-fire</mark>, este es un entrenamiento intensivo para quemar calorías
+              y depende de tu índice de masa corporal. Si no sabes cuál es tu IMC ¡No te preocupes! Presiona en el botón de Calcular para saber cuál
+              es tu resultado y poderte ubicar en el grupo de entrenamiento más adecuado para ti.</p>
+              <a class="btn btn-outline-primary" href="#calcular-aqui" role="button">Calcular aquí</a>
+        </div>
+            <div class="col-12 col-md-8">
+              <img class="img-fluid rounded" src="img/baile.jpg" alt="imagen-baile">
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="info" class="bg-dark bloque-2 text-info py-5"> 
+    <div class="container">
+        <h3 class="text-center display-4">Entérate <i class="bi bi-exclamation-circle"></i></h3>
+        <div class="row align-items-center">
+                <div class="col-12 col-md-12 text-center">
+                    <hr/>
+                    <p class="texto-p1">Si te interesa conocernos, tienes la oportunidad de disfrutar de una clase en vivo <ins>¡totalmente gratis!</ins>
+                    Déjanos tus datos y pronto te contactaremos para programar tu clase y te animes a formar parte de esta gran familia.
+                    </p>
+                </div>
+        </div>
+    </div>
+</div> 
+<br>  
+<div class="container">
+  <br>
+    <h3 class="">Ingresa tu información</h3>
+    <div class="form-group">
+        <input class="form-control mb-2" id="nombre" type="text" placeholder="Nombre">
+        <input class="form-control mb-2" id="apellido" type="text" placeholder="Apellido">
+        <input class="form-control mb-2" id="edad" type="num" placeholder="Edad">
+        <input class="form-control mb-2" id="estado-vacuna" type="num" placeholder="¿Tiene vacuna?">
+    </div>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Edad</th>
+                <th scope="col">Estado vacuna</th>
+                </tr>
+            </thead>
+          <tbody id="tab-datper"></tbody>
+        </table>
+      <button onclick="tablaDatos()" type="button" class="btn btn-outline-warning">Guardar</button>
+</div>
+<hr>
+<br>
+<div id="calcular-aqui" class="container">
+  <div class="row align-items-center">
+    <div class="col-12 col-md-6">
+      <h2> <i class="bi bi-person-circle"></i> Calcula tu índice de masa corporal</h2>
+      <div class="col-12 col-md-6">
+        <div class="form-group">
+            <label for="peso">Ingrese su peso en kg</label>
+            <input id="peso" class="form-control" name="peso" type="number">
+
+            <label for="altura">Ingrese su altura en metros</label>
+            <input id="altura" class="form-control" name="altura" type="number">
+            <br>
+            <button onclick="calcular()" type="button" class="btn btn-outline-primary">Calcular</button>
+            <br>
+              <div class="titulo-p">
+                <h3>Resultado</h3>
+                <p id="resultado-imc"></p>
+                <br>
+              </div>
+         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-xl">
+<div id="planes" class="row">
+    <div class="col-12 col-lg">
+      <div class="card">
+        <img src="img/dance.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+      <h5 class="card-title">Plan Principiante</h5>
+      <p class="card-text">Tienes cupón por 4 clases al mes, grabación de las coreografías, obsequio kit "force".</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item" id="plan-1"></li>
+      <li class="list-group-item">
+        <div class="form-group">
+            <label for="cant-pl1">Cantidad</label>
+            <input id="cant-pl1"  min="0" class="form-control" name="cant-pl1" type="number">
+        </div>
+        <li class="list-group-item text-center">De acuerdo a la cantidad deseada, su valor es de:<p id="price1"></p></li>
+      </li>
+    </ul>
+  </div>
+  </div>
+
+
+
+    <div class="col-12 col-lg">
+  <div class="card">
+    <img src="img/dance2.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Plan Intermedio</h5>
+      <p class="card-text">Tienes cupón de 8 clases mensuales, shows en vivo locales, grabación de las coreografías, obsequio kit "force" .</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item" id="plan-2"></li>
+      <li class="list-group-item">
+        <div class="form-group">
+            <label for="cant-pl2">Cantidad</label>
+            <input id="cant-pl2" min="0" class="form-control" name="cant-pl2" type="number">
+        </div>
+        <li class="list-group-item text-center" id="price2">De acuerdo a la cantidad deseada, su valor es de:<p id="price2"></p></li>
+      </li>
+    </ul>
+  </div>
+  </div>
+
+    <div class="col-12 col-lg">
+  <div class="card">
+    <img src="img/dance3.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Plan Avanzado </h5>
+      <p class="card-text">Tienes cupón por 10 clases mensuales, acceso a grabación y promoción, shows en vivo con representación nacional e 
+      internacional, posibilidad de ser parte del equipo de intructores la cuál se realiza por medio de una audición.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item" id="plan-3"></li>
+      <li class="list-group-item">
+        <div class="form-group">
+            <label for="cant-pl3">Cantidad</label>
+            <input id="cant-pl3" min="0" class="form-control" name="cant-pl3" type="number">
+        </div>
+        <li class="list-group-item text-center" id="price3">De acuerdo a la cantidad deseada, su valor es de:<p id="price3"></p></li>
+      </li>
+    </ul>
+  </div>
+  </div>
+
+  
+    <div class="col-12 col-lg">
+  <div class="card">
+    <img src="img/dance7.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Plan On-fire</h5>
+      <p class="card-text">Entrenamiento completamente personalizado e intensivo, máx 8 personas por grupo, pruebas constantes de niveles, 
+      obsequio kit "force 2.0", 10 clases mensuales y se deben hacer con previa inscripción, acceso a grabación de las coreografias, prueba de 
+      aptitud para cambiar al programa avanzado si lo desea, e inrefrigerio.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item" id="plan-4"></li>
+      <li class="list-group-item">
+        <div class="form-group">
+            <label for="cant-pl4">Cantidad</label>
+            <input id="cant-pl4" min="0" class="form-control" name="cant-pl4" type="number">
+        </div>
+        <li class="list-group-item text-center" id="price4">De acuerdo a la cantidad deseada, su valor es de:<p id="price4"></p></li>
+      </li>
+    </ul>
+  </div>
+  </div>
+</div>
+</div>
+  <button onclick="precioplan()" class="btn btn-outline-dark col-md-12 text-center" type="submit">Calcular total</button>
+  <hr>
+  
+  <div class="container" id="cambio-peso">
+          <h2>Conversor de moneda <i class="bi bi-coin"></i></h2>
+          <p class="texto-p">Si el Peso Colombiano no es tu moneda, puedes mirar aquí según tu moneda local cuánto es la cantidad del dinero que necesitas</p>
+        <div class="row-cols-md-4">
+          <div class="col">
+            <div class="form-group">
+                <label for="valor1">Ingrese monto</label>
+                <input id="valor1" min="1" class="form-control" name="valor1" type="number">
+                 
+                <label for="valor2">USD:</label>
+                <input id="valor2" class="form-control" name="valor2" type="number" disabled>
+                <label for="valor3">EUR:</label>
+                <input id="valor3" class="form-control" name="valor3" type="number" disabled>
+
+                <div class="py-2">
+                    <button onclick="conversor()" type="button" class="btn btn-primary">Convertir</button>  
+                </div>      
+            </div>
+          </div>
+        </div>
+      </div>
+
+<hr>
+
+      <footer id="autor" class="pie-pagina">
+        <div class="card mb-3 row-cols-md" style="height: 300px">
+          <div class="row g-2">
+            <div class="col-md-2">
+              <img src="img/avatar.jpg" class="img-fluid rounded-start" alt="avatar" style="width: 300rem; height: 300px;">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">DIANA CAROLINA TABORDA RUA</h5>
+                <p class="card-text">¡Hola! Soy Carolina y vivo en la ciudad de Medellín, Antioquia del país Colombia. Me gusta mucho aprender cosas 
+                  nuevas en especial las que me interesan y apasionan; por ejemplo disfruto mucho del baile y desde años anteriores me gusta transmitir mis 
+                  conocimientos a aquellas personas que apenas empiezan, o que aún no dan sus primeros pasos en el baile pero quieren intentarlo.
+                  Tal y como me gusta la programación ahora, para mí es un mecanismo para transportar el talento al que quisiera que llegara a cada 
+                  uno de ustedes.
+                  <br>
+                </p>
+                <br>
+                  <p class="card-text"><h4><mark>Copyright ©2022 Se reservan los derechos de autor</mark></h4>
+                </p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./Js/script.js"></script>
+    
+</body>
+</html>
