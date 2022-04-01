@@ -20,7 +20,7 @@ age: 205
 show collections;
 
 //sirve para imprimir los datos que tiene la colección
-db.persona.find();
+db.personas.find();
 
 //sirve para ordenar el documento
 db.persona.find().pretty();
@@ -31,19 +31,38 @@ db.persona.findOne({"nombre":"Alvaro"});
 
 db.persona.update({"nombre":"Actualizado"});
 
+
+//sirve para solo afectar a un grupo de datos
+db.personas.update({
+    id: 1
+},
+{
+    $set: {
+        title: "a"
+      
+    }
+},{multi:true});
+
+
+
 //Sirve para actualizar un dato en concreto, no vamos a tener riesgo de alteras los demas.
-db.persona.updateOne(
-   {_id:"6243c373d1331b53f35702e1"},
-   { $set: { nombre: "actualizado" } }
+db.personas.updateOne(
+   {_id:ObjectId("6245fa02131955ee5f2e347a")},
+   { $set: { title: "actualizado" } }
 );
+db.personas.updateOne(
+   {title:"actualizado"},
+   { $set: { title: "actualizado2" } }
+);
+
 //debemos ser cuidadoso con las instrucciones actualizar, eliminar, deben ser especificas por que de lo contrario van afectar los demás registro.
 db.personas.update(
    {"nombre": "Alvaro"}, {"apellidos": "ahorita"}
 );
 
-db.persona.deleteOne({_id: "6243c373d1331b53f35702e1"});
+db.personas.deleteOne({_id:ObjectId("6245fa02131955ee5f2e347a")});
 
-db.persona.remove({'nombre':'actualizado'});
+db.personas.remove({'title':'Monitor gamer'});
 
 
 //sirve para contar los registros que tenemos en nuestro documento
