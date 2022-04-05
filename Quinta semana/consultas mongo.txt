@@ -1,0 +1,58 @@
+
+//esta consulta nor sirve para buscar datos iguales
+$eq: igual que
+ejemplo:
+{name:{$eq:"nombre"}}
+
+$ne: distinto de $eq
+ejemplo:
+{rank:{$ne:"nombre"}}
+
+ejemplo filtrar por objeto:
+{"affiliation.actualDate":{$eq:"03/21/1990"}}
+
+ejemplo filtrar arrays:
+{"attacks.0":{$eq:"Another Dimension"}}
+
+ejemplo de ver que documentos no tienen un campo:
+{ id:{$exists:true}}
+
+ejemplo para filtrar coincidencias:
+
+ { name: { $regex: /^se/i } }
+ { name: { $regex: /se/i } }
+
+
+ Ejemplo de OR
+ { name:"Seiya", $or:[{rank:"Bronze"}]}
+
+$gt: valores mayores que
+{id:{$gt:"5"}}
+$gte: valores mayores o iguales que
+{id:{$gt6:"5"}}
+$lt: valores menores que
+{id:{$lt:"5"}}
+$lte: valores menores o iguales que
+{id:{$lte:"5"}}
+
+$in: sus valores se encuentran dentro
+ejemplo:
+{name:{$in:["Seiya","Abel"]}}
+
+$nin: operación contraria a $in,
+{name:{$nin:["Seiya","Abel"]}}
+
+ordenar:
+db.datos.find({}).sort({id:1 }).pretty();
+
+
+
+
+
+
+
+
+
+
+
+
