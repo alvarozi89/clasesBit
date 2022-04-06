@@ -25,6 +25,10 @@ node -v
 //es el corazón del proyecto, aqui van estar registrados con lo que vamos a trabajar.!ojo! siempre debe instalarse de primero
 npm init
 
+**nodemon es necesario para que el servidor detecte los cambios automaticamente, sin necesidad de estarlo reiniando para que tome los nuevos cambios
+4-instalar nodemon:
+npm i nodemon
+
 luego vamos a incorporar la siguiente linea:
 ¿donde? en el package json, en la linea de los scripts
 "dev": "nodemon src/index.js"
@@ -36,28 +40,23 @@ npm run dev
 **ojo para detener el servidor dar ctrl+c**
 
 4-instalar express
-**podemos instalar de ambas maneras**
+**podemos instalar de ambas maneras solo una**
 npm i express
 npm install express
 
-**nodemon es necesario para que el servidor detecte los cambios automaticamente, sin necesidad de estarlo reiniando para que tome los nuevos cambios
-5-instalar nodemon:
-npm i nodemon
-
-npm i -D nodemon
+**notas importantes***
+crear dentro del proyecto un archivo llamado .gitignore y dentro vamos a colocar
+el nombre de la carpeta node_modules
 
 
 
-npm install @
-# example
-npm install lodash@4.11.1
-
-npm uninstall -D nodemon
+**para desintalar un paquete**
+npm uninstall "cualquier paquete"
 npm cache clean --force
-npm install npm -g
+npm install "nuevamente el programa" 
 
 
 **para actualizar la versión de node**
-npm install npm -g
 npm install @latest
-npm install -g
+npm install npm -g
+
