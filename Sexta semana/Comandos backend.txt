@@ -1,0 +1,24 @@
+
+-----------------------------------------------------------------------------
+Servidor
+
+1- npm init
+2- npm i express nodemon mongoose cors morgan body-parser bcryptjs jsonwebtoken
+3- poner la ruta en el package json
+node src/index.js
+"dev": "nodemon src/index.js"
+
+4-crear las siguientes carpertas:
+//carpeta padre:
+src
+//sub carpertas
+
+controller
+helper
+models
+routes
+5-dentro de la carpeta src crear los siguientes archivos.
+
+index.js
+database.js
+

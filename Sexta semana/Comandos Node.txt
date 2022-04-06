@@ -1,0 +1,63 @@
+node:
+Node.js es un entorno en tiempo de ejecución multiplataforma, 
+de código abierto, para la capa del servidor (pero no limitándose a ello) 
+basado en el lenguaje de programación JavaScript.
+
+modulo:
+Node tiene un sistema de modulos incorporado
+un archivo node, puede importar la funcionabilidad expuesta por otros archivos
+node
+
+comillas rebeldes:``
+
+
+npm: node package manager
+"dev": "nodemon app.js"
+comandos:
+
+1-ver que version de node tenemos instalado para ello correr el siguiente comando:
+node -v
+
+2-instalar node,descargarlo y ejecutar.
+
+3-una vez vamos a iniciar nuestro proyecto es necesario correr los siguientes comandos:
+**comando**
+//es el corazón del proyecto, aqui van estar registrados con lo que vamos a trabajar.!ojo! siempre debe instalarse de primero
+npm init
+
+luego vamos a incorporar la siguiente linea:
+¿donde? en el package json, en la linea de los scripts
+"dev": "nodemon src/index.js"
+
+la manera definitiva de que corrar nuestro servidor es:
+**nota: la palabra dev puede cambiarse por cualquiera"
+npm run dev
+
+**ojo para detener el servidor dar ctrl+c**
+
+4-instalar express
+**podemos instalar de ambas maneras**
+npm i express
+npm install express
+
+**nodemon es necesario para que el servidor detecte los cambios automaticamente, sin necesidad de estarlo reiniando para que tome los nuevos cambios
+5-instalar nodemon:
+npm i nodemon
+
+npm i -D nodemon
+
+
+
+npm install @
+# example
+npm install lodash@4.11.1
+
+npm uninstall -D nodemon
+npm cache clean --force
+npm install npm -g
+
+
+**para actualizar la versión de node**
+npm install npm -g
+npm install @latest
+npm install -g
