@@ -79,3 +79,10 @@ npm i morgan: solicitudes HTTP
 npm i body-parser:contiene información desde una petición tipo POST 
 npm i bcryptjs:sirve para encriptar las contraseñas
 npm i jsonwebtoken: entandamolo con un codigo que nos va permitir acceder.
+
+luego de instalar todos los modulos vamos a insertar la siguiente linea
+en el package.json:
+"dev": "nodemon src/index.js"
+
+y recordemos que para ejecutar el servidor es necesario el comando:
+npm run dev
