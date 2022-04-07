@@ -3,33 +3,38 @@
 $eq: igual que
 ejemplo:
 {name:{$eq:"nombre"}}
-
+//es la forma ccontraria del igual.
 $ne: distinto de $eq
 ejemplo:
 {rank:{$ne:"nombre"}}
-
+//de esta manera podemos ingresar al objeto y a su respectivo campo.
 ejemplo filtrar por objeto:
 {"affiliation.actualDate":{$eq:"03/21/1990"}}
-
+//de esta manera podemos filtrar los datos de un arreglo.
 ejemplo filtrar arrays:
 {"attacks.0":{$eq:"Another Dimension"}}
 
-ejemplo de ver que documentos no tienen un campo:
+//ejemplo de ver que documentos no tienen un campo:
 { id:{$exists:true}}
 
 ejemplo para filtrar coincidencias:
-
+//con la palomita podemos llamar las coincidencias desde el principio de la palabra
  { name: { $regex: /^se/i } }
+ //sin la palomina vamos a llamar las coincidencia del final de  la palabra
  { name: { $regex: /se/i } }
 
 
  Ejemplo de OR
+ //utilizamos el operador O, para traer resultados especificos de un documento
  { name:"Seiya", $or:[{rank:"Bronze"}]}
 
+//esta consulta nos trae valores mayores !ojo! recordemos que es recomendado usar campos numericos.
 $gt: valores mayores que
 {id:{$gt:"5"}}
+//igual a $gt, pero utiliza la clausala mayor igual.
 $gte: valores mayores o iguales que
 {id:{$gt6:"5"}}
+
 $lt: valores menores que
 {id:{$lt:"5"}}
 $lte: valores menores o iguales que
@@ -37,8 +42,9 @@ $lte: valores menores o iguales que
 
 $in: sus valores se encuentran dentro
 ejemplo:
+//Nos sirve para traer datos que se encuentran dentro de los criterios plasmados
 {name:{$in:["Seiya","Abel"]}}
-
+//hace lo contrario
 $nin: operación contraria a $in,
 {name:{$nin:["Seiya","Abel"]}}
 

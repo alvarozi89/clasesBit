@@ -46,7 +46,8 @@ npm install express
 
 **notas importantes***
 crear dentro del proyecto un archivo llamado .gitignore y dentro vamos a colocar
-el nombre de la carpeta node_modules
+el nombre de la carpeta node_modules.
+al hacer esto vamos a evitar que se envie esto al repositorio.
 
 
 
@@ -60,3 +61,21 @@ npm install "nuevamente el programa"
 npm install @latest
 npm install npm -g
 
+
+--creación de un backend real--
+
+**componentes necesarios para que sirva el backend, nota: podemos instalarlo de dos
+formas, primera: enviando todo en una sola linea, segunda: una por una**
+** !ojo! npm init no se instala, es decir no se utiliza el i o el install
+simplemente lo corremos asi, y debe ser el primero**
+npm init
+npm i express nodemon mongoose cors morgan body-parser bcryptjs jsonwebtoken
+**o se pueden instalar de la siguiente manera**
+npm i express  
+npm i nodemon
+npm i mongoose
+npm i cors:obtenga permiso para acceder a recursos seleccionados desde un servidor
+npm i morgan: solicitudes HTTP
+npm i body-parser:contiene información desde una petición tipo POST 
+npm i bcryptjs:sirve para encriptar las contraseñas
+npm i jsonwebtoken: entandamolo con un codigo que nos va permitir acceder.
