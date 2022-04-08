@@ -86,3 +86,8 @@ en el package.json:
 
 y recordemos que para ejecutar el servidor es necesario el comando:
 npm run dev
+
+**notas importantes***
+crear dentro del proyecto un archivo llamado .gitignore y dentro vamos a colocar
+el nombre de la carpeta node_modules.
+al hacer esto vamos a evitar que se envie esto al repositorio.
