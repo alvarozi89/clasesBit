@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 app.use(cors({origen: '*'}));
 
 //aqui vamos a utilizar las rutas 
-
+app.use('/personas', require('./routes/personas.route'));
 
 //aqui vamos a escuchar nuestro puerto
 app.listen(app.get('Port'),()=> {

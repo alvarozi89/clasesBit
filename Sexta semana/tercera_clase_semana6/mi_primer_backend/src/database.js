@@ -2,7 +2,7 @@
 debemos tener en cuenta la dirección; sea local o externar(servidor)
 */
 const mongoose = require('mongoose');
-URL=('mongodb://localhost/bdPersonasBit');
+URL=('mongodb://localhost/bdBit');
 
 //enviamos la conexión de la bd, establecemos unas configuraciones pretederminadas
 mongoose.connect(URL,{
