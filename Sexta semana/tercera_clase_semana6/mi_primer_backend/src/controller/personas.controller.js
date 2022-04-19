@@ -25,5 +25,21 @@ personaCtrl.listar= async(req,res)=>{
     res.json(respuesta)
 }
 
+personaCtrl.eliminar= async(req,res)=>{
+    const id = req.params.id 
+    await persona.findByIdAndRemove({_id:id})
+    res.json({
+        mensaje: "Persona eliminada"
+    })
+}
+
+personaCtrl.actualizar= async (req,res)=>{
+    const id = req.params.id 
+    await persona.findByIdAndUpdate({_id:id},req.body)
+    res.json({
+        mensaje: "Persona actualizada"
+    })
+}
+
 module.exports=personaCtrl
 

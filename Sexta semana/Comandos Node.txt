@@ -91,3 +91,8 @@ npm run dev
 crear dentro del proyecto un archivo llamado .gitignore y dentro vamos a colocar
 el nombre de la carpeta node_modules.
 al hacer esto vamos a evitar que se envie esto al repositorio.
+
+**nota importante cuando clonemos o descarguemos un proyecto**
+cuando descargamos o clonamos en el proyecto no viene incluido
+la carpeta node_modules, para ello es necesario correr el siguiente
+comando: npm i node
