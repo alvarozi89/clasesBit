@@ -9,7 +9,7 @@ adminCtrl.crear = async(req,res)=>{
     const nuevoAdmin = new adminModel({
         nombre,
         correo,
-        contrasena
+        contrasena,
     })
 
     const correoAdmin= await adminModel.findOne({correo:correo})
@@ -29,10 +29,35 @@ adminCtrl.crear = async(req,res)=>{
             id: nuevoAdmin._id,
             nombre: nuevoAdmin.nombre,
             token
-        })
+        });
 
     }
 
+}
+
+adminCtrl.login = async (req,res)=>{
+    const {correo,contrasena}= req.body
+    const admin = await adminModel.findOne({correo:correo})
+    if(!admin){
+        return res.json({
+            mensaje:'Correo incorrecto'
+        })
+    }
+    const match = await bcrypt.compare(contrasena,admin.contrasena)
+    if(match){
+        const token = jwt.sign({_id: admin._id},'Secreta')
+        res.json({
+            mensaje: 'Iniciastes sesión correctamente',
+            id: admin.id,
+            nombre: admin.nombre,
+            token
+        })
+    }
+    else {
+        res.json({
+            mensaje: 'Contraseña incorrecta'
+        })
+    }
 }
 
 module.exports= adminCtrl;
