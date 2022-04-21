@@ -19,4 +19,47 @@ empleadoCtrl.crearEmpleado = async(req,res)=>{
     })
 }
 
+empleadoCtrl.listar = async(req,res)=>{
+    const respuesta = await empleadoModels.find()
+    res.json(respuesta)
+}
+
+empleadoCtrl.listarId = async(req,res)=>{
+    const id = req.params.id
+    const respuesta =await empleadoModels.findById({_id:id})
+    res.json(respuesta)
+}
+
+empleadoCtrl.listarCedula = async(req,res)=>{
+    const cedula = req.params.cedula 
+    const respuesta = await empleadoModels.findOne({cedula:cedula})
+    res.json(respuesta)
+}
+
+empleadoCtrl.empleadosDeUnJefe = async(req,res)=>{
+    const id = req.params.id
+    const respuesta = await empleadoModels.find({jefe:id})
+    res.json(respuesta)
+}
+
+//Esta consulta aplica para otro contexto
+// empleadoCtrl.buscarPorCoincidencia = async (req,res)=>{
+//     const {nombres,id} = req.params;
+//     const respuesta = await empleadoModels.find({nombres:{$regex:".*"+ nombres +".*"}
+//     ,jefe:id})
+//     res.json(respuesta)
+// }
+
+//tarea aplicar coincidencia por mayusculas/minusculas
+
+empleadoCtrl.buscarPorCoincidencia = async (req,res)=>{
+    const {nombres} = req.params;
+    const respuesta = await empleadoModels.find({nombres:{$regex:".*"+ nombres}})
+    res.json(respuesta)
+}
+
+//eliminar
+
+//actualizar
+
 module.exports= empleadoCtrl
