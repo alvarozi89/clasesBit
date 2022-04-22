@@ -58,8 +58,34 @@ empleadoCtrl.buscarPorCoincidencia = async (req,res)=>{
     res.json(respuesta)
 }
 
+empleadoCtrl.buscarPorCoincidenciaMayusculas = async (req,res)=>{
+    const {nombres} = req.params;
+    const respuesta = await empleadoModels.find({nombres:{$regex:"^"+ nombres,$options:'i'}})
+    res.json(respuesta)
+}
+
 //eliminar
 
+empleadoCtrl.elimarEmpleado = async(req,res)=>{
+    const id = req.params.id
+    await empleadoModels.findByIdAndRemove({_id:id})
+    res.json({
+        mensaje: 'Empleado eliminado'
+    })
+}
+
+
 //actualizar
+
+empleadoCtrl.actualizarEmpleado= async(req,res)=>{
+    const id = req.params.id 
+    await empleadoModels.findByIdAndUpdate({_id:id},req.body)
+    const respuesta =await empleadoModels.findById({_id:id})
+    res.json({
+        mensaje: 'Empleado actualizado',
+        respuesta
+    })
+} 
+
 
 module.exports= empleadoCtrl

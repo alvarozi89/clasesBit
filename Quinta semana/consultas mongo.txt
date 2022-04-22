@@ -23,6 +23,9 @@ ejemplo para filtrar coincidencias:
  //sin la palomina vamos a llamar las coincidencia del final de  la palabra
  { name: { $regex: /se/i } }
 
+ const respuesta = await empleadoModels.find({nombres:{$regex:"^"+ nombres,$options:'i'}})
+ const respuesta = await empleadoModels.find({nombres:{$regex: nombres,$options:'i'}})
+     const respuesta = await empleadoModels.find({nombres:{$regex:".*"+ nombres, $options:'i'}})
 
  Ejemplo de OR
  //utilizamos el operador O, para traer resultados especificos de un documento
