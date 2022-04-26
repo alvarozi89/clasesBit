@@ -5,7 +5,7 @@ const empleadoSchema = new Schema({
     nombres: String,
     apellidos: String,
     cedula: String,
-    cargo: String,
+    cargo: [],
     correo: String,
     tipoContrato: String,
     jefe: String,

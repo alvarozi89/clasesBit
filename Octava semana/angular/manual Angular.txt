@@ -1,0 +1,60 @@
+**Manual Angular**
+
+primero revisar la versión:
+
+ng version
+**si no aparece nada entonces procedemos con el siguiente comando:**
+
+**instalar de manera global angular**
+nota: cuando se instala de manera global solo se hace una vez.
+npm install -g @angular/cli
+
+**para crear un proyecto en angular vamos
+a ejecutar el siguiente comando**
+
+ng new primerProyectoAngular
+
+**ahora debemos ingresar al proyecto**
+
+cd my-first-project
+
+**ahora la prueba de fuego, ejecutar el proyecto**
+**nota: con el comando ng serve corremos el proyecto**
+**nota: con control + c detenemos el proyecto, es necesario
+que se encuentre detenido para instalar complementos**
+ng serve
+
+revisar el componente app, recordemos que ahi estan
+los archivos principales del proyecto,
+vamos a limpiar el app.component.html.
+**nota: no abrir con open live serve, abrir con la url que entrega angular**
+
+**instalar bootstrap**
+primero correr el siguiente comando
+npm install bootstrap
+segundo vamos a importar la ruta en angular.json,
+ubicamos la linea de los estilos y scripts
+y pegamos lo siguiente:
+css:
+"node_modules/bootstrap/dist/css/bootstrap.min.css"
+
+js:
+"node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+
+
+**nota:la etiquete router-outlet siempre debe ir en el
+app component**
+
+<router-outlet></router-outlet>
+
+**crear componentes**
+
+comando:
+ng g c componente/barra
+ng g c componente/carrusel
+ng generate component componente/barra
+
+
+
+
+
