@@ -24,6 +24,10 @@ cd my-first-project
 que se encuentre detenido para instalar complementos**
 ng serve
 
+**ojo no abrir con open live serve, abrir con la url**
+url del proyecto: http://localhost:4200/
+
+
 revisar el componente app, recordemos que ahi estan
 los archivos principales del proyecto,
 vamos a limpiar el app.component.html.
@@ -41,6 +45,17 @@ css:
 js:
 "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
 
+**solución cuando no cargan los estilo de bootstrap**
+
+npm install bootstrap --save
+**esto se importa en el archivo css que esta fuera del app**
+@import "~bootstrap/dist/css/bootstrap.css";
+
+**iconos**
+npm i bootstrap-icons
+"node_modules/bootstrap-icons/font/bootstrap-icons.css"
+
+
 
 **nota:la etiquete router-outlet siempre debe ir en el
 app component**
@@ -50,11 +65,24 @@ app component**
 **crear componentes**
 
 comando:
-ng g c componente/barra
+**nota:--skip-tests=true sirve para eliminar el archivo spec**
+ng g c componente/barra --skip-tests=true
+
+ng g c componente/formulario1 --skip-tests=true
+
+ng g c componente/carrusel --skip-tests=true
+
+ng g c componente/cards --skip-tests=true
+
+ng g c componente/footer --skip-tests=true
+
 ng g c componente/carrusel
 ng generate component componente/barra
 
 
+**llamar componentes**
+<app-barra></app-barra>
 
 
-
+**crear rutas**
+{path:'cards',component:CardsComponent}
