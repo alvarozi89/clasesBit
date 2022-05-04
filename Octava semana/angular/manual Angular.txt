@@ -34,6 +34,7 @@ vamos a limpiar el app.component.html.
 **nota: no abrir con open live serve, abrir con la url que entrega angular**
 
 **instalar bootstrap**
+**ojo: importar los estilos dentro de las primeras lineas**
 primero correr el siguiente comando
 npm install bootstrap
 segundo vamos a importar la ruta en angular.json,
@@ -76,7 +77,12 @@ ng g c componente/cards --skip-tests=true
 
 ng g c componente/footer --skip-tests=true
 
+ng g c componente/xbox --skip-tests=true
+ng g c componente/ps5 --skip-tests=true
+ 
+
 ng g c componente/carrusel
+ng g c componente/footer
 ng generate component componente/barra
 
 
@@ -86,3 +92,12 @@ ng generate component componente/barra
 
 **crear rutas**
 {path:'cards',component:CardsComponent}
+
+**build a un proyecto**
+ng build
+
+**despliegue**
+ng add angular-cli-ghpages
+https://alvarozi89.github.io/pruebaAngular/
+
+ng deploy --base-href=https://alvarozi89.github.io/pruebaAngular/

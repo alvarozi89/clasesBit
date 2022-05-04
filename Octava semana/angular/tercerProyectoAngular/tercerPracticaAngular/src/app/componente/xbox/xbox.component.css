@@ -1,0 +1,8 @@
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+.carousel-inner img {
+  width: 600px;
+  height: 600px;
+}
