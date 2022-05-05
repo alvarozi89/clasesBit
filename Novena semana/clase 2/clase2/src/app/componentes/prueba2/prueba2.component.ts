@@ -12,6 +12,26 @@ export class Prueba2Component implements OnInit {
 
   public consolas:any
 
+  public consolas2=
+  [
+    {
+    marca:"Xboaaax",
+    anio: "2006aa",
+    precio: 500
+    },
+
+    {
+    marca:"ps4445",
+    anio: "2004",
+    precio: 600
+    },
+    {
+    marca:"nintendo",
+    anio: "2001",
+    precio: 300
+    }
+  ];
+
   // public consolas =
   // [
   //   {
@@ -74,7 +94,7 @@ export class Prueba2Component implements OnInit {
   }
 
 
-  //esta funciones deben centrarse en envetos, como clic, change
+  //esta funciones deben centrarse en enventos, como clic, change
   eliminarPersona(){
 
   }

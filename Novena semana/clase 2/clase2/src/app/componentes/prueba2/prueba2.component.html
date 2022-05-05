@@ -1,7 +1,7 @@
 <h1>{{titulo}}</h1>
 
 <h3>Nombre con pipe mayuscula: {{nombrePrueba | uppercase}}</h3>
-<h3>Nombre con pipe minuscual: {{nombrePrueba | lowercase}}</h3>
+<h3>Nombre con pipe minuscual: {{nombrePrueba2 | lowercase}}</h3>
 
 <h4>Año de lanzamiento: {{anioLanzamiento | date}}</h4>
 
@@ -17,38 +17,58 @@
   <img src="https://cdn.dribbble.com/users/2973561/screenshots/5757826/loading__.gif" alt="">
 </div>
 
-<div *ngFor="let i of consolas">
-  <h5>Tipo de consola: {{i.marca | uppercase }}</h5>
-  <h5>año de lanzamiento: {{i.anio}}</h5>
-  <h5>Precio: {{i.precio | currency}}</h5>
+
+<div *ngIf="1<1">
+  <h1>Se cumplio la condición 1===1</h1>
+</div>
+
+<div *ngIf="consolas.length===0">
+  <h1>No hay consolas</h1>
+</div>
+
+<div *ngIf="consolas.length > 0">
+  <h1>Si hay datos</h1>
+
+  <div *ngFor="let i of consolas">
+    <h5>Tipo de consola: {{i.marca | uppercase }}</h5>
+    <h5>año de lanzamiento: {{i.anio}}</h5>
+    <h5>Precio: {{i.precio | currency}}</h5>
+  </div>
+
+  <hr>
+  <hr>
+
+  <ul *ngFor="let i of consolas">
+    <li>Tipo de consola: {{i.marca | uppercase }}</li>
+    <li>año de lanzamiento: {{i.anio}}</li>
+    <li>Precio: {{i.precio | currency}}</li>
+  </ul>
+
+  <hr>
+  <hr>
+
+  <table>
+    <tr>
+      <th>Consola</th>
+      <th>año de lanzamiento</th>
+      <th>Precio</th>
+    </tr>
+    <tbody *ngFor="let i of consolas">
+      <tr>
+        <td>Tipo de consola: {{i.marca | uppercase }}</td>
+        <td>año de lanzamiento: {{i.anio}}</td>
+        <td>Precio: {{i.precio | currency}}</td>
+      </tr>
+
+    </tbody>
+
+  </table>
 </div>
 
 <hr>
-<hr>
 
-<ul *ngFor="let i of consolas">
-  <li>Tipo de consola: {{i.marca | uppercase }}</li>
-  <li>año de lanzamiento: {{i.anio}}</li>
-  <li>Precio: {{i.precio | currency}}</li>
-</ul>
+<!-- tema pendiente -->
+<!-- <app-listado-consolas [consolas]="consolas"></app-listado-consolas> -->
 
-<hr>
-<hr>
 
-<table>
-  <tr>
-    <th>Consola</th>
-    <th>año de lanzamiento</th>
-    <th>Precio</th>
-  </tr>
-  <tbody *ngFor="let i of consolas">
-    <tr>
-      <td>Tipo de consola: {{i.marca | uppercase }}</td>
-      <td>año de lanzamiento: {{i.anio}}</td>
-      <td>Precio: {{i.precio | currency}}</td>
-    </tr>
-
-  </tbody>
-
-</table>
 
