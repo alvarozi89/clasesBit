@@ -15,18 +15,18 @@ export class Prueba2Component implements OnInit {
   public consolas2=
   [
     {
-    marca:"Xboaaax",
+    marca:"Nueva consola",
     anio: "2006aa",
     precio: 500
     },
 
     {
-    marca:"ps4445",
+    marca:"ps4",
     anio: "2004",
     precio: 600
     },
     {
-    marca:"nintendo",
+    marca:"wii",
     anio: "2001",
     precio: 300
     }
