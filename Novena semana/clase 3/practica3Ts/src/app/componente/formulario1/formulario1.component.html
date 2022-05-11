@@ -26,6 +26,7 @@
                 <label>Estrato</label>
                 <select class="form-control" formControlName="estrato">
                   <option value="" selected>SELECCIONAR</option>
+                  <option *ngFor="let item of estrato" value="{{item}}">{{item}}</option>
                 </select>
               </div>
 
@@ -33,11 +34,12 @@
                 <label>Ciudad</label>
                 <select class="form-control" formControlName="ciudad">
                   <option value="" selected>SELECCIONAR</option>
+                  <option *ngFor="let item of ciudad" value="{{item}}">{{item}}</option>
                 </select>
               </div>
 
             </div>
-            <button type="submit" class="btn btn-outline-info my-3"> <i class="bi bi-save"></i> Guardar</button>
+            <button (click)="guardar_detalle(formValue)" type="submit" class="btn btn-outline-info my-3"> <i class="bi bi-save"></i> Guardar</button>
         </form>
         </div>
 
@@ -58,14 +60,40 @@
             <th scope="col">Ciudad</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody *ngFor="let item of data_detalle; let index = index ">
           <tr>
-            <td></td>
-            <td><button type="button" class="btn btn-outline-danger"><i class="bi bi-trash3"></i></button></td>
+            <td>{{index+1}}</td>
+            <td>{{item.nombres}}</td>
+            <td>{{item.apellidos}}</td>
+            <td>{{item.estrato}}</td>
+            <td>{{item.ciudad}}</td>
+            <td><button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-trash3"></i></button></td>
           </tr>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Eliminar registro</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h1>¿Realmente desea eliminar el registro?</h1>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary"data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal" (click)="remover(index)">Eliminar</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </tbody>
+        <h1>Total de registros: {{contador}}</h1>
       </table>
     </div>
   </div>
+
+
+<!-- Modal -->
+
 
 </div>
