@@ -106,4 +106,5 @@ import swal from'sweetalert2';
 
 
 **servicios**
+ng generate service nombre-componente --module=app
 ng g s servicios/api --skip-tests=true
