@@ -1,5 +1,5 @@
 {
-  "name": "practica3-ts",
+  "name": "front-jefes",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -11,20 +11,14 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~13.3.0",
-    "@angular/cdk": "^13.3.6",
     "@angular/common": "~13.3.0",
     "@angular/compiler": "~13.3.0",
     "@angular/core": "~13.3.0",
     "@angular/forms": "~13.3.0",
-    "@angular/material": "^13.3.6",
     "@angular/platform-browser": "~13.3.0",
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
-    "bootstrap": "^5.1.3",
-    "bootstrap-icons": "^1.8.1",
-    "ngx-pagination": "^5.1.1",
     "rxjs": "~7.5.0",
-    "sweetalert2": "^11.4.13",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },

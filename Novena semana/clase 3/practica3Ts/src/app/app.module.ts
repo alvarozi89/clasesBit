@@ -16,13 +16,21 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatMenuModule} from '@angular/material/menu';
+import { CardComponent } from './componente/card/card.component';
+
+
+//http
+import { HttpClientModule } from '@angular/common/http';
+
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
     AppComponent,
     CalculadoraComponent,
     Formulario1Component,
-    BarraComponent
+    BarraComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +41,9 @@ import {MatMenuModule} from '@angular/material/menu';
     MatButtonModule,
     MatMenuModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

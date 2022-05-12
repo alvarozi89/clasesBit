@@ -101,5 +101,9 @@ ng add angular-cli-ghpages
 https://alvarozi89.github.io/pruebaAngular/
 
 ng deploy --base-href=https://alvarozi89.github.io/pruebaAngular/
-
+**Alertas**
 import swal from'sweetalert2';
+
+
+**servicios**
+ng g s servicios/api --skip-tests=true
