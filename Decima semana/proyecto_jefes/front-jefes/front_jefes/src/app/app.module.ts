@@ -13,6 +13,14 @@ import { PaginaNoAutorizadaComponent } from './componente/pagina-no-autorizada/p
 import { BarraComponent } from './componente/barra/barra.component';
 import { FooterComponent } from './componente/footer/footer.component';
 
+
+//estos son requisitos cuando trabajamos con formularios
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+
+//http
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +36,11 @@ import { FooterComponent } from './componente/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

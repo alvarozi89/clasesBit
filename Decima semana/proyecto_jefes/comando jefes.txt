@@ -1,0 +1,33 @@
+
+ng g c componente/login --skip-tests=true
+ng g c componente/barra --skip-tests=true
+
+
+ng g c componente/jefes/jefes-crear --skip-tests=true
+ng g c componente/jefes/jefes-index --skip-tests=true
+
+
+ng g c componente/empleados/empleados-index --skip-tests=true
+ng g c componente/empleados/empleados-crear --skip-tests=true
+
+ng g c componente/inicio --skip-tests=true
+
+ng g c componente/pagina-no-autorizada --skip-tests=true
+
+ng g s servicios/jefe --skip-tests=true
+ng g s servicios/empleado --skip-tests=true
+
+ng g c componente/pagina-no-autorizado --skip-tests=true
+
+   "styles": [
+              "src/styles.css",
+              "node_modules/mdb-ui-kit/css/mdb.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+
+
+            ],
+            "scripts": [
+
+              "node_modules/mdb-ui-kit/js/mdb.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
