@@ -10,12 +10,13 @@ import { JefeService } from 'src/app/servicios/jefe.service';
 })
 export class LoginComponent implements OnInit {
 
+  //son variables auxiliares
   public user: any;
   public token: any;
   public identity:any;
   public nombre: any;
   public mensaje_ok:any;
-  public mensaje_erro:any;
+  public mensaje_error:any;
 
   formValue !: FormGroup;
 
