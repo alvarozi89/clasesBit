@@ -27,7 +27,7 @@ export class JefeService {
     }))
   }
 
-  login(user: any,obtenerToken=null){
+  login(user: any,obtenerToken=null):Observable<any>{
     let json=user;
     if(obtenerToken!=null){
       user.token=true
@@ -36,7 +36,7 @@ export class JefeService {
     return this.http.post(base_url+'jefe/login',json,{headers:headers})
   }
 
-  obtenerToken(){
+  obtenerToken():Observable<any>{
     let tokenAuxiliar = localStorage.getItem('token')
     if(tokenAuxiliar){
       this.token=tokenAuxiliar
@@ -47,7 +47,7 @@ export class JefeService {
     return this.token
   }
 
-  obtenerIdentidad(){
+  obtenerIdentidad():Observable<any>{
     let identityAuxiliar = localStorage.getItem('id')
     if(identityAuxiliar){
       this.identity=identityAuxiliar
@@ -58,7 +58,7 @@ export class JefeService {
     return this.identity
   }
 
-  obtenerNombre(){
+  obtenerNombre():Observable<any>{
 
     let nombresAuxiliar = localStorage.getItem('nombre')
     if(nombresAuxiliar){

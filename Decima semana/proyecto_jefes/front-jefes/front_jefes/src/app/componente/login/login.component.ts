@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder,FormGroup,Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { JefeService } from 'src/app/servicios/jefe.service';
-import { Jefe } from '../models/jefe.models';
+
 
 @Component({
   selector: 'app-login',
@@ -53,25 +53,21 @@ export class LoginComponent implements OnInit {
       this.jefeService.login(this.formValue.value).subscribe(
         response=>{
           console.log(response)
-
-          if(response=="correo incorrecto"){
+          if(response.mensaje=="correo incorrecto"){
             alert("El correo no existe")
           }
-
-          else if(response=="Contraseña incorrecta"){
+          else if(response.mensaje=="Contraseña incorrecta"){
             alert("La contraseña no es correcta")
           }
-
           else{
             alert("Inicio de sesión correcto")
                 //estas variables auxiliares contiene los datos de la bd
-                this.token=response
-                this.nombre=response
-                this.identity=response
+                this.token=response.token
+                this.nombre=response.nombre
+                this.identity=response.id
                 localStorage.setItem('token',this.token);
                 localStorage.setItem('nombres',this.nombre);
                 localStorage.setItem('id',this.identity);
-
             this.jefeService.login(this.formValue.value).subscribe(
               response=>{
                 console.log(response)
