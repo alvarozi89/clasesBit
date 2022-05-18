@@ -108,3 +108,45 @@ import swal from'sweetalert2';
 **servicios**
 ng generate service nombre-componente --module=app
 ng g s servicios/api --skip-tests=true
+
+
+
+**Despliegue**
+
+Front: 
+
+https://dev.to/gedgonz/haciendo-deploy-de-una-app-en-angular-a-heroku-16ji
+instalar express
+
+"scripts": {
+    "ng": "ng",
+    "start": "node server.js",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+
+    "heroku-postbuild": "ng build --prod"
+  },
+luego crear un archivo llamado server.js:
+
+const path = require('path');
+const express = require('express');
+const app = express();
+
+// Serve static files
+app.use(express.static(__dirname + '/dist/front-jefes'));
+
+// Send all requests to index.html
+app.get('/*', function(req, res) {
+  res.sendFile(path.join(__dirname + '/dist/front-jefes/index.html'));
+});
+
+// default Heroku port
+app.listen(process.env.PORT || 5000);
+
+
+backend:
+
+solo agregar en el script:
+
+  "start": "node src/index.js"

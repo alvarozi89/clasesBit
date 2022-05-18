@@ -9,6 +9,7 @@ const empleadoSchema = new Schema({
     correo: String,
     tipoContrato: String,
     jefe: String,
+   
     date:{type:Date,default:Date.now}
 })
 

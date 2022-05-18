@@ -43,11 +43,13 @@ export class LoginComponent implements OnInit {
   login(){
 
     if(this.formValue.value.correo==""){
-      alert("Debe diligenciar su correo")
+      //alert("Debe diligenciar su correo")
+      this.mensaje_error="Debe diligenciar su correo"
     }
 
     else if(this.formValue.value.contrasena==""){
-      alert("Debe diligenciar su contraseña")
+      //alert("Debe diligenciar su contraseña")
+      this.mensaje_error="Debe diligenciar su contraseña"
     }
     else{
       this.jefeService.login(this.formValue.value).subscribe(
@@ -87,4 +89,9 @@ export class LoginComponent implements OnInit {
       )
     }
   }
+
+  cerrarAlerta(){
+    this.mensaje_error=""
+  }
+
 }
