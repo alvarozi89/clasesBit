@@ -17,9 +17,9 @@ export class BarraComponent implements OnInit {
 
   constructor(private jefeService:JefeService, private router:Router)
   {
-    // this.id= this.jefeService.identity();
-    // this.token= this.jefeService.obtenerToken();
-    // this.nombre= this.jefeService.obtenerNombre();
+    this.id= this.jefeService.obtenerIdentidad();
+    this.token= this.jefeService.obtenerToken();
+    this.nombre= this.jefeService.obtenerNombre();
 
   }
 
@@ -29,7 +29,7 @@ export class BarraComponent implements OnInit {
   cerrarSesion(){
 
     localStorage.removeItem('token');
-    localStorage.removeItem('nombres');
+    localStorage.removeItem('nombre');
     localStorage.removeItem('id');
 
     this.id=null;

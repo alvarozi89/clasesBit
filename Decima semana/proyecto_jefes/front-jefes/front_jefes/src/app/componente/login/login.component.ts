@@ -56,10 +56,12 @@ export class LoginComponent implements OnInit {
         response=>{
           console.log(response)
           if(response.mensaje=="correo incorrecto"){
-            alert("El correo no existe")
+
+            this.mensaje_error="El correo no existe"
           }
           else if(response.mensaje=="Contraseña incorrecta"){
-            alert("La contraseña no es correcta")
+
+            this.mensaje_error="La contraseña no es correcta"
           }
           else{
             alert("Inicio de sesión correcto")
@@ -68,7 +70,7 @@ export class LoginComponent implements OnInit {
                 this.nombre=response.nombre
                 this.identity=response.id
                 localStorage.setItem('token',this.token);
-                localStorage.setItem('nombres',this.nombre);
+                localStorage.setItem('nombre',this.nombre);
                 localStorage.setItem('id',this.identity);
             this.jefeService.login(this.formValue.value).subscribe(
               response=>{
