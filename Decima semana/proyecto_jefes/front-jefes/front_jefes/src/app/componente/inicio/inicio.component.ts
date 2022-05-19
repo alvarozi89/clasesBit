@@ -23,14 +23,14 @@ export class InicioComponent implements OnInit {
 
   validar(){
     if(this.token){
-      this.jefeService.obtenerToken().subscribe(
-        response=>{
-          console.log(response)
-        },
-        error=>{
-          console.log(error)
-        }
-      );
+      // this.jefeService.obtenerToken().subscribe(
+      //   response=>{
+      //     console.log(response)
+      //   },
+      //   error=>{
+      //     console.log(error)
+      //   }
+      // );
     }
     else{
       this.router.navigate(['no-autorizado'])
