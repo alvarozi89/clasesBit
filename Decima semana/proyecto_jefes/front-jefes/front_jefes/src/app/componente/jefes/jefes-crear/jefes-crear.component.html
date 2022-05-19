@@ -10,8 +10,23 @@
         </div>
 
         <div class="card-body">
-          <form>
+          <form [formGroup]="formValue">
             <div class="row">
+
+              <div *ngIf="mensaje_ok">
+                <div class="alert alert-success alert-dismissible fade show" role="alert" >
+                  <strong>{{mensaje_ok}}</strong>
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+              </div>
+
+
+              <div *ngIf="mensaje_error">
+                <div class="alert alert-danger alert-dismissible fade show" role="alert" >
+                  <strong>{{mensaje_error}}</strong>
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" (click)="cerrarAlerta()"></button>
+                </div>
+              </div>
 
               <div class="col-md-6">
                 <label>Nombre</label>
@@ -29,7 +44,7 @@
               </div>
             </div>
 
-            <button type="submit" class="btn btn-outline-info my-3"> <i class="bi bi-person-plus-fill"></i> Crear jefe</button>
+            <button type="submit" class="btn btn-outline-info my-3" (click)="CrearJefe()"> <i class="bi bi-person-plus-fill"></i> Crear jefe</button>
         </form>
         </div>
       </div>

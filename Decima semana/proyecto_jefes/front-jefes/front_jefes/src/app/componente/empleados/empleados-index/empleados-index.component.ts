@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmpleadosIndexComponent implements OnInit {
 
+  public data_detalle:any
   constructor() { }
 
   ngOnInit(): void {
