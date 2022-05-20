@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable,map} from 'rxjs';
 import { HttpClient,HttpHeaders } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
+import { JefeService } from './jefe.service';
 
 const base_url= environment.url
 @Injectable({
@@ -15,7 +16,7 @@ export class EmpleadoService {
    public nombres: any;
    public id: any;
 
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient,private jefeService:JefeService) {this.token= this.jefeService.obtenerToken(); }
 
     //las rutas deben ser iguales a las de backend
     listarEmpleados(){
@@ -25,26 +26,45 @@ export class EmpleadoService {
       }))
     }
 
-    obtenerEmpleadosDeUnJefe(){
-      return this.http.get<any>(base_url+'empleado/listarEmpleados')
+    obtenerEmpleadosDeUnJefe(id:any){
+      let headers = new HttpHeaders().set('autorizacion',this.token)
+      return this.http.get<any>(base_url+'empleado/listarEmpleadoPorJefe/'+id,{headers:headers})
       .pipe(map((res:any)=>{
         return res;
       }))
     }
 
-    buscarFiltro(){
-      return this.http.get<any>(base_url+'empleado/listarEmpleados')
+    obtenerIdEmpleado(id:any){
+      return this.http.get<any>(base_url+'empleado/listarEmpleadoId/'+id)
       .pipe(map((res:any)=>{
         return res;
       }))
     }
 
-    eliminarEmpleado(){
 
+    buscarFiltro(id:any,nombre:any){
+      return this.http.get<any>(base_url+'empleado/listarEmpleadoPorJefeFiltro/'+id +'/' + nombre)
+      .pipe(map((res:any)=>{
+        return res;
+      }))
     }
 
-    actualizarEmpleado(){
+    CrearEmpleado(data:any){
+      return this.http.post<any>(base_url+'empleado/crearEmpleado',data)
+      .pipe(map((res:any)=>{
+        return res;
+      }))
+    }
 
+    eliminarEmpleado(id:any){
+      return this.http.delete<any>(base_url+'empleado/eliminarEmpleado/'+id)
+    }
+
+    actualizarEmpleado(id:any, data:any){
+      return this.http.put<any>(base_url+'empleado/actualizarEmpleado/'+id,data)
+      .pipe(map((res:any)=>{
+        return res;
+      }))
     }
 
 

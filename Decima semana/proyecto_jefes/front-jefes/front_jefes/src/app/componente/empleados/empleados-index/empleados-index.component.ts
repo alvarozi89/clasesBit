@@ -21,19 +21,34 @@ export class EmpleadosIndexComponent implements OnInit {
   public filtro:any;
   public filtroText:any;
   public data_detalle:any;
+  public token:any;
 
-  constructor
-  (
+
+
+  constructor(
     private formBuilder:FormBuilder,
     private jefeService:JefeService,
     private empleadoService:EmpleadoService,
     private router:Router
 
   )
-  {this.id_jefe= this.jefeService.obtenerIdentidad();}
+  {
+    this.id_jefe= this.jefeService.obtenerIdentidad();
+    this.token= this.jefeService.obtenerToken();
+  }
 
   ngOnInit(): void {
-    this.listar();
+    this.validar();
+  }
+
+  validar(){
+    if(this.token){
+
+      this.listarEmpleadosPorJefe();
+    }
+    else{
+      this.router.navigate(['no-autorizado'])
+    }
   }
 
   listar(){
@@ -44,5 +59,28 @@ export class EmpleadosIndexComponent implements OnInit {
     })
 
   }
+
+  listarEmpleadosPorJefe(){
+    this.empleadoService.obtenerEmpleadosDeUnJefe(this.id_jefe)
+    .subscribe(res=>{
+      this.datos_empleados=res
+      console.log(this.datos_empleados)
+    })
+
+  }
+
+  search(searchForm:any){
+    this.empleadoService.buscarFiltro(this.id_jefe,searchForm.value.filtro)
+    .subscribe(res=>{
+      this.datos_empleados=res
+      console.log(this.datos_empleados)
+    })
+
+    if(this.filtroText==""){
+      this.listarEmpleadosPorJefe();
+    }
+  }
+
+
 
 }

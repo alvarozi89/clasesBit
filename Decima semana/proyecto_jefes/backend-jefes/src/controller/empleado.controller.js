@@ -42,12 +42,12 @@ empleadoCtrl.empleadosDeUnJefe = async(req,res)=>{
     res.json(respuesta)
 }
 
-// empleadoCtrl.empleadosDeUnJefeBuscar = async(req,res)=>{
-//     const id = req.params.id
-//     const {nombres} = req.params;
-//     const respuesta = await empleadoModels.find({jefe:id,nombres:{$regex:"^"+ nombres,$options:'i'}})
-//     res.json(respuesta)
-// }
+empleadoCtrl.empleadosDeUnJefeBuscar = async(req,res)=>{
+    const id = req.params.id
+    const {nombres} = req.params;
+    const respuesta = await empleadoModels.find({jefe:id,nombres:{$regex:"^"+ nombres,$options:'i'}})
+    res.json(respuesta)
+}
 
 //Esta consulta aplica para otro contexto
 // empleadoCtrl.buscarPorCoincidencia = async (req,res)=>{

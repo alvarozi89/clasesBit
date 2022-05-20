@@ -15,9 +15,9 @@
 
               <div class="col-lg-6 my-2">
                   <h5 class="card-title">Filtro de empleados</h5>
-                  <form>
+                  <form #searchForm="ngForm" (ngSubmit)="search(searchForm)">
                       <div class="input-group date" id="datetimepicker-minimum" data-target-input="nearest">
-                          <input type="text" class="form-control datetimepicker-input">
+                          <input type="text" class="form-control datetimepicker-input"  #filtro="ngModel" name="filtro" [(ngModel)]="filtroText">
                           <div class="input-group-append">
                               <button type="submit" class="input-group-text"><i class="bi bi-search"></i></button>
                           </div>
@@ -48,8 +48,10 @@
                     <td>{{item.correo}}</td>
                     <td>{{item.tipoContrato}}</td>
 
-                    <td><button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-trash3"></i></button> </td>
-                    <td><button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-wrench-adjustable"></i></button></td>
+                    <td><button type="button" class="btn btn-outline-danger me-2 my-2" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-trash3"></i></button>
+                      <button type="button" class="btn btn-outline-info me-2 my-2" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-wrench-adjustable"></i></button>
+                   </td>
+
                   </tr>
                   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">

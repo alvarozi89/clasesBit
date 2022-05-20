@@ -9,6 +9,11 @@ router.get('/listarEmpleados',empleadoCtrl.listar)
 router.get('/listarEmpleadoId/:id',empleadoCtrl.listarId)
 router.get('/listarEmpleadoCedula/:cedula',empleadoCtrl.listarCedula)
 router.get('/listarEmpleadoPorJefe/:id',auth.verificarToken,empleadoCtrl.empleadosDeUnJefe)
+
+router.get('/listarEmpleadoPorJefeFiltro/:id/:nombres',empleadoCtrl.empleadosDeUnJefeBuscar)
+
+
+
 router.get('/buscarPorCoincidenciaEmpleado/:nombres',empleadoCtrl.buscarPorCoincidencia)
 router.get('/buscarPorCoincidenciaEmpleadoMayusculas/:nombres',empleadoCtrl.buscarPorCoincidenciaMayusculas)
 

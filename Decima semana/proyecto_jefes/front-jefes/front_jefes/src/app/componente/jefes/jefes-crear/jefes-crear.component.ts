@@ -71,8 +71,9 @@ export class JefesCrearComponent implements OnInit {
         }
         else{
           this.mensaje_ok="Se registro correctamente"
-          alert("Se registro correctamente")
-          this.router.navigate(['']);
+          setTimeout(() => {
+            this.router.navigate(['']);
+          }, 2000);
         }
       },
       err=>{
