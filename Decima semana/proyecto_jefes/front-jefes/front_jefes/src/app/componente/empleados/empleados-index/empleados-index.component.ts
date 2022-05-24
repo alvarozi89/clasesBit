@@ -84,10 +84,15 @@ export class EmpleadosIndexComponent implements OnInit {
     }
   }
 
-  eliminarEmpleado(item:any){
-    this.empleadoService.eliminarEmpleado(item)
+
+  obtenerId(item:any){
+    this.EmpleadoModel._id = item._id
+  }
+
+  eliminarEmpleado(){
+    this.empleadoService.eliminarEmpleado(this.EmpleadoModel._id)
     .subscribe(res=>{
-      alert("Empleado eliminado "+item)
+      alert("Empleado eliminado "+this.EmpleadoModel._id)
       this.listarEmpleadosPorJefe()
     })
   }
@@ -114,6 +119,8 @@ export class EmpleadosIndexComponent implements OnInit {
     this.formValue.controls['tipoContrato'].setValue(item.tipoContrato)
 
   }
+
+
 
   actualizarEmpleado(){
 

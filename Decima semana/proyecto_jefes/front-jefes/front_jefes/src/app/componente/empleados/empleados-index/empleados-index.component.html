@@ -25,11 +25,10 @@
                   </form>
               </div>
               <div class="table-responsive-sm">
-                <table class="table table-bordered ">
+                <table class="table table-bordered">
                   <thead>
                     <tr>
                       <th scope="col">#</th>
-                      <th scope="col">Id</th>
                       <th scope="col">Nombres</th>
                       <th scope="col">Apellidos</th>
                       <th scope="col">Cedula</th>
@@ -42,7 +41,6 @@
                   <tbody *ngFor="let item of datos_empleados; let index = index ">
                     <tr>
                       <td>{{index+1}}</td>
-                      <td>{{item._id}}</td>
                       <td>{{item.nombres}}</td>
                       <td>{{item.apellidos}}</td>
                       <td>{{item.cedula}}</td>
@@ -50,7 +48,7 @@
                       <td>{{item.correo}}</td>
                       <td>{{item.tipoContrato}}</td>
 
-                      <td><button type="button" class="btn btn-outline-danger me-2 my-2" (click)="eliminarEmpleado(item._id)"><i class="bi bi-trash3"></i></button>
+                      <td><button type="button" class="btn btn-outline-danger me-2 my-2" data-bs-toggle="modal" data-bs-target="#modalEliminar" (click)="obtenerId(item)"><i class="bi bi-trash3"></i></button>
                         <button type="button" class="btn btn-outline-info me-2 my-2" data-bs-toggle="modal" data-bs-target="#modalActualizar" (click)="editar(item)"><i class="bi bi-wrench-adjustable"></i></button>
                      </td>
 
@@ -69,7 +67,7 @@
                           </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-secondary"data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal" (click)="eliminarEmpleado(item._id)">Eliminar</button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal" (click)="eliminarEmpleado()">Eliminar</button>
                           </div>
                         </div>
                       </div>
@@ -77,7 +75,7 @@
 
                     <!-- Modal actualizar -->
                     <div class="modal fade" id="modalActualizar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog">
+                      <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                           <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel">Actualizar registro</h5>
