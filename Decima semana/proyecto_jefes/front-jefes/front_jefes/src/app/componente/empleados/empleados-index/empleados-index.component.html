@@ -24,54 +24,118 @@
                       </div>
                   </form>
               </div>
+              <div class="table-responsive-sm">
+                <table class="table table-bordered ">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Id</th>
+                      <th scope="col">Nombres</th>
+                      <th scope="col">Apellidos</th>
+                      <th scope="col">Cedula</th>
+                      <th scope="col">Cargo</th>
+                      <th scope="col">Correo</th>
+                      <th scope="col">Tipo de contrato</th>
+                      <th scope="col">Acciones</th>
+                    </tr>
+                  </thead>
+                  <tbody *ngFor="let item of datos_empleados; let index = index ">
+                    <tr>
+                      <td>{{index+1}}</td>
+                      <td>{{item._id}}</td>
+                      <td>{{item.nombres}}</td>
+                      <td>{{item.apellidos}}</td>
+                      <td>{{item.cedula}}</td>
+                      <td>{{item.cargo}}</td>
+                      <td>{{item.correo}}</td>
+                      <td>{{item.tipoContrato}}</td>
 
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Nombres</th>
-                    <th scope="col">Apellidos</th>
-                    <th scope="col">Cedula</th>
-                    <th scope="col">Cargo</th>
-                    <th scope="col">Correo</th>
-                    <th scope="col">Tipo de contrato</th>
-                    <th scope="col">Acciones</th>
-                  </tr>
-                </thead>
-                <tbody *ngFor="let item of datos_empleados; let index = index ">
-                  <tr>
-                    <td>{{index+1}}</td>
-                    <td>{{item.nombres}}</td>
-                    <td>{{item.apellidos}}</td>
-                    <td>{{item.cedula}}</td>
-                    <td>{{item.cargo}}</td>
-                    <td>{{item.correo}}</td>
-                    <td>{{item.tipoContrato}}</td>
+                      <td><button type="button" class="btn btn-outline-danger me-2 my-2" (click)="eliminarEmpleado(item._id)"><i class="bi bi-trash3"></i></button>
+                        <button type="button" class="btn btn-outline-info me-2 my-2" data-bs-toggle="modal" data-bs-target="#modalActualizar" (click)="editar(item)"><i class="bi bi-wrench-adjustable"></i></button>
+                     </td>
 
-                    <td><button type="button" class="btn btn-outline-danger me-2 my-2" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-trash3"></i></button>
-                      <button type="button" class="btn btn-outline-info me-2 my-2" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-wrench-adjustable"></i></button>
-                   </td>
+                    </tr>
 
-                  </tr>
-                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Eliminar registro</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <h1>¿Realmente desea eliminar el registro?</h1>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary"data-bs-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Eliminar</button>
+                    <!-- Modal eliminar -->
+                    <div class="modal fade" id="modalEliminar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Eliminar registro</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <h1>¿Realmente desea eliminar el registro?</h1>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal" (click)="eliminarEmpleado(item._id)">Eliminar</button>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </tbody>
-              </table>
+
+                    <!-- Modal actualizar -->
+                    <div class="modal fade" id="modalActualizar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Actualizar registro</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <form [formGroup]="formValue">
+                              <div class="row">
+
+                                <div class="col-md-6">
+                                  <label>Nombre</label>
+                                  <input type="text" class="form-control" formControlName="nombres">
+                                </div>
+
+                                <div class="col-md-6">
+                                  <label>apellidos</label>
+                                  <input type="text" class="form-control" formControlName="apellidos">
+                                </div>
+
+                                <div class="col-md-6">
+                                  <label>Cedula</label>
+                                  <input type="text" class="form-control" formControlName="cedula">
+                                </div>
+
+                                <div class="col-md-6">
+                                  <label>cargo</label>
+                                  <input type="text" class="form-control" formControlName="cargo">
+                                </div>
+
+                                <div class="col-md-6">
+                                  <label>correo</label>
+                                  <input type="text" class="form-control" formControlName="correo">
+                                </div>
+
+                                <div class="col-md-6">
+                                  <label>tipo de contrato</label>
+                                  <input type="text" class="form-control" formControlName="tipoContrato">
+                                </div>
+
+
+                              </div>
+
+                          </form>
+
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success" data-bs-dismiss="modal" (click)="actualizarEmpleado()">Actualizar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </tbody>
+                </table>
+              </div>
+
             </div>
         </div>
       </div>

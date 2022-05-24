@@ -57,6 +57,7 @@ export class EmpleadoService {
     }
 
     eliminarEmpleado(id:any){
+
       return this.http.delete<any>(base_url+'empleado/eliminarEmpleado/'+id)
     }
 

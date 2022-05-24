@@ -17,8 +17,8 @@ router.get('/listarEmpleadoPorJefeFiltro/:id/:nombres',empleadoCtrl.empleadosDeU
 router.get('/buscarPorCoincidenciaEmpleado/:nombres',empleadoCtrl.buscarPorCoincidencia)
 router.get('/buscarPorCoincidenciaEmpleadoMayusculas/:nombres',empleadoCtrl.buscarPorCoincidenciaMayusculas)
 
-router.delete('/eliminarEmpleado/:id',auth.verificarToken,empleadoCtrl.elimarEmpleado)
+router.delete('/eliminarEmpleado/:id',empleadoCtrl.elimarEmpleado)
 
-router.put('/actualizarEmpleado/:id' ,auth.verificarToken,empleadoCtrl.actualizarEmpleado)
+router.put('/actualizarEmpleado/:id' ,empleadoCtrl.actualizarEmpleado)
 
 module.exports= router

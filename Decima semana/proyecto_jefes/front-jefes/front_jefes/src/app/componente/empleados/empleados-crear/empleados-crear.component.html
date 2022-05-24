@@ -1,1 +1,73 @@
-<p>empleados-crear works!</p>
+<app-barra></app-barra>
+
+<div class="container my-4">
+  <div class="row">
+
+    <div class="col-md-10 mx-auto">
+      <div class="card">
+
+        <div class="card-header bg-warning text-center text-white">
+          <h1><i class="bi bi-person-circle"></i> Registrar Empleado</h1>
+        </div>
+
+        <div class="card-body">
+          <form >
+            <div class="row">
+
+              <div *ngIf="mensaje_ok">
+                <div class="alert alert-success alert-dismissible fade show" role="alert" >
+                  <strong>{{mensaje_ok}}</strong>
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+              </div>
+
+
+              <div *ngIf="mensaje_error">
+                <div class="alert alert-danger alert-dismissible fade show" role="alert" >
+                  <strong>{{mensaje_error}}</strong>
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" (click)="cerrarAlerta()"></button>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label>Nombre</label>
+                <input type="text" class="form-control" formControlName="nombres">
+              </div>
+
+              <div class="col-md-6">
+                <label>apellidos</label>
+                <input type="text" class="form-control" formControlName="apellidos">
+              </div>
+
+              <div class="col-md-6">
+                <label>Cedula</label>
+                <input type="text" class="form-control" formControlName="cedula">
+              </div>
+
+              <div class="col-md-6">
+                <label>cargo</label>
+                <input type="text" class="form-control" formControlName="cargo">
+              </div>
+
+              <div class="col-md-6">
+                <label>correo</label>
+                <input type="text" class="form-control" formControlName="correo">
+              </div>
+
+              <div class="col-md-6">
+                <label>tipo de contrato</label>
+                <input type="text" class="form-control" formControlName="tipoContrato">
+              </div>
+
+
+
+            </div>
+
+            <button type="submit" class="btn btn-outline-info my-3" (click)="CrearEmpleado()"> <i class="bi bi-person-plus-fill"></i> Crear empleado</button>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

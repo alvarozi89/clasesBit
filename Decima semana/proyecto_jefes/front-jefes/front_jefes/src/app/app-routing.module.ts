@@ -5,6 +5,7 @@ import { InicioComponent } from './componente/inicio/inicio.component';
 import { PaginaNoAutorizadaComponent } from './componente/pagina-no-autorizada/pagina-no-autorizada.component';
 import { JefesCrearComponent } from './componente/jefes/jefes-crear/jefes-crear.component';
 import { EmpleadosIndexComponent } from './componente/empleados/empleados-index/empleados-index.component';
+import { EmpleadosCrearComponent } from './componente/empleados/empleados-crear/empleados-crear.component';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path:'no-autorizado',component:PaginaNoAutorizadaComponent},
   {path:'jefe-crear',component:JefesCrearComponent},
   {path:'empleado-index',component:EmpleadosIndexComponent},
+  {path:'empleado-crear',component:EmpleadosCrearComponent},
 ];
 
 @NgModule({

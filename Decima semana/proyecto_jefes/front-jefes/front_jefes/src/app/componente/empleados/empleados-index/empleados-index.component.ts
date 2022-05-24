@@ -14,7 +14,7 @@ import { FormGroup } from '@angular/forms';
 export class EmpleadosIndexComponent implements OnInit {
 
   //Variable auxiliares
-  formaValue !:FormGroup
+  formValue !:FormGroup
   public datos_empleados:any
   public id: any;
   public id_jefe:any;
@@ -22,6 +22,8 @@ export class EmpleadosIndexComponent implements OnInit {
   public filtroText:any;
   public data_detalle:any;
   public token:any;
+
+  EmpleadoModel:Empleado = new Empleado();
 
 
 
@@ -39,6 +41,7 @@ export class EmpleadosIndexComponent implements OnInit {
 
   ngOnInit(): void {
     this.validar();
+    this.obtenerCampos();
   }
 
   validar(){
@@ -81,6 +84,55 @@ export class EmpleadosIndexComponent implements OnInit {
     }
   }
 
+  eliminarEmpleado(item:any){
+    this.empleadoService.eliminarEmpleado(item)
+    .subscribe(res=>{
+      alert("Empleado eliminado "+item)
+      this.listarEmpleadosPorJefe()
+    })
+  }
+
+  obtenerCampos(){
+    this.formValue= this.formBuilder.group({
+      nombres:[''],
+      apellidos:[''],
+      cedula:[''],
+      cargo:[''],
+      correo:[''],
+      tipoContrato:[''],
+    })
+  }
+
+  editar(item:any){
+
+    this.EmpleadoModel._id = item._id
+    this.formValue.controls['nombres'].setValue(item.nombres)
+    this.formValue.controls['apellidos'].setValue(item.apellidos)
+    this.formValue.controls['cedula'].setValue(item.cedula)
+    this.formValue.controls['correo'].setValue(item.correo)
+    this.formValue.controls['cargo'].setValue(item.cargo)
+    this.formValue.controls['tipoContrato'].setValue(item.tipoContrato)
+
+  }
+
+  actualizarEmpleado(){
+
+    this.EmpleadoModel.nombres= this.formValue.value.nombres;
+    this.EmpleadoModel.apellidos= this.formValue.value.apellidos;
+    this.EmpleadoModel.cedula= this.formValue.value.cedula;
+    this.EmpleadoModel.correo= this.formValue.value.correo;
+    this.EmpleadoModel.cargo= this.formValue.value.cargo;
+    this.EmpleadoModel.tipoContrato= this.formValue.value.tipoContrato;
+    this.EmpleadoModel.jefe= this.id_jefe;
+
+    this.empleadoService.actualizarEmpleado(this.EmpleadoModel._id,this.EmpleadoModel)
+    .subscribe(res=>{
+      alert("Persona actualizada")
+      this.listarEmpleadosPorJefe()
+    })
+
+
+  }
 
 
 }
