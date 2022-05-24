@@ -3,7 +3,7 @@ const router = Router();
 const empleadoCtrl = require('../controller/empleado.controller');
 const auth = require('../helper/auth');
 
-router.post('/crearEmpleado', auth.verificarToken,empleadoCtrl.crearEmpleado);
+router.post('/crearEmpleado',empleadoCtrl.crearEmpleado);
 
 router.get('/listarEmpleados',empleadoCtrl.listar)
 router.get('/listarEmpleadoId/:id',empleadoCtrl.listarId)

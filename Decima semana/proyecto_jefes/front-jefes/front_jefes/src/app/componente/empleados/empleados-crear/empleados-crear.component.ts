@@ -32,7 +32,7 @@ export class EmpleadosCrearComponent implements OnInit {
     ) {this.id_jefe= this.jefeService.obtenerIdentidad(); }
 
   ngOnInit(): void {
-    this.obtenerCampos()
+    this.obtenerCampos();
   }
 
   obtenerCampos(){
@@ -68,9 +68,10 @@ export class EmpleadosCrearComponent implements OnInit {
       .subscribe(res=>{
       console.log(res);
           this.mensaje_ok="Se registro correctamente"
-          setTimeout(() => {
-            this.router.navigate(['empleado-index']);
-          }, 2000);
+          this.formValue.reset();
+          // setTimeout(() => {
+          //   this.router.navigate(['empleado-index']);
+          // }, 2000);
       },
       err=>{
         console.log(err)
