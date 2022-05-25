@@ -1,0 +1,68 @@
+
+<div class="container my-4">
+  <div class="row">
+
+    <div class="col-md-10 mx-auto">
+      <div class="card">
+
+        <div class="card-header bg-info text-center text-white">
+          <h1><i class="bi bi-person-circle"></i> Registrar usuario</h1>
+        </div>
+
+        <div class="card-body">
+          <form [formGroup]="formValue">
+            <div class="row">
+
+              <div *ngIf="mensaje_ok">
+                <div class="alert alert-success alert-dismissible fade show" role="alert" >
+                  <strong>{{mensaje_ok}}</strong>
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+              </div>
+
+
+              <div *ngIf="mensaje_error">
+                <div class="alert alert-danger alert-dismissible fade show" role="alert" >
+                  <strong>{{mensaje_error}}</strong>
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" (click)="cerrarAlerta()"></button>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label>Nombre</label>
+                <input type="text" class="form-control" formControlName="nombres">
+              </div>
+
+              <div class="col-md-6">
+                <label>Apellidos</label>
+                <input type="email" class="form-control" formControlName="apellidos">
+              </div>
+
+              <div class="col-md-6">
+                <label>Correo</label>
+                <input type="email" class="form-control" formControlName="correo">
+              </div>
+
+              <div class="col-md-6">
+                <label>Rol</label>
+                <select class="form-control" formControlName="rol">
+                  <option value="" selected>SELECCIONAR</option>
+                  <option *ngFor="let item of rol" value="{{item}}">{{item}}</option>
+                </select>
+              </div>
+
+              <div class="col-md-6">
+                <label>Contraseña</label>
+                <input type="password" class="form-control" formControlName="contrasena">
+              </div>
+
+
+            </div>
+
+            <button type="submit" class="btn btn-outline-info my-3" (click)="CrearUsuario()"> <i class="bi bi-person-plus-fill"></i> Crear usuario</button>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

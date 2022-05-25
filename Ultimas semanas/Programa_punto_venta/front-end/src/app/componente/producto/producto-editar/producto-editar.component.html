@@ -1,0 +1,106 @@
+<app-barra></app-barra>
+<div class="container my-2">
+        <div class="container-fluid">
+            <div class="header">
+                <h1 class="header-title">
+                    Actualización de productos
+                </h1>
+            </div>
+            <div class="row">
+              <!-- <div class="col-12 col-lg-12" *ngIf="error_message">
+                <div  class="alert alert-danger alert-dismissible fade show" role="alert">
+                  <h5> {{error_message}} </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+              </div> -->
+              <!-- <div class="col-12 col-lg-12" *ngIf="success_message" >
+                <div  class="alert alert-success alert-dismissible fade show" role="alert">
+                  <h5> {{success_message}} </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+              </div> -->
+                <div class="col-12 col-xl-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="card-title">Complete el formulario</h5>
+                            <h6 class="card-subtitle text-muted">Productos.</h6>
+                        </div>
+                        <div class="card-body">
+                          <form>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="form-label">Titulo del producto</label>
+                                            <input type="text" class="form-control" formControlName="titulo"  placeholder="Ingrese el titulo del producto" name="titulo" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="form-group">
+                                            <label class="form-label">Precio compra</label>
+                                            <input type="number" class="form-control"  formControlName="precio_compra" placeholder="$0"  required>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="form-group">
+                                            <label class="form-label">Precio venta</label>
+                                            <input type="number" class="form-control" formControlName="precio_venta" placeholder="$0"  name="precio_venta" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <label class="form-label">Cantidad</label>
+                                        <input type="number" class="form-control" formControlName="stock" placeholder="0"   required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Descripcion</label>
+                                    <textarea class="form-control" formControlName="descripcion" placeholder="Breve descripcion"></textarea>
+                                </div>
+                                <div class="row">
+                                  <div class="col-lg-4">
+                                      <div class="form-group">
+                                          <label class="form-label">Categoria</label>
+                                          <select class="form-control" formControlName="idcategoria" required name="idcategoria">
+                                              <option disabled>SELECCIONAR</option>
+                                              <!-- <option *ngFor="let item of categorias" value={{item._id}}>{{item.titulo.toUpperCase()}}</option> -->
+                                          </select>
+                                      </div>
+                                  </div>
+                              </div>
+
+                                <button type="submit" class="btn btn-primary my-2">Actualizar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-4">
+                    <div class="card">
+                        <div class="card-header">
+                          Link de imagen
+                        </div>
+                        <!-- <div class="card-body">
+                            <div class="text-center">
+                                <img src="https://media.revistagq.com/photos/5f45010acb266484bb785c78/1:1/w_720,h_720,c_limit/dragon-ball-z.jpg" alt="Imagen" class="rounded-circle img-responsive mt-2" width="128" height="128">
+                                <div class="mt-2">
+                                    <input class="btn btn-primary" [(ngModel)]="imagenUrl" required type="text" style="width: 100% !important;">
+                                </div>
+                                <small>Debe importar el link de internet</small>
+                            </div>
+                        </div> -->
+                        <div class="card-body">
+                            <div class="text-center">
+                                <img alt="Chris Wood"  class="rounded-circle img-responsive mt-2" width="128" height="128">
+                                <div class="mt-2">
+                                    <input class="btn btn-primary"   type="file" style="width: 100% !important;">
+                                </div>
+                                <small>For best results, use an image at least 128px by 128px in .jpg
+                                format</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+

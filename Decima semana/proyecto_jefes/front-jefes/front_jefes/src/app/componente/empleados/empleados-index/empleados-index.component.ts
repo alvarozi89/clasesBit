@@ -5,6 +5,7 @@ import { JefeService } from 'src/app/servicios/jefe.service';
 import { Router } from '@angular/router';
 import { FormBuilder } from '@angular/forms';
 import { FormGroup } from '@angular/forms';
+import Swal from 'sweetalert2'
 
 @Component({
   selector: 'app-empleados-index',
@@ -73,15 +74,19 @@ export class EmpleadosIndexComponent implements OnInit {
   }
 
   search(searchForm:any){
-    this.empleadoService.buscarFiltro(this.id_jefe,searchForm.value.filtro)
-    .subscribe(res=>{
-      this.datos_empleados=res
-      console.log(this.datos_empleados)
-    })
 
     if(this.filtroText==""){
       this.listarEmpleadosPorJefe();
     }
+
+    else {
+      this.empleadoService.buscarFiltro(this.id_jefe,searchForm.value.filtro)
+      .subscribe(res=>{
+        this.datos_empleados=res
+        console.log(this.datos_empleados)
+      })
+    }
+
   }
 
 
@@ -92,7 +97,11 @@ export class EmpleadosIndexComponent implements OnInit {
   eliminarEmpleado(){
     this.empleadoService.eliminarEmpleado(this.EmpleadoModel._id)
     .subscribe(res=>{
-      alert("Empleado eliminado "+this.EmpleadoModel._id)
+      Swal.fire(
+        'Empleado eliminado!',
+        'You clicked the button!',
+        'error'
+       )
       this.listarEmpleadosPorJefe()
     })
   }
@@ -134,7 +143,12 @@ export class EmpleadosIndexComponent implements OnInit {
 
     this.empleadoService.actualizarEmpleado(this.EmpleadoModel._id,this.EmpleadoModel)
     .subscribe(res=>{
-      alert("Persona actualizada")
+
+      Swal.fire(
+        'Persona actualizada!',
+        'You clicked the button!',
+        'success'
+       )
       this.listarEmpleadosPorJefe()
     })
 

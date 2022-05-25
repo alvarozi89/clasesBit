@@ -96,7 +96,7 @@ usuarioCtrl.listarId = async(req,res)=>{
     res.json(respuesta)
 }
 
-usuarioCtrl.elimarProducto = async(req,res)=>{
+usuarioCtrl.elimarUsuario = async(req,res)=>{
     const id = req.params.id
     await usuarioModel.findByIdAndRemove({_id:id})
     res.json({

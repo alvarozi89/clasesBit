@@ -17,7 +17,7 @@ router.put('/actualizarUsuario/:id' ,usuarioCtrl.actualizarUsuario)
 router.get('/listarUsuario/:id',usuarioCtrl.listarId)
 
 
-router.delete('/eliminarUsuario/:id',usuarioCtrl.crearUsuario)
+router.delete('/eliminarUsuario/:id',usuarioCtrl.elimarUsuario)
 
 
 

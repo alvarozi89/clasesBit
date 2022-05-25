@@ -6,7 +6,6 @@ var ventaSchema = Schema({
     iduser: {type: Schema.ObjectId, ref: 'usuario'},
     fecha: {type: Date, default: Date.now},
   
-
 });
 
 module.exports = mongoose.model('venta',ventaSchema);

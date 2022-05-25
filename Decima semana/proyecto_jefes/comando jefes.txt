@@ -38,3 +38,5 @@ ng g c componente/pagina-no-autorizado --skip-tests=true
 			
 			https://i.ytimg.com/vi/0XJ9N2YoLUw/maxresdefault.jpg
 			
+			
+			URL =('mongodb+srv://sistemas2021:sistemas@cluster0.zsev0.mongodb.net/jefes-angular?retryWrites=true&w=majority')

@@ -9,7 +9,7 @@ require('./database')
 
 //configurar el puerto
 
-app.set('Port', process.env.PORT || 3200);
+app.set('Port', process.env.PORT || 3000);
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
@@ -24,6 +24,8 @@ app.use('/cliente',require('./routes/cliente.route'))
 app.use('/venta',require('./routes/venta.route'))
 //app.use('/venta',venta_routes);
 
+
+//Otra manera de utilizar los headers
 // app.use((req,res,next)=>{
 //     res.header('Content-Type: application/json');
 //     res.header('Access-Control-Allow-Origin','*'); 

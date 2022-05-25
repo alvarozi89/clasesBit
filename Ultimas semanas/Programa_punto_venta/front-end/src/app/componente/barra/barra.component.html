@@ -1,0 +1,62 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+  <div class="container-fluid">
+
+
+      <a class="navbar-brand text-success">Bievenido: {{"nombre"}}</a>
+      <a class="navbar-brand" routerLink="/inicio">Inicio</a>
+
+
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Productos
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item"  routerLink="/producto-index" href="#">Ver producto</a></li>
+            <li><a class="dropdown-item" routerLink="/producto-registrar" href="#">Registrar producto</a></li>
+            <li><hr class="dropdown-divider"></li>
+
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Ventas
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" routerLink="/venta">Generar venta</a></li>
+            <li><a class="dropdown-item" routerLink="/venta-index">Ver ventas</a></li>
+          </ul>
+        </li>
+
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Usuarios
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item"  routerLink="/usuario" >Ver usuarios</a></li>
+            <li><a class="dropdown-item" routerLink="/usuario">Registrar usuarios</a></li>
+            <li><hr class="dropdown-divider"></li>
+          </ul>
+        </li>
+
+      </ul>
+      <form class="d-flex">
+        <button class="btn btn-outline-danger" type="submit"><i class="bi bi-person-x-fill"></i></button>
+      </form>
+
+      <form class="d-flex m-2">
+        <button class="btn btn-outline-success" routerLink="/crear-usuario"><i class="bi bi-person-plus-fill">Registrate</i></button>
+      </form>
+    </div>
+  </div>
+</nav>

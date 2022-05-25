@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder,FormGroup,Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { JefeService } from 'src/app/servicios/jefe.service';
+import Swal from 'sweetalert2'
 
 
 @Component({
@@ -64,7 +65,12 @@ export class LoginComponent implements OnInit {
             this.mensaje_error="La contraseña no es correcta"
           }
           else{
-            alert("Inicio de sesión correcto")
+
+            Swal.fire(
+              'Inicio de sesión correcto!',
+              'You clicked the button!',
+              'success'
+             )
                 //estas variables auxiliares contiene los datos de la bd
                 this.token=response.token
                 this.nombre=response.nombre
