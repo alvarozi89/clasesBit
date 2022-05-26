@@ -6,7 +6,7 @@ const detalleModel= require('../models/detalleventa')
 
 ventaCtrl.GenerarVenta = async(req,res)=>{
     let data = req.body;
-    const { idcliente,iduser}= req.body 
+    const {idcliente,iduser}= req.body 
     const nuevaVenta= new ventaModel({
         idcliente,
         iduser
