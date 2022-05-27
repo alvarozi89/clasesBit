@@ -25,7 +25,9 @@ ventaCtrl.GenerarVenta = async(req,res)=>{
                             productoModel.findById({_id:element.idproducto},(err,producto_data)=>{
                                 if(producto_data){
                                     productoModel.findByIdAndUpdate({_id:producto_data._id},{stock: parseInt(producto_data.stock) - parseInt(element.cantidad)},(err,producto_edit)=>{
-                                        res.end();
+                                        res.json({
+                                            mensaje: 'Venta realizada'
+                                        })
                                     })
                                 }else{
                                     res.send(err);
@@ -35,7 +37,7 @@ ventaCtrl.GenerarVenta = async(req,res)=>{
                             res.send(err);
                         }
                     });
-    
+                 
                 });
     
             }else{
@@ -44,19 +46,13 @@ ventaCtrl.GenerarVenta = async(req,res)=>{
 
         })
 
-        // res.json({
-        //     mensaje: 'Creado',
-        //     //nombres: nombres
-        // })
-    
+
 }
-
-
 
 ventaCtrl.listar = async(req,res)=>{
       ventaModel.find().populate('idcliente').populate('iduser').exec((err,data_ventas)=>{
         if(data_ventas){
-        //res.status(200).send({ventas:data_ventas});
+       
             res.json({
                 listar:data_ventas
             })
@@ -65,8 +61,6 @@ ventaCtrl.listar = async(req,res)=>{
         }
      
     });
-    // const respuesta = await ventaModel.find()
-    // res.json(respuesta)
 }
 
 
@@ -91,7 +85,8 @@ ventaCtrl.listarId = async(req,res)=>{
                         {
                             data : {
                                 venta: data_venta,
-                                detalles: data_detalle
+                                detalles: data_detalle,
+
                             }
                         }
                     );
