@@ -86,7 +86,7 @@ export class CrearUsuarioComponent implements OnInit {
         else{
           this.mensaje_ok="Se registro correctamente"
           setTimeout(() => {
-            this.router.navigate(['inicio']);
+            this.router.navigate(['']);
           }, 2000);
         }
       },

@@ -41,10 +41,10 @@
           <th scope="col">Acciones</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody *ngFor="let item of dataProductos; let index = index ">
         <tr>
-
-          <td>{{""}}</td>
+          <td>{{index}}</td>
+          <td>{{item.titulo}}</td>
           <td>{{""}}</td>
           <td>{{""}}</td>
 

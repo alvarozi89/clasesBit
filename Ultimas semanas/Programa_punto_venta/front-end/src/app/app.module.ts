@@ -18,6 +18,7 @@ import { VentaIndexComponent } from './componente/venta/venta-index/venta-index.
 import { VentaDetalleComponent } from './componente/venta/venta-detalle/venta-detalle.component';
 import { InicioComponent } from './componente/inicio/inicio.component';
 import { CrearUsuarioComponent } from './componente/usuario/crear-usuario/crear-usuario.component';
+import { PaginaNoAutorizadaComponent } from './componente/pagina-no-autorizada/pagina-no-autorizada.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { CrearUsuarioComponent } from './componente/usuario/crear-usuario/crear-
     VentaIndexComponent,
     VentaDetalleComponent,
     InicioComponent,
-    CrearUsuarioComponent
+    CrearUsuarioComponent,
+    PaginaNoAutorizadaComponent
 
   ],
   imports: [

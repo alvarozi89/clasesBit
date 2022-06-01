@@ -12,11 +12,20 @@ export class InicioComponent implements OnInit {
   public token:any
   constructor(private usuarioService:UsuarioService, private router:Router)
   {
-
+    this.token= this.usuarioService.obtenerToken();
   }
 
   ngOnInit(): void {
+    this.validar()
+  }
 
+  validar(){
+    if(this.token){
+
+    }
+    else{
+      this.router.navigate(['no-autorizado'])
+    }
   }
 
 
