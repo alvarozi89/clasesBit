@@ -10,15 +10,32 @@ import { VentaService } from 'src/app/servicios/venta.service';
 })
 export class VentaIndexComponent implements OnInit {
 
+  public datosVenta !: any;
+  public id !: any;
+  public ventas !: any;
 
   constructor(
+    private usuarioService :UsuarioService,
+    private  ventaService :VentaService,
+    private router: Router
 
-  ) {
-
+  )
+  {
+    this.id= this.usuarioService.obtenerId();
   }
 
   ngOnInit(): void {
+    this.listarVentas();
 
+  }
+
+  listarVentas(){
+    this.ventaService.obtenerVentas().subscribe(
+      response=>{
+        this.datosVenta= response.listar
+        console.log(this.datosVenta)
+      }
+    )
 
   }
 

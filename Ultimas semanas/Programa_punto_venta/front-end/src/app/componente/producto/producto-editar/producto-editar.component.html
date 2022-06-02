@@ -26,7 +26,7 @@
                             <h6 class="card-subtitle text-muted">Productos.</h6>
                         </div>
                         <div class="card-body">
-                          <form>
+                          <form [formGroup]="formValue">
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="form-group">
@@ -61,13 +61,13 @@
                                           <label class="form-label">Categoria</label>
                                           <select class="form-control" formControlName="idcategoria" required name="idcategoria">
                                               <option disabled>SELECCIONAR</option>
-                                              <!-- <option *ngFor="let item of categorias" value={{item._id}}>{{item.titulo.toUpperCase()}}</option> -->
+                                              <option *ngFor="let item of categorias" value={{item._id}}>{{item.titulo.toUpperCase()}}</option>
                                           </select>
                                       </div>
                                   </div>
                               </div>
 
-                                <button type="submit" class="btn btn-primary my-2">Actualizar</button>
+                                <button type="submit" class="btn btn-primary my-2" (click)="actualizarProducto()">Actualizar</button>
                             </form>
                         </div>
                     </div>

@@ -5,9 +5,9 @@
   <div class="row">
           <div class="col-lg-6 my-2">
             <h5 class="card-title">Filtro de productos</h5>
-            <form>
+            <form #searchForm="ngForm" (ngSubmit)="search(searchForm)">
                 <div class="input-group date" id="datetimepicker-minimum" data-target-input="nearest">
-                    <input type="text" class="form-control datetimepicker-input">
+                    <input type="text" class="form-control datetimepicker-input" #filtro="ngModel" name="filtro" [(ngModel)]="filtroText">
                     <div class="input-group-append">
 
                         <button type="submit" class="input-group-text"><i class="bi bi-search"></i></button>
@@ -16,7 +16,7 @@
             </form>
         </div>
 
-        <div class="col-md-6 col-lg-6 my-2">
+        <!-- <div class="col-md-6 col-lg-6 my-2">
           <h5 class="card-title" style="opacity: 0.0">Opciones de productos</h5>
           <div class="btn-group" role="group">
             <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -27,7 +27,7 @@
               <li><a class="dropdown-item" href="#">Dropdown link</a></li>
             </ul>
           </div>
-      </div>
+      </div> -->
 
   </div>
   <div class="table-responsive-sm">
@@ -37,16 +37,18 @@
           <th scope="col">#</th>
           <th scope="col">titulo</th>
           <th scope="col">descripción</th>
+          <th scope="col">cantidad</th>
           <th scope="col">imagen</th>
           <th scope="col">Acciones</th>
         </tr>
       </thead>
       <tbody *ngFor="let item of dataProductos; let index = index ">
         <tr>
-          <td>{{index}}</td>
+          <td>{{index+1}}</td>
           <td>{{item.titulo}}</td>
-          <td>{{""}}</td>
-          <td>{{""}}</td>
+          <td>{{item.descripcion}}</td>
+          <td>{{item.stock}}</td>
+          <td>{{item.imagen}}</td>
 
           <!-- <td>
             <img  [src]="base_url + 'producto/producto/img/'+ row.imagen" width="48" height="48" class="rounded-circle mr-2" alt="Avatar">
@@ -54,8 +56,8 @@
           </td> -->
 
           <td>
-            <button  class="btn btn-warning me-1 my-1" style="width: 78px !important;" routerLink="/producto-editar/">Editar</button>
-            <button  class="btn btn-danger me-1 my-1"style="width: 78px !important;">Eliminar</button>
+            <button  class="btn btn-warning me-1 my-1" style="width: 78px !important;" routerLink="/producto-editar/{{item._id}}">Editar</button>
+            <button  class="btn btn-danger me-1 my-1"style="width: 78px !important;"  (click)="eliminarProducto(item)">Eliminar</button>
           </td>
         </tr>
       </tbody>

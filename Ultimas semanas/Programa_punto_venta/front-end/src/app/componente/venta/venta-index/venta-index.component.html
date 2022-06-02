@@ -25,21 +25,21 @@
                                       <th>Opciones</th>
                                   </tr>
                               </thead>
-                              <tbody>
+                              <tbody *ngFor="let item of datosVenta">
 
                                       <td>
-                                        {{""}}
+                                        {{item._id}}
                                     </td>
                                       <td>
-                                        {{""}}
+                                        {{item.idcliente.nombres}}
                                       </td>
 
-                                      <td>{{"" | date: 'MMM d, y, h:mm:ss a'}}</td>
+                                      <td>{{item.fecha | date: 'MMM d, y, h:mm:ss a'}}</td>
                                       <td>
-                                         {{""}} {{""}}
+                                         {{item.iduser.nombres}} {{item.iduser.apellidos}}
                                       </td>
                                       <td>
-                                        <button  class="btn btn-warning me-1 my-1" style="width: 78px !important;" routerLink="/venta-detalle/">Ver</button>
+                                        <button  class="btn btn-warning me-1 my-1" style="width: 78px !important;" routerLink="/venta-detalle/{{item._id}}">Ver</button>
 
                                       </td>
                               </tbody>
