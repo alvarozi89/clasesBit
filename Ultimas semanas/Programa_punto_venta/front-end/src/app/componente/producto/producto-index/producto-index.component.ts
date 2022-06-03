@@ -19,6 +19,8 @@ export class ProductoIndexComponent implements OnInit {
   public filtro:any;
   public filtroText:any;
 
+  public base_url = environment.url;
+
   //productoModel:ProductoModel = new ProductoModel();
   constructor
    (

@@ -26,16 +26,18 @@ export class ProductoRegistrarComponent implements OnInit {
 
   productoModel : ProductoModel = new ProductoModel();
 
-  imagenUrl !: any;
-  imgSelect !: any;
-
   error_message !:any;
   success_message !:any;
-
 
   public rol:any
   public token:any
 
+//variables imagenes
+
+public file!: File;
+public archivos: any[] | undefined
+imagenUrl !: any;
+public imgSelect : String | ArrayBuffer | any;
 
   constructor
   (
@@ -98,7 +100,7 @@ export class ProductoRegistrarComponent implements OnInit {
     this.productoModel.stock = this.formValue.value.stock;
     this.productoModel.descripcion = this.formValue.value.descripcion;
     this.productoModel.idcategoria = this.formValue.value.idcategoria;
-    this.productoModel.imagen = "imagen";
+    this.productoModel.imagen = this.file.name;
 
     if(this.productoModel.titulo==""){
       this.error_message="El campo titulo no puede estar vacio"
@@ -126,8 +128,10 @@ export class ProductoRegistrarComponent implements OnInit {
             stock: [''],
             descripcion: [''],
             idcategoria: [''],
-            imagen: ['']
           })
+          this.imagenUrl="";
+          this.imgSelect = '../../../../assets/img/default.jpg';
+
           // setTimeout(() => {
           //   this.router.navigate(['']);
           // }, 2000);
@@ -140,6 +144,25 @@ export class ProductoRegistrarComponent implements OnInit {
   }
 
 
+  seleccionarImagen(event:any){
+    this.file = <File>event.target.files[0];
+    const reader = new FileReader();
+    reader.onload = e => this.imgSelect= reader.result;
+    reader.readAsDataURL(this.file);
+    console.log("soy el file " +this.file.name)
+
+}
+
+// seleccionarImagen(event: HtmlInputEvent){
+//   if(event.target.files  && event.target.files[0]){
+//       this.file = <File>event.target.files[0];
+
+//       const reader = new FileReader();
+//       reader.onload = e => this.imgSelect= reader.result;
+//       reader.readAsDataURL(this.file);
+//       console.log("soy el file " +this.file.name)
+//   }
+// }
 
 }
 

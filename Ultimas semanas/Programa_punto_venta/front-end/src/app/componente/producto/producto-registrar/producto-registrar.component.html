@@ -88,9 +88,9 @@
                         </div> -->
                         <div class="card-body">
                             <div class="text-center">
-                                <img alt="Chris Wood" [src]="  '../../../../assets/img/default.jpg'" class="rounded-circle img-responsive mt-2" width="128" height="128">
+                                <img alt="Chris Wood" [src]=" imgSelect || '../../../../assets/img/default.jpg'" class="rounded-circle img-responsive mt-2" width="128" height="128">
                                 <div class="mt-2">
-                                    <input class="btn btn-primary"  type="file" style="width: 100% !important;">
+                                    <input class="btn btn-primary" (change)="seleccionarImagen($any($event))"  type="file" style="width: 100% !important;">
                                 </div>
                                 <small>For best results, use an image at least 128px by 128px in .jpg
                                 format</small>

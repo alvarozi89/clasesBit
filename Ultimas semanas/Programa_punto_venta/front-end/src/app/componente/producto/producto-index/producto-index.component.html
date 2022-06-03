@@ -48,7 +48,10 @@
           <td>{{item.titulo}}</td>
           <td>{{item.descripcion}}</td>
           <td>{{item.stock}}</td>
-          <td>{{item.imagen}}</td>
+          <td>
+            <img  [src]="base_url + 'producto/producto/img/'+ item.imagen" width="48" height="48" class="rounded-circle mr-2" alt="Avatar">
+            <!-- {{base_url + 'producto/img/'+ row.imagen}} -->
+          </td>
 
           <!-- <td>
             <img  [src]="base_url + 'producto/producto/img/'+ row.imagen" width="48" height="48" class="rounded-circle mr-2" alt="Avatar">
