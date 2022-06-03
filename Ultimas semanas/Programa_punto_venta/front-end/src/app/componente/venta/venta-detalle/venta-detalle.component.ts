@@ -47,6 +47,8 @@ export class VentaDetalleComponent implements OnInit {
         response=>{
           console.log(response)
 
+          this.venta= response.data.venta
+          this.detalle_venta= response.data.detalles
 
         }
       )

@@ -17,23 +17,23 @@
                               <div class="row">
                                   <div class="col-4 form-group">
                                       <label><b>Cliente</b></label>
-                                      <input type="text" class="form-control">
+                                      <input type="text" class="form-control" value="{{venta.idcliente.nombres}}">
                                   </div>
                                   <div class="col-4 form-group">
                                       <label><b>Correo</b></label>
-                                      <input type="text" class="form-control" >
+                                      <input type="text" class="form-control" value="{{venta.idcliente.correo}}">
                                   </div>
                                   <div class="col-4 form-group">
                                       <label><b>DNI</b></label>
-                                      <input type="text" class="form-control" >
+                                      <input type="text" class="form-control" value="{{venta.idcliente.nDocumento}}" >
                                   </div>
                                   <div class="col-4 form-group">
                                       <label><b>Trabajador</b></label>
-                                      <input type="text" class="form-control">
+                                      <input type="text" class="form-control" value="{{venta.iduser.nombres}}">
                                   </div>
                                   <div class="col-4 form-group">
                                       <label><b>Correo del trabajador</b></label>
-                                      <input type="text" class="form-control">
+                                      <input type="text" class="form-control" value="{{venta.iduser.correo}}">
                                   </div>
 
                               </div>
@@ -56,11 +56,11 @@
                                       <th class="text-center">Subtotal</th>
                                   </tr>
                               </thead>
-                              <tbody >
-                                  <td class="text-center">{{""}}</td>
-                                  <td class="text-center">${{""}}</td>
-                                  <td class="text-center" >{{""}}</td>
-                                  <td class="text-center" >{{""}}</td>
+                              <tbody *ngFor="let item of detalle_venta" >
+                                  <td class="text-center">{{item.idproducto.titulo}}</td>
+                                  <td class="text-center">${{item.idproducto.precio_venta}}</td>
+                                  <td class="text-center" >{{item.cantidad}}</td>
+                                  <td class="text-center" >${{item.idproducto.precio_venta * item.cantidad }}</td>
 
                               </tbody>
 

@@ -40,6 +40,7 @@ export class VentaService {
   }
 
   registrarVenta(data: any){
+    let headers = new HttpHeaders().set('Content-Type','application/json')
     return this._htpp.post<any>(base_url+'venta/crearVenta',data)
     .pipe(map((res:any)=>{
       return res;

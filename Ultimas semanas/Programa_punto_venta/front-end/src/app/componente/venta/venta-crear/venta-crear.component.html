@@ -17,17 +17,17 @@
                               <h5 class="card-title">Datos de la Venta</h5>
                           </div>
                           <div class="card-body">
-                            <form #ventaForm="ngForm">
+                            <form #ventaForm="ngForm" (ngSubmit)="onSubmit(ventaForm)" >
                                   <div class="row">
                                       <div class="col-lg-4 form-group">
                                           <label><b>Trabajador</b></label>
-                                          <input type="text"  class="form-control">
+                                          <input type="text"  class="form-control" value="{{nombre}}">
                                       </div>
                                       <div class="col-lg-4 form-group">
                                           <label><b>Clientes</b></label>
-                                          <select name="" class="form-control"   name="idcliente" >
+                                          <select name="" class="form-control"   name="idcliente" [(ngModel)]="venta.idcliente" >
                                               <option value="">SELECCIONAR</option>
-                                              <!-- <option value="{{item._id}}" *ngFor="let item of clientes">{{item.nombres}}</option> -->
+                                              <option value="{{item._id}}" *ngFor="let item of clientes">{{item.nombres}}</option>
                                           </select>
                                       </div>
 
@@ -40,7 +40,7 @@
                       </div>
                   </div>
 
-                  <!-- <div class="col-12 col-lg-12" *ngIf="error_message">
+                  <div class="col-12 col-lg-12" *ngIf="error_message">
                       <div class="alert alert-danger alert-dismissible" role="alert">
                           <div class="alert-message">
                              {{error_message}}
@@ -50,7 +50,7 @@
                           <span aria-hidden="true">×</span>
                           </button>
                       </div>
-                  </div> -->
+                  </div>
 
                   <div class="col-12 col-xl-12 form-group">
                       <div class="card">
@@ -59,22 +59,22 @@
                           </div>
                           <div class="card-body">
 
-                            <form #detalleForm="ngForm">
+                            <form #detalleForm="ngForm" (ngSubmit)="save_detalle(detalleForm)">
                                   <div class="row">
                                       <div class="col-lg-4 form-group">
                                           <label for=""><b>Productos</b></label>
-                                          <select class="form-control" name="idproducto">
-                                              <option value="" disabled>SELECCIONAR</option>
-                                              <!-- <option value="{{item._id}}" *ngFor="let item of productos">{{item.titulo}}</option> -->
+                                          <select class="form-control" name="idproducto" (change)="get_data_producto($any($event.target).value)" [(ngModel)]="detalle.idproducto">
+                                              <option value="" selected disabled>SELECCIONAR</option>
+                                              <option value="{{item._id}}" *ngFor="let item of productos">{{item.titulo}}</option>
                                           </select>
                                       </div>
                                       <div class="col-lg-3 form-group">
                                           <label for=""><b>Stock actual</b></label>
-                                          <input type="text" readonly class="form-control" >
+                                          <input type="text" readonly class="form-control" value="{{producto.stock}}">
                                       </div>
                                       <div class="col-lg-3 form-group">
                                           <label for=""><b>Cantidad</b></label>
-                                          <input type="text" name="cantidad"  class="form-control" >
+                                          <input type="text" name="cantidad"  class="form-control" [(ngModel)]="cantidad" >
                                       </div>
                                       <div class="col-lg-2 form-group">
                                           <label><b>*</b></label>
@@ -100,19 +100,19 @@
                                   <th>Subtotal</th>
 
                               </thead>
-                              <tbody >
-                                  <td><button class="btn btn-danger btn-sm"><i class="bi bi-x-octagon-fill"></i></button></td>
-                                  <td>{{""}}</td>
-                                  <td>{{""}}</td>
-                                  <td>{{""}}</td>
-                                  <td>{{""}}</td>
+                              <tbody *ngFor="let item of data_detalle; let idx = index " >
+                                  <td><button class="btn btn-danger btn-sm"><i class="bi bi-x-octagon-fill" (click)="eliminar(idx,item.precio_venta,item.cantidad)"></i></button></td>
+                                  <td>{{item.producto}}</td>
+                                  <td>{{item.precio_venta}}</td>
+                                  <td>{{item.cantidad}}</td>
+                                  <td>{{item.precio_venta * item.cantidad}}</td>
                               </tbody>
                               <tfoot>
                                   <td><b>Total</b></td>
                                   <td>-</td>
                                   <td>-</td>
                                   <td>-</td>
-                                  <td>{{""}}</td>
+                                  <td>{{total}}</td>
                               </tfoot>
                           </table>
                           <div class="card-footer">
