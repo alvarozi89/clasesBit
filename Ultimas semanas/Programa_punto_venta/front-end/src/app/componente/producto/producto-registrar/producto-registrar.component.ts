@@ -100,7 +100,7 @@ public imgSelect : String | ArrayBuffer | any;
     this.productoModel.stock = this.formValue.value.stock;
     this.productoModel.descripcion = this.formValue.value.descripcion;
     this.productoModel.idcategoria = this.formValue.value.idcategoria;
-    this.productoModel.imagen = this.file.name;
+    this.productoModel.imagen = this.imagenUrl;
 
     if(this.productoModel.titulo==""){
       this.error_message="El campo titulo no puede estar vacio"
@@ -149,7 +149,7 @@ public imgSelect : String | ArrayBuffer | any;
     const reader = new FileReader();
     reader.onload = e => this.imgSelect= reader.result;
     reader.readAsDataURL(this.file);
-    console.log("soy el file " +this.file.name)
+    console.log("soy el file " +this.file)
 
 }
 
