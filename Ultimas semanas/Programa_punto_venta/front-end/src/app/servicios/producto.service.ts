@@ -39,10 +39,24 @@ export class ProductoService {
 
 
   agregar(data:any){
+
     return this._htpp.post<any>(base_url+'producto/crearProducto',data)
     .pipe(map((res:any)=>{
       return res;
     }))
+  }
+
+  insert_producto(data:any){
+    const fd = new FormData();
+    fd.append('titulo',data.titulo);
+    fd.append('descripcion',data.descripcion);
+    fd.append('imagen',data.imagen);
+    fd.append('precio_compra',data.precio_compra);
+    fd.append('precio_venta',data.precio_venta);
+    fd.append('stock',data.stock);
+    fd.append('idcategoria',data.idcategoria);
+
+    return this._htpp.post(base_url + 'producto/crearProducto',fd);
   }
 
 

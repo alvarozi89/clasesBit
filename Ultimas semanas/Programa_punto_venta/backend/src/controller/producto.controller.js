@@ -1,5 +1,7 @@
 const productoCtrl = {};
+const imagenCtrl = {};
 const productoModel = require('../models/producto.models')
+const uploadController = require ('../controller/upload.controller.js')
 const fs = require('fs');
 const path = require('path');
 const multer = require('multer');
@@ -21,7 +23,7 @@ productoCtrl.crearProducto = async(req,res)=>{
             mensaje: 'el producto ya existe'
         })
     }
-
+    
     else if(req.files)
     {
         const imagen_path = req.files.imagen.path;
@@ -31,7 +33,7 @@ productoCtrl.crearProducto = async(req,res)=>{
         const nuevoproducto = new productoModel({
             titulo,
             descripcion,
-            imagen:imagenCargada,
+            imagen: imagenCargada,
             precio_compra,
             precio_venta,
             stock,
@@ -39,23 +41,30 @@ productoCtrl.crearProducto = async(req,res)=>{
         })
         await nuevoproducto.save()
         res.json({
-            mensaje: 'Creado',
+            mensaje: 'Creado'+ "en req files" +imagenCargada,
             titulo: titulo
         })
-
     }
 
     else {
+        const nuevoproducto = new productoModel({
+            titulo,
+            descripcion,
+            imagen: null,
+            precio_compra,
+            precio_venta,
+            stock,
+            idcategoria
+        })
+
         await nuevoproducto.save()
         res.json({
             mensaje: 'Creado',
             titulo: titulo
         })
-    
-       
+
     }
 }
-
 
 
 productoCtrl.listar = async(req,res)=>{
@@ -134,4 +143,5 @@ productoCtrl.elimarProducto = async(req,res)=>{
 //     }
 // }
 
-module.exports= productoCtrl
+module.exports= productoCtrl,imagenCtrl
+

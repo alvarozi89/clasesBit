@@ -26,7 +26,50 @@
                             <h6 class="card-subtitle text-muted">Productos.</h6>
                         </div>
                         <div class="card-body">
-                          <form [formGroup]="formValue" >
+                          <!-- Se establece la otra manera de formulario, la cual es compatible con los file -->
+                          <form #productoForm="ngForm" (ngSubmit)="onSubmit(productoForm)">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Titulo del producto</label>
+                                        <input type="text" class="form-control" placeholder="Ingrese el titulo del producto" #titulo="ngModel" name="titulo" [(ngModel)]="producto.titulo" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class="form-group">
+                                        <label class="form-label">Precio compra</label>
+                                        <input type="number" class="form-control" placeholder="$0"  #precio_compra="ngModel" name="precio_compra" [(ngModel)]="producto.precio_compra" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class="form-group">
+                                        <label class="form-label">Precio venta</label>
+                                        <input type="number" class="form-control" placeholder="$0"  #precio_venta="ngModel" name="precio_venta" [(ngModel)]="producto.precio_venta" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <label class="form-label">Cantidad</label>
+                                    <input type="number" class="form-control" placeholder="0"  #stock="ngModel" name="stock" [(ngModel)]="producto.stock" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Descripcion</label>
+                                <textarea class="form-control" placeholder="Breve descripcion"  #descripcion="ngModel" name="descripcion" [(ngModel)]="producto.descripcion"> required</textarea>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label class="form-label">Categoria</label>
+                                        <select class="form-control"  #idcategoria="ngModel" required name="idcategoria" [(ngModel)]="producto.idcategoria">
+                                            <option value="" disabled>SELECCIONAR</option>
+                                            <option value="{{item._id}}" *ngFor="let item of datosCategoria" value={{item._id}}>{{item.titulo.toUpperCase()}}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary my-2">Registrar</button>
+                        </form>
+                          <!-- <form [formGroup]="formValue" >
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="form-group">
@@ -56,7 +99,7 @@
                                     <textarea class="form-control" formControlName="descripcion" placeholder="Breve descripcion"></textarea>
                                 </div>
                                 <div class="row">
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-12">
                                         <div class="form-group">
                                             <label class="form-label">Categoria</label>
                                             <select class="form-control" formControlName="idcategoria" required name="idcategoria">
@@ -66,9 +109,8 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <button (click)="CrearProducto()" type="submit" class="btn btn-primary my-2">Registrar</button>
-                            </form>
+                            </form> -->
                         </div>
                     </div>
                 </div>
@@ -77,7 +119,7 @@
                         <div class="card-header">
                           Link de imagen
                         </div>
-                        <div class="card-body">
+                        <!-- <div class="card-body">
                             <div class="text-center">
                                 <img src="../../../../assets/img/default.jpg" alt="Imagen" class="rounded-circle img-responsive mt-2" width="128" height="128">
                                 <div class="mt-2">
@@ -85,17 +127,18 @@
                                 </div>
                                 <small>Debe importar el link de internet</small>
                             </div>
-                        </div>
-                        <!-- <div class="card-body">
+                        </div> -->
+                        <div class="card-body">
+                          <!-- esta es la configuración para las imagenes -->
                             <div class="text-center">
                                 <img alt="Chris Wood" [src]=" imgSelect || '../../../../assets/img/default.jpg'" class="rounded-circle img-responsive mt-2" width="128" height="128">
                                 <div class="mt-2">
-                                    <input class="btn btn-primary" (change)="seleccionarImagen($any($event))"  type="file" style="width: 100% !important;">
+                                    <input class="btn btn-primary"  [(ngModel)]="imagenUrl" (change)="seleccionarImagen($event)"  type="file" style="width: 100% !important;">
                                 </div>
                                 <small>For best results, use an image at least 128px by 128px in .jpg
                                 format</small>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -103,3 +146,13 @@
 </div>
 
 
+      <!-- <div class="p-fluid grid formgrid">
+                                  <div class="field col-6 md:col-12">
+                                    <label for="time">Time / 24h</label>
+                                    <p-calendar [(ngModel)]="date7" [showTime]="true" [hourFormat]="12" [showSeconds]="false" inputId="time"></p-calendar>
+                                 </div>
+                                 <div class="field col-12 md:col-4">
+                                  <label for="timeonly">Time / 12h</label>
+                                  <p-calendar [(ngModel)]="date8" [timeOnly]="true" [hourFormat]="12" inputId="timeonly"></p-calendar>
+                              </div>
+                                </div> -->

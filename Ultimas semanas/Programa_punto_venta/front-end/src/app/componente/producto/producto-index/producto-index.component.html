@@ -52,14 +52,14 @@
             <img  [src]="base_url + 'producto/producto/img/'+ item.imagen" width="48" height="48" class="rounded-circle mr-2" alt="Avatar">
           </td> -->
 
-          <td>
-            <img  [src]="item.imagen" width="48" height="48" class="rounded-circle mr-2" alt="Avatar">
-          </td>
-
           <!-- <td>
-            <img  [src]="base_url + 'producto/producto/img/'+ row.imagen" width="48" height="48" class="rounded-circle mr-2" alt="Avatar">
-
+            <img  [src]="item.imagen" width="48" height="48" class="rounded-circle mr-2" alt="Avatar">
           </td> -->
+
+          <td>
+            <img  [src]="base_url + 'producto/producto/img/'+ item.imagen" width="48" height="48" class="rounded-circle mr-2" alt="Avatar">
+
+          </td>
 
           <td>
             <button  class="btn btn-warning me-1 my-1" style="width: 78px !important;" routerLink="/producto-editar/{{item._id}}">Editar</button>

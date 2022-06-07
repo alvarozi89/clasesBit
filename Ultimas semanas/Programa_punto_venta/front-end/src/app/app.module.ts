@@ -20,6 +20,9 @@ import { InicioComponent } from './componente/inicio/inicio.component';
 import { CrearUsuarioComponent } from './componente/usuario/crear-usuario/crear-usuario.component';
 import { PaginaNoAutorizadaComponent } from './componente/pagina-no-autorizada/pagina-no-autorizada.component';
 
+//prime
+import {CalendarModule} from 'primeng/calendar';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +46,9 @@ import { PaginaNoAutorizadaComponent } from './componente/pagina-no-autorizada/p
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CalendarModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
