@@ -1,5 +1,5 @@
 const productoCtrl = {};
-const imagenCtrl = {};
+//const imagenCtrl = {};
 const productoModel = require('../models/producto.models')
 const uploadController = require ('../controller/upload.controller.js')
 const fs = require('fs');
@@ -143,5 +143,5 @@ productoCtrl.elimarProducto = async(req,res)=>{
 //     }
 // }
 
-module.exports= productoCtrl,imagenCtrl
+module.exports= productoCtrl
 

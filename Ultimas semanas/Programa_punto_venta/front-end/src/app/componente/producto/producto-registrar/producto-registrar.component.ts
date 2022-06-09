@@ -229,7 +229,6 @@ public imgSelect : String | ArrayBuffer | any;
 seleccionarImagen(event: any){
   if(event.target.files  && event.target.files[0]){
       this.file = <File>event.target.files[0];
-
       const reader = new FileReader();
       reader.onload = e => this.imgSelect= reader.result;
       reader.readAsDataURL(this.file);

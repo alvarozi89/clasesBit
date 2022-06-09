@@ -1,4 +1,5 @@
 **Manual Angular**
+comando instalar:npm install -g @angular/cli
 
 primero revisar la versión:
 
@@ -19,7 +20,7 @@ ng new primerProyectoAngular
 cd my-first-project
 
 **ahora la prueba de fuego, ejecutar el proyecto**
-**nota: con el comando ng serve corremos el proyecto**
+**nota: con el comando ng serve o ng serve -o corremos el proyecto**
 **nota: con control + c detenemos el proyecto, es necesario
 que se encuentre detenido para instalar complementos**
 ng serve

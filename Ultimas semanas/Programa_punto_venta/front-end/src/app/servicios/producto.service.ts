@@ -39,7 +39,6 @@ export class ProductoService {
 
 
   agregar(data:any){
-
     return this._htpp.post<any>(base_url+'producto/crearProducto',data)
     .pipe(map((res:any)=>{
       return res;
